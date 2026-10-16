@@ -5,7 +5,13 @@ from collections.abc import Sequence
 from dataclasses import dataclass
 from datetime import date
 
-from judogg.ingestion.domain.competitions import ExclusionRules, exclusion_reason, parse_date, read_entry
+from judogg.ingestion.domain.competitions import (
+    ELITE_RANKS,
+    ExclusionRules,
+    exclusion_reason,
+    parse_date,
+    read_entry,
+)
 from judogg.ingestion.domain.constants import FIRST_YEAR
 from judogg.ingestion.domain.model import RawJson
 
@@ -19,6 +25,7 @@ class Selection:
     years: frozenset[int] = frozenset()
     competition_ids: tuple[int, ...] = ()
     recent_months: int | None = None
+    elite_only: bool = False
 
     @property
     def is_empty(self) -> bool:
@@ -63,7 +70,7 @@ def select_competitions(
     wanted = {competition_id: _explicit(by_id, competition_id) for competition_id in selection.competition_ids}
     since = months_before(today, selection.recent_months) if selection.recent_months else None
     for raw in listing:
-        if not read_entry(raw, lambda r: _downloadable(r, today, rules)):
+        if not read_entry(raw, lambda r: _downloadable(r, today, rules, elite_only=selection.elite_only)):
             continue
         is_recent = since is not None and parse_date(raw["date_from"]) >= since
         if is_recent or int(raw["comp_year"]) in selection.years:
@@ -94,7 +101,9 @@ def _explicit(by_id: dict[int, RawJson], competition_id: int) -> Wanted:
     return Wanted(competition_id, str(raw["name"]), refresh=False)
 
 
-def _downloadable(raw: RawJson, today: date, rules: ExclusionRules) -> bool:
+def _downloadable(raw: RawJson, today: date, rules: ExclusionRules, *, elite_only: bool = False) -> bool:
+    if elite_only and raw.get("rank_name") not in ELITE_RANKS:
+        return False
     return (
         int(raw["comp_year"]) >= FIRST_YEAR
         and raw["has_results"] != "0"

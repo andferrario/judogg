@@ -137,3 +137,17 @@ def test_category_weight_ids() -> None:
 def test_unreadable_id_is_an_invalid_entry() -> None:
     with pytest.raises(InvalidCompetitionEntry, match="abc"):
         select([entry(1) | {"id_competition": "abc"}], years=frozenset({2025}))
+
+
+def test_elite_only_filters_out_non_elite_competitions() -> None:
+    listing = [
+        entry(1, rank_name="Grand Slam"),
+        entry(2, rank_name="European Open"),
+        entry(3, rank_name="Continental Cup"),
+        entry(4, rank_name="World Championships"),
+    ]
+    all_selected = select(listing, years=frozenset({2025}))
+    assert [w.id for w in all_selected] == [1, 2, 3, 4]
+
+    elite_selected = select(listing, years=frozenset({2025}), elite_only=True)
+    assert [w.id for w in elite_selected] == [1, 4]

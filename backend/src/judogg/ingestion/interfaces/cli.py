@@ -79,12 +79,15 @@ def fetch(
     recent_months: Annotated[
         int | None, typer.Option(min=1, help="Competitions started in the last N months, always downloaded again.")
     ] = None,
+    elite_only: Annotated[
+        bool, typer.Option("--elite-only", help="Download only elite competitions (Grand Slam, Grand Prix, etc.).")
+    ] = False,
     force: Annotated[bool, typer.Option(help="Download again the calls already stored.")] = False,
     delay: Annotated[float | None, typer.Option(min=0, help="Seconds between calls (default: FETCH_DELAY_S).")] = None,
     then_load: Annotated[bool, typer.Option("--load", help="Run load at the end, only if no call failed.")] = False,
 ) -> None:
     """Download IJF competitions into the raw responses; resumable by running the same command again."""
-    selection = Selection(_years(year), tuple(competition or ()), recent_months)
+    selection = Selection(_years(year), tuple(competition or ()), recent_months, elite_only=elite_only)
     if selection.is_empty:
         raise typer.BadParameter("choose at least one of --year, --competition, --recent-months")
     settings = settings_or_exit()

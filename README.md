@@ -60,15 +60,16 @@ The first `make up` builds the backend image and installs the frontend packages,
 `make fetch` downloads competitions from the IJF API and stores the raw answers in the database. `--load` then rebuilds the app tables from everything stored.
 
 ```bash
-make fetch ARGS="--competition 3131 --load"   # one competition, by id
-make fetch ARGS="--year 2025 --load"          # one season: about 60 competitions, 30–60 minutes
-make fetch ARGS="--year 2017-2026 --load"     # the whole history: about 7,000 calls, a few hours
-make fetch ARGS="--recent-months 12 --load"   # refresh: the IJF corrects results for months
+make fetch ARGS="--competition 3131 --load"               # one competition, by id
+make fetch ARGS="--year 2025 --elite-only --load"         # one season (elite only): Grand Slam, Grand Prix, etc.
+make fetch ARGS="--year 2017-2026 --elite-only --load"    # whole history (elite only): skips untagged Opens & Cups
+make fetch ARGS="--recent-months 12 --elite-only --load"  # refresh: the IJF corrects results for months
 ```
 
 | Option | Effect |
 | :--- | :--- |
 | `--year` | competitions of these years: `2025`, `2025,2026` or `2020-2026` (from 2017) |
+| `--elite-only` | download only elite competitions (Grand Slam, Grand Prix, World/Continental Championships, Masters, Olympics), skipping untagged Opens and Cups |
 | `--competition` | one competition by id, repeatable. It is downloaded as asked, without the filters below |
 | `--recent-months N` | competitions that started in the last N months, always downloaded again |
 | `--force` | download again calls that are already stored |
