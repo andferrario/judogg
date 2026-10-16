@@ -1,0 +1,433 @@
+{
+  "filters": {
+    "gender": "all",
+    "weight": [],
+    "year_from": 2018,
+    "year_to": 2024,
+    "ruleset": [
+      2018
+    ],
+    "country": [],
+    "side": [
+      "left",
+      "right",
+      "unknown"
+    ],
+    "domain": [
+      "standing",
+      "ground",
+      "unknown"
+    ],
+    "count_by": "event",
+    "min_scores_athlete": 5,
+    "min_scores_technique": 2
+  },
+  "totals": {
+    "competitions": 0,
+    "contests": 0,
+    "athletes": 0,
+    "scores": 0,
+    "penalties": 0
+  },
+  "warnings": [],
+  "data": {
+    "technique": {
+      "code": "uchi_mata",
+      "name": "Uchi-mata",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    "kpis": {
+      "n_scores": 0,
+      "rank": null,
+      "of": 0,
+      "pct": {
+        "ippon": null,
+        "waza_ari": null,
+        "yuko": null
+      },
+      "overall_pct_ippon": null,
+      "right_share": null,
+      "unknown_side_share": null,
+      "n_athletes": 0,
+      "n_awasete": 0,
+      "gs_share": null,
+      "overall_gs_share": null
+    },
+    "sample": {
+      "status": "insufficient",
+      "n": 0,
+      "unit": "scores"
+    },
+    "by_weight": [
+      {
+        "weight": {
+          "code": "m-60",
+          "gender": "m",
+          "label": "-60"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "m-66",
+          "gender": "m",
+          "label": "-66"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "m-73",
+          "gender": "m",
+          "label": "-73"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "m-81",
+          "gender": "m",
+          "label": "-81"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "m-90",
+          "gender": "m",
+          "label": "-90"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "m-100",
+          "gender": "m",
+          "label": "-100"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "m+100",
+          "gender": "m",
+          "label": "+100"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "f-48",
+          "gender": "f",
+          "label": "-48"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "f-52",
+          "gender": "f",
+          "label": "-52"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "f-57",
+          "gender": "f",
+          "label": "-57"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "f-63",
+          "gender": "f",
+          "label": "-63"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "f-70",
+          "gender": "f",
+          "label": "-70"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "f-78",
+          "gender": "f",
+          "label": "-78"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      },
+      {
+        "weight": {
+          "code": "f+78",
+          "gender": "f",
+          "label": "+78"
+        },
+        "n": 0,
+        "total": 0,
+        "share": null,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "scores"
+        }
+      }
+    ],
+    "timing": [
+      {
+        "bin": 0,
+        "label": "0:00–0:30",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      },
+      {
+        "bin": 1,
+        "label": "0:30–1:00",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      },
+      {
+        "bin": 2,
+        "label": "1:00–1:30",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      },
+      {
+        "bin": 3,
+        "label": "1:30–2:00",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      },
+      {
+        "bin": 4,
+        "label": "2:00–2:30",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      },
+      {
+        "bin": 5,
+        "label": "2:30–3:00",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      },
+      {
+        "bin": 6,
+        "label": "3:00–3:30",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      },
+      {
+        "bin": 7,
+        "label": "3:30–4:00",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      },
+      {
+        "bin": 8,
+        "label": "Golden score",
+        "n": 0,
+        "ippon": 0,
+        "waza_ari": 0,
+        "yuko": 0
+      }
+    ],
+    "trend": {
+      "points": [],
+      "ruleset_changes": [],
+      "sample": {
+        "status": "insufficient",
+        "n": 0,
+        "unit": "years"
+      }
+    },
+    "top_athletes": [],
+    "countries": {
+      "rows": [],
+      "min_scores_country": 30
+    }
+  }
+}

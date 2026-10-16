@@ -1,0 +1,15 @@
+{
+  "path": "/api/repertoire",
+  "query": {
+    "technique": "seoi_nage",
+    "with": "nope"
+  },
+  "status": 404,
+  "body": {
+    "error": {
+      "code": "not_found",
+      "message": "unknown technique nope",
+      "field": "with"
+    }
+  }
+}

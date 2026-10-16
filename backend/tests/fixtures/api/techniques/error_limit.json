@@ -1,0 +1,14 @@
+{
+  "path": "/api/techniques",
+  "query": {
+    "limit": "0"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "limit must be an integer between 1 and 200",
+      "field": "limit"
+    }
+  }
+}

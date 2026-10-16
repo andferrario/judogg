@@ -1,0 +1,14 @@
+{
+  "path": "/api/overview",
+  "query": {
+    "ruleset": "1999"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "unknown ruleset 1999",
+      "field": "ruleset"
+    }
+  }
+}

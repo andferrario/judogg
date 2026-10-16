@@ -1,0 +1,176 @@
+{
+  "path": "/api/overview",
+  "query": {
+    "ruleset": "2018"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "all",
+      "weight": [],
+      "year_from": 2018,
+      "year_to": 2024,
+      "ruleset": [
+        2018
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 0,
+      "contests": 0,
+      "athletes": 0,
+      "scores": 0,
+      "penalties": 0
+    },
+    "warnings": [],
+    "data": {
+      "kpis": {
+        "scores": 0,
+        "contests": 0,
+        "scoring_athletes": 0,
+        "techniques": 0,
+        "gs_share": null,
+        "unknown_side_share": null,
+        "unknown_technique_share": null
+      },
+      "outcomes": {
+        "played": 0,
+        "walkovers": {
+          "fusen_gachi": 0,
+          "kiken_gachi": 0
+        },
+        "end_types": [
+          {
+            "end_type": "ippon",
+            "n": 0,
+            "share": null
+          },
+          {
+            "end_type": "waza_ari_awasete",
+            "n": 0,
+            "share": null
+          },
+          {
+            "end_type": "hansoku_shido",
+            "n": 0,
+            "share": null
+          },
+          {
+            "end_type": "double_hansoku",
+            "n": 0,
+            "share": null
+          },
+          {
+            "end_type": "score_gs",
+            "n": 0,
+            "share": null
+          },
+          {
+            "end_type": "score_regulation",
+            "n": 0,
+            "share": null
+          }
+        ],
+        "gs_share": null,
+        "avg_duration_s": null,
+        "sample": {
+          "status": "insufficient",
+          "n": 0,
+          "unit": "contests"
+        }
+      },
+      "timing": [
+        {
+          "bin": 0,
+          "label": "0:00–0:30",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 1,
+          "label": "0:30–1:00",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 2,
+          "label": "1:00–1:30",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 3,
+          "label": "1:30–2:00",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 4,
+          "label": "2:00–2:30",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 5,
+          "label": "2:30–3:00",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 6,
+          "label": "3:00–3:30",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 7,
+          "label": "3:30–4:00",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 8,
+          "label": "Golden score",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        }
+      ],
+      "sample": {
+        "status": "insufficient",
+        "n": 0,
+        "unit": "scores"
+      }
+    }
+  }
+}

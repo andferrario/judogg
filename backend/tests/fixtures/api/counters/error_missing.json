@@ -1,0 +1,12 @@
+{
+  "path": "/api/counters",
+  "query": {},
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "technique is required",
+      "field": "technique"
+    }
+  }
+}

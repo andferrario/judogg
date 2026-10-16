@@ -1,0 +1,50 @@
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports: ["5432:5432"]
+    volumes:
+      # PostgreSQL 18 images keep their data under /var/lib/postgresql/18/: mount the parent.
+      - pgdata:/var/lib/postgresql
+      - ./docker/db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+
+  backend:
+    build: ./backend
+    image: judogg-backend:dev
+    env_file: .env
+    command: uvicorn judogg.app.interfaces.api.main:app --host 0.0.0.0 --port 8000 --reload
+    ports: ["8000:8000"]
+    volumes: ["./backend:/backend"]
+    depends_on:
+      db: { condition: service_healthy }
+
+  ingestion:
+    build: ./backend
+    image: judogg-backend:dev
+    env_file: .env
+    volumes: ["./backend:/backend"]
+    profiles: ["tools"]
+    depends_on:
+      db: { condition: service_healthy }
+
+  frontend:
+    image: node:24-slim
+    working_dir: /frontend
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0"
+    ports: ["5173:5173"]
+    volumes:
+      - ./frontend:/frontend
+      - frontend_node_modules:/frontend/node_modules
+    depends_on: [backend]
+
+volumes:
+  pgdata: {}
+  frontend_node_modules: {}

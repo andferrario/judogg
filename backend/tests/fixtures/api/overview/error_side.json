@@ -1,0 +1,14 @@
+{
+  "path": "/api/overview",
+  "query": {
+    "side": "up"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "side must be one of left, right, unknown",
+      "field": "side"
+    }
+  }
+}

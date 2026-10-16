@@ -1,0 +1,157 @@
+{
+  "path": "/api/techniques",
+  "query": {
+    "gender": "m",
+    "weight": "m-73",
+    "limit": "3"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "m",
+      "weight": [
+        "m-73"
+      ],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 1,
+      "contests": 51,
+      "athletes": 48,
+      "scores": 78,
+      "penalties": 81
+    },
+    "warnings": [
+      {
+        "code": "high_unknown_technique",
+        "message": "14% of the scores have no technique."
+      }
+    ],
+    "data": {
+      "rows": [
+        {
+          "technique": {
+            "code": "seoi_nage",
+            "name": "Seoi-nage",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "n_scores": 8,
+          "n_athletes": 6,
+          "share": 0.1026,
+          "counts": {
+            "ippon": 2,
+            "waza_ari": 1,
+            "yuko": 5
+          },
+          "pct": {
+            "ippon": 0.25,
+            "waza_ari": 0.125,
+            "yuko": 0.625
+          },
+          "n_awasete": 0,
+          "side": {
+            "left": 2,
+            "right": 6,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "small",
+            "n": 8,
+            "unit": "scores"
+          }
+        },
+        {
+          "technique": {
+            "code": "o_uchi_gari",
+            "name": "O-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_scores": 7,
+          "n_athletes": 7,
+          "share": 0.0897,
+          "counts": {
+            "ippon": 1,
+            "waza_ari": 0,
+            "yuko": 6
+          },
+          "pct": {
+            "ippon": 0.1429,
+            "waza_ari": 0,
+            "yuko": 0.8571
+          },
+          "n_awasete": 0,
+          "side": {
+            "left": 2,
+            "right": 5,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "small",
+            "n": 7,
+            "unit": "scores"
+          }
+        },
+        {
+          "technique": {
+            "code": "ko_soto_gari",
+            "name": "Ko-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_scores": 6,
+          "n_athletes": 3,
+          "share": 0.0769,
+          "counts": {
+            "ippon": 1,
+            "waza_ari": 0,
+            "yuko": 5
+          },
+          "pct": {
+            "ippon": 0.1667,
+            "waza_ari": 0,
+            "yuko": 0.8333
+          },
+          "n_awasete": 0,
+          "side": {
+            "left": 1,
+            "right": 5,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "small",
+            "n": 6,
+            "unit": "scores"
+          }
+        }
+      ],
+      "total_rows": 24,
+      "sort": "share",
+      "order": "desc",
+      "sample": {
+        "status": "ok",
+        "n": 78,
+        "unit": "scores"
+      }
+    }
+  }
+}

@@ -1,0 +1,1610 @@
+{
+  "genders": [
+    {
+      "code": "m",
+      "label": "Men"
+    },
+    {
+      "code": "f",
+      "label": "Women"
+    }
+  ],
+  "weights": [
+    {
+      "code": "m-60",
+      "gender": "m",
+      "label": "-60",
+      "contests": 42
+    },
+    {
+      "code": "m-66",
+      "gender": "m",
+      "label": "-66",
+      "contests": 78
+    },
+    {
+      "code": "m-73",
+      "gender": "m",
+      "label": "-73",
+      "contests": 51
+    },
+    {
+      "code": "m-81",
+      "gender": "m",
+      "label": "-81",
+      "contests": 53
+    },
+    {
+      "code": "m-90",
+      "gender": "m",
+      "label": "-90",
+      "contests": 45
+    },
+    {
+      "code": "m-100",
+      "gender": "m",
+      "label": "-100",
+      "contests": 45
+    },
+    {
+      "code": "m+100",
+      "gender": "m",
+      "label": "+100",
+      "contests": 34
+    },
+    {
+      "code": "f-48",
+      "gender": "f",
+      "label": "-48",
+      "contests": 26
+    },
+    {
+      "code": "f-52",
+      "gender": "f",
+      "label": "-52",
+      "contests": 32
+    },
+    {
+      "code": "f-57",
+      "gender": "f",
+      "label": "-57",
+      "contests": 28
+    },
+    {
+      "code": "f-63",
+      "gender": "f",
+      "label": "-63",
+      "contests": 24
+    },
+    {
+      "code": "f-70",
+      "gender": "f",
+      "label": "-70",
+      "contests": 39
+    },
+    {
+      "code": "f-78",
+      "gender": "f",
+      "label": "-78",
+      "contests": 32
+    },
+    {
+      "code": "f+78",
+      "gender": "f",
+      "label": "+78",
+      "contests": 27
+    }
+  ],
+  "rulesets": [
+    {
+      "id": 2025,
+      "label": "2025–",
+      "year_from": 2025,
+      "year_to": 2027,
+      "has_koka": false,
+      "has_yuko": true,
+      "max_wazaari": 1,
+      "max_shido": 2,
+      "contests": 556,
+      "is_default": true
+    },
+    {
+      "id": 2018,
+      "label": "2018–2024",
+      "year_from": 2018,
+      "year_to": 2024,
+      "has_koka": false,
+      "has_yuko": false,
+      "max_wazaari": 1,
+      "max_shido": 2,
+      "contests": 0,
+      "is_default": false
+    },
+    {
+      "id": 2017,
+      "label": "2017",
+      "year_from": 2017,
+      "year_to": 2017,
+      "has_koka": false,
+      "has_yuko": false,
+      "max_wazaari": null,
+      "max_shido": 2,
+      "contests": 0,
+      "is_default": false
+    }
+  ],
+  "years": [
+    2025,
+    2026
+  ],
+  "countries": [
+    "ANG",
+    "AUT",
+    "AZE",
+    "BEL",
+    "BEN",
+    "BIH",
+    "BLR",
+    "BRA",
+    "BUL",
+    "CAF",
+    "CAN",
+    "CGO",
+    "CHI",
+    "CHN",
+    "CIV",
+    "CMR",
+    "COM",
+    "CRO",
+    "CUB",
+    "CYP",
+    "CZE",
+    "DEN",
+    "DOM",
+    "EGY",
+    "ESP",
+    "FIN",
+    "FRA",
+    "GAB",
+    "GAM",
+    "GBR",
+    "GBS",
+    "GEO",
+    "GER",
+    "GRE",
+    "GUI",
+    "HAI",
+    "HKG",
+    "HUN",
+    "IND",
+    "IRT",
+    "ISR",
+    "ITA",
+    "JPN",
+    "KAZ",
+    "KGZ",
+    "KOR",
+    "KOS",
+    "LBN",
+    "LTU",
+    "MAD",
+    "MAR",
+    "MDA",
+    "MEX",
+    "MGL",
+    "MKD",
+    "MNE",
+    "MTN",
+    "NED",
+    "NOR",
+    "NZL",
+    "PAR",
+    "POL",
+    "POR",
+    "PUR",
+    "RSA",
+    "RUS",
+    "RWA",
+    "SLO",
+    "SRB",
+    "SUI",
+    "SVK",
+    "TJK",
+    "TOG",
+    "TPE",
+    "TUN",
+    "UAE",
+    "UKR",
+    "URU",
+    "USA",
+    "VEN",
+    "ZAM"
+  ],
+  "techniques": [
+    {
+      "code": "ashi_guruma",
+      "name": "Ashi-guruma",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "de_ashi_harai",
+      "name": "De-ashi-harai",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "harai_goshi",
+      "name": "Harai-goshi",
+      "group_label": "Koshi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "harai_makikomi",
+      "name": "Harai-makikomi",
+      "group_label": "Yoko-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "hikikomi_gaeshi",
+      "name": "Hikikomi-gaeshi",
+      "group_label": "Ma-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "hiza_guruma",
+      "name": "Hiza-guruma",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "juji_gatame",
+      "name": "Juji-gatame",
+      "group_label": "Kansetsu-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "kami_shiho_gatame",
+      "name": "Kami-shiho-gatame",
+      "group_label": "Osaekomi-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "kata_guruma",
+      "name": "Kata-guruma",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "kesa_gatame",
+      "name": "Kesa-gatame",
+      "group_label": "Osaekomi-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "ko_soto_gake",
+      "name": "Ko-soto-gake",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "ko_soto_gari",
+      "name": "Ko-soto-gari",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "ko_uchi_gaeshi",
+      "name": "Ko-uchi-gaeshi",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "ko_uchi_gari",
+      "name": "Ko-uchi-gari",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "ko_uchi_makikomi",
+      "name": "Ko-uchi-makikomi",
+      "group_label": "Yoko-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "koshi_guruma",
+      "name": "Koshi-guruma",
+      "group_label": "Koshi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "kuzure_kami_shiho_gatame",
+      "name": "Kuzure-kami-shiho-gatame",
+      "group_label": "Osaekomi-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "kuzure_kesa_gatame",
+      "name": "Kuzure-kesa-gatame",
+      "group_label": "Osaekomi-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "o_goshi",
+      "name": "O-goshi",
+      "group_label": "Koshi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "o_soto_gaeshi",
+      "name": "O-soto-gaeshi",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "o_soto_gari",
+      "name": "O-soto-gari",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "o_soto_guruma",
+      "name": "O-soto-guruma",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "o_soto_otoshi",
+      "name": "O-soto-otoshi",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "o_uchi_gaeshi",
+      "name": "O-uchi-gaeshi",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "o_uchi_gari",
+      "name": "O-uchi-gari",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "obi_tori_gaeshi",
+      "name": "Obi-tori-gaeshi",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "okuri_ashi_harai",
+      "name": "Okuri-ashi-harai",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "okuri_eri_jime",
+      "name": "Okuri-eri-jime",
+      "group_label": "Shime-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "sankaku_jime",
+      "name": "Sankaku-jime",
+      "group_label": "Shime-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "sasae_tsurikomi_ashi",
+      "name": "Sasae-tsurikomi-ashi",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "seoi_nage",
+      "name": "Seoi-nage",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "seoi_otoshi",
+      "name": "Seoi-otoshi",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "sode_guruma_jime",
+      "name": "Sode-guruma-jime",
+      "group_label": "Shime-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "sode_tsurikomi_goshi",
+      "name": "Sode-tsurikomi-goshi",
+      "group_label": "Koshi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "soto_makikomi",
+      "name": "Soto-makikomi",
+      "group_label": "Yoko-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "sumi_gaeshi",
+      "name": "Sumi-gaeshi",
+      "group_label": "Ma-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "sumi_otoshi",
+      "name": "Sumi-otoshi",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "tai_otoshi",
+      "name": "Tai-otoshi",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "tani_otoshi",
+      "name": "Tani-otoshi",
+      "group_label": "Yoko-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "tate_shiho_gatame",
+      "name": "Tate-shiho-gatame",
+      "group_label": "Osaekomi-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "te_gatame",
+      "name": "Te-gatame",
+      "group_label": "Kansetsu-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "tomoe_nage",
+      "name": "Tomoe-nage",
+      "group_label": "Ma-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "tsubame_gaeshi",
+      "name": "Tsubame-gaeshi",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "tsuri_goshi",
+      "name": "Tsuri-goshi",
+      "group_label": "Koshi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "uchi_mata",
+      "name": "Uchi-mata",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "uchi_mata_gaeshi",
+      "name": "Uchi-mata-gaeshi",
+      "group_label": "Ashi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "uchi_mata_makikomi",
+      "name": "Uchi-mata-makikomi",
+      "group_label": "Yoko-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "uchi_mata_sukashi",
+      "name": "Uchi-mata-sukashi",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "ude_garami",
+      "name": "Ude-garami",
+      "group_label": "Kansetsu-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "uki_otoshi",
+      "name": "Uki-otoshi",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "ura_gatame",
+      "name": "Ura-gatame",
+      "group_label": "Osaekomi-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "ura_nage",
+      "name": "Ura-nage",
+      "group_label": "Ma-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "ushiro_kesa_gatame",
+      "name": "Ushiro-kesa-gatame",
+      "group_label": "Osaekomi-waza",
+      "domain": "ground"
+    },
+    {
+      "code": "utsuri_goshi",
+      "name": "Utsuri-goshi",
+      "group_label": "Koshi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "yoko_gake",
+      "name": "Yoko-gake",
+      "group_label": "Yoko-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "yoko_guruma",
+      "name": "Yoko-guruma",
+      "group_label": "Yoko-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "yoko_otoshi",
+      "name": "Yoko-otoshi",
+      "group_label": "Yoko-sutemi-waza",
+      "domain": "standing"
+    },
+    {
+      "code": "yoko_shiho_gatame",
+      "name": "Yoko-shiho-gatame",
+      "group_label": "Osaekomi-waza",
+      "domain": "ground"
+    }
+  ],
+  "shido_reasons": [
+    {
+      "code": "avoid_grip",
+      "name": "Avoid-grip",
+      "group_label": "Grip"
+    },
+    {
+      "code": "defensive_posture",
+      "name": "Defensive-posture",
+      "group_label": "Passivity"
+    },
+    {
+      "code": "escape_with_head",
+      "name": "Escape-with-head",
+      "group_label": "Grip"
+    },
+    {
+      "code": "false_attack",
+      "name": "False-attack",
+      "group_label": "Passivity"
+    },
+    {
+      "code": "fingers_interlocked",
+      "name": "Fingers-interlocked",
+      "group_label": "Grip"
+    },
+    {
+      "code": "hand_on_face",
+      "name": "Hand-on-face",
+      "group_label": "Infractions"
+    },
+    {
+      "code": "hide_lapel",
+      "name": "Hide-lapel",
+      "group_label": "Grip"
+    },
+    {
+      "code": "hitting",
+      "name": "Hitting",
+      "group_label": "Infractions"
+    },
+    {
+      "code": "hold_sleeve_ends",
+      "name": "Hold-sleeve-ends",
+      "group_label": "Grip"
+    },
+    {
+      "code": "hold_trouser_leg",
+      "name": "Hold-trouser-leg",
+      "group_label": "Infractions"
+    },
+    {
+      "code": "illegal_grip_breaking",
+      "name": "Illegal-grip-breaking",
+      "group_label": "Grip"
+    },
+    {
+      "code": "kansetsu_waza_from_tachi_waza",
+      "name": "Kansetsu waza from tachi waza",
+      "group_label": "Infractions"
+    },
+    {
+      "code": "leg_inside_blocking",
+      "name": "Leg-inside-blocking",
+      "group_label": "Passivity"
+    },
+    {
+      "code": "non_combativity",
+      "name": "Non-combativity",
+      "group_label": "Passivity"
+    },
+    {
+      "code": "outside_contest_area",
+      "name": "Outside-contest-area",
+      "group_label": "Passivity"
+    },
+    {
+      "code": "pull_down",
+      "name": "Pull-down",
+      "group_label": "Passivity"
+    },
+    {
+      "code": "rearranging_hair",
+      "name": "Rearranging hair",
+      "group_label": "Other"
+    },
+    {
+      "code": "squeeze_head_with_legs",
+      "name": "Squeeze head with legs",
+      "group_label": "Infractions"
+    },
+    {
+      "code": "two_hand_grip_avoidance",
+      "name": "Two-hand-grip-avoidance",
+      "group_label": "Grip"
+    },
+    {
+      "code": "unorthodox_kumi_kata_too_long",
+      "name": "Unorthodox kumi-kata too long",
+      "group_label": "Grip"
+    }
+  ],
+  "defaults": {
+    "gender": "all",
+    "ruleset": [
+      2025
+    ],
+    "year_from": 2025,
+    "year_to": 2027,
+    "count_by": "event",
+    "min_scores_athlete": 5,
+    "min_scores_technique": 2
+  },
+  "thresholds": {
+    "sample_ok": 20,
+    "sample_small": 5,
+    "athlete_sample_ok": 10,
+    "athlete_sample_small": 5,
+    "specialist_share": 0.4,
+    "min_scores_country": 30,
+    "unknown_technique_warning": 0.1
+  },
+  "coverage": {
+    "competitions": [
+      {
+        "id": 3081,
+        "code": "gp_mex2025",
+        "name": "Guadalajara Grand Prix 2025",
+        "rank_name": "Grand Prix",
+        "level": "elite",
+        "tag_coverage": 0.9762,
+        "date_from": "2025-10-17",
+        "date_to": "2025-10-19",
+        "ruleset_id": 2025,
+        "contests": 28,
+        "by_weight": [
+          {
+            "weight": "m-66",
+            "contests": 28
+          }
+        ]
+      },
+      {
+        "id": 3131,
+        "code": "gs_fra2026",
+        "name": "Paris Grand Slam 2026",
+        "rank_name": "Grand Slam",
+        "level": "elite",
+        "tag_coverage": 0.9132,
+        "date_from": "2026-02-07",
+        "date_to": "2026-02-08",
+        "ruleset_id": 2025,
+        "contests": 528,
+        "by_weight": [
+          {
+            "weight": "m-60",
+            "contests": 42
+          },
+          {
+            "weight": "m-66",
+            "contests": 50
+          },
+          {
+            "weight": "m-73",
+            "contests": 51
+          },
+          {
+            "weight": "m-81",
+            "contests": 53
+          },
+          {
+            "weight": "m-90",
+            "contests": 45
+          },
+          {
+            "weight": "m-100",
+            "contests": 45
+          },
+          {
+            "weight": "m+100",
+            "contests": 34
+          },
+          {
+            "weight": "f-48",
+            "contests": 26
+          },
+          {
+            "weight": "f-52",
+            "contests": 32
+          },
+          {
+            "weight": "f-57",
+            "contests": 28
+          },
+          {
+            "weight": "f-63",
+            "contests": 24
+          },
+          {
+            "weight": "f-70",
+            "contests": 39
+          },
+          {
+            "weight": "f-78",
+            "contests": 32
+          },
+          {
+            "weight": "f+78",
+            "contests": 27
+          }
+        ]
+      }
+    ],
+    "excluded": [
+      {
+        "id": 3363,
+        "name": "Ecole Mont-Olivet Deaf Judo Masters Top 18 Lausanne 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains Deaf"
+      },
+      {
+        "id": 3242,
+        "name": "European Judo Championships Kata Sarajevo 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3170,
+        "name": "European Senior Championships Mixed Teams 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Mixed Teams"
+      },
+      {
+        "id": 3200,
+        "name": "Gijón Kata World Series 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3368,
+        "name": "Kata African Championships 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3219,
+        "name": "Laval Kata World Series 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3201,
+        "name": "Louvain-la-Neuve Kata World Series 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3241,
+        "name": "Madrid European Kata Tournament 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3364,
+        "name": "Ne-Waza European Judo Championships 2026",
+        "year": 2026,
+        "level": "elite",
+        "tag_coverage": null,
+        "reason": "name contains Ne-Waza"
+      },
+      {
+        "id": 3331,
+        "name": "Oceania Kata Championships 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3333,
+        "name": "Panamerican Kata Championships 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3238,
+        "name": "Pordenone EJU Kata Tournament 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3240,
+        "name": "Radom European Kata Tournament 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3228,
+        "name": "Sarajevo World Judo Championships Kata 2026",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3374,
+        "name": "XIII South American Games 2026   Katas",
+        "year": 2026,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3217,
+        "name": "33rd SEA Games Thailand 2025 Kata",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3096,
+        "name": "African Junior Kata Championships 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3097,
+        "name": "African Senior Kata Championships 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3000,
+        "name": "CANCELLED Fatima European Kata Tournament 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2942,
+        "name": "Conegliano European Open 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": 0,
+        "reason": "technique tags on 0% of scores"
+      },
+      {
+        "id": 3063,
+        "name": "EJU Ne-Waza Trophy 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains Ne-Waza"
+      },
+      {
+        "id": 3064,
+        "name": "IBSA Judo World Cup Tbilisi 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains IBSA"
+      },
+      {
+        "id": 3022,
+        "name": "Louvain-la-Neuve IJF Kata World Series 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2998,
+        "name": "Madrid European Kata Tournament 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2999,
+        "name": "Maintal European Kata Tournament 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3066,
+        "name": "Paris World Championships Kata 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2996,
+        "name": "Pordenone European Kata Tournament 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2997,
+        "name": "Radom European Kata Tournament 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3042,
+        "name": "Reims IJF Kata World Series 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3001,
+        "name": "Riga European Kata Championships 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 3027,
+        "name": "_____Belgrade ECC Champions League 2025",
+        "year": 2025,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Mixed Teams"
+      },
+      {
+        "id": 2765,
+        "name": "2024 IBSA Judo Grand Prix Antalya",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains IBSA"
+      },
+      {
+        "id": 2764,
+        "name": "2024 IBSA Judo Grand Prix Heidelberg",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains IBSA"
+      },
+      {
+        "id": 2766,
+        "name": "2024 IBSA Judo Grand Prix Tbilisi",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains IBSA"
+      },
+      {
+        "id": 2745,
+        "name": "African Kata Championships Individuals 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2816,
+        "name": "European Kata Championships Individuals 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2856,
+        "name": "Las Vegas World Championships Kata 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2761,
+        "name": "Louvain-la-Neuve European Kata Tournament 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2818,
+        "name": "Madrid European Kata Tournament 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2819,
+        "name": "Maintal European Kata Tournament 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2767,
+        "name": "Paralympic Games Paris 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains Paralympic"
+      },
+      {
+        "id": 2762,
+        "name": "Pordenone European Kata Tournament 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2829,
+        "name": "Radom European Kata Tournament 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2763,
+        "name": "Reims European Kata Tournament 2024",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2868,
+        "name": "__European Club Championships 2024__",
+        "year": 2024,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 2612,
+        "name": "2023 IBSA Judo Grand Prix – AZE – Baku",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains IBSA"
+      },
+      {
+        "id": 2613,
+        "name": "2023 IBSA Judo Grand Prix – JPN – Tokyo",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains IBSA"
+      },
+      {
+        "id": 2610,
+        "name": "2023 IBSA Judo Grand Prix – POR – Almada",
+        "year": 2023,
+        "level": "elite",
+        "tag_coverage": null,
+        "reason": "name contains IBSA"
+      },
+      {
+        "id": 2539,
+        "name": "Abu Dhabi World Championships Kata 2023",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2690,
+        "name": "African Senior Championships Kata 2023",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2569,
+        "name": "European Judo Championships Kata 2023",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2696,
+        "name": "Hong Kong Asian Kata Tournament 2023",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2692,
+        "name": "IX Jeux de la Francophonie 2023 Teams",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 2570,
+        "name": "Laon European Kata Tournament",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2502,
+        "name": "Louvain-la-Neuve European Kata Tournament 2023",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2687,
+        "name": "Madrid Seniors European Kata Tournament 2023",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2506,
+        "name": "Pordenone European Kata Tournament",
+        "year": 2023,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2496,
+        "name": "2022 IBSA Judo World Championships",
+        "year": 2022,
+        "level": "elite",
+        "tag_coverage": null,
+        "reason": "name contains IBSA"
+      },
+      {
+        "id": 2423,
+        "name": "African Senior Judo Championships Kata Oran 2022",
+        "year": 2022,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2420,
+        "name": "European Junior Judo Championships Kata Rijeka 2022",
+        "year": 2022,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2378,
+        "name": "European Senior Judo Championships Kata Rijeka 2022",
+        "year": 2022,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2159,
+        "name": "Krakow World Championships Kata 2022",
+        "year": 2022,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2269,
+        "name": "European Club Judo Championships - Champions League (W&M)",
+        "year": 2021,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 2259,
+        "name": "European Club Judo Championships - Europa League (W&M)",
+        "year": 2021,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 2278,
+        "name": "Paralympic Games Tokyo 2020",
+        "year": 2021,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "name contains Paralympic"
+      },
+      {
+        "id": 2249,
+        "name": "Pordenone EJU Kata Tournament 2021",
+        "year": 2021,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2245,
+        "name": "Senior Kata European Championships 2021",
+        "year": 2021,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2266,
+        "name": "World Championships Kata 2021",
+        "year": 2021,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2137,
+        "name": "Louvain-La-Neuve European Kata Tournament 2020",
+        "year": 2020,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1830,
+        "name": "African Kata Championships 2019",
+        "year": 2019,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1823,
+        "name": "Brussels EJU Kata Tournament 2019",
+        "year": 2019,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 2031,
+        "name": "European Club Championships - Champions League",
+        "year": 2019,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 2030,
+        "name": "European Club Championships - Europa League",
+        "year": 2019,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 1835,
+        "name": "European Kata Championships Gran Canaria 2019",
+        "year": 2019,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1824,
+        "name": "Pordenone EJU Kata Tournament 2019",
+        "year": 2019,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1836,
+        "name": "World Championships Kata 2019",
+        "year": 2019,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1689,
+        "name": "7th African Kata Championships 2018",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1690,
+        "name": "African Senior Championships 2018 - TEAMS",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 1655,
+        "name": "Brussels EJU Kata Tournament 2018",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1682,
+        "name": "European Club Championships - Champions League",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 1683,
+        "name": "European Club Championships - Europa League",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Team event"
+      },
+      {
+        "id": 1684,
+        "name": "European Kata Championships",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1686,
+        "name": "Kata World Championships 2018",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1656,
+        "name": "Pordenone EJU Kata Tournament 2018",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1657,
+        "name": "Tours EJU Kata Tournament 2018",
+        "year": 2018,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1544,
+        "name": "African Kata Championships 2017",
+        "year": 2017,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1474,
+        "name": "Brussels EJU Kata Tournament 2017",
+        "year": 2017,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1530,
+        "name": "Kata European Judo Championships 2017",
+        "year": 2017,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1557,
+        "name": "Kata Grand Slam and World Kata Championship Olbia 2017",
+        "year": 2017,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      },
+      {
+        "id": 1439,
+        "name": "Odivelas European Open 2017",
+        "year": 2017,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "no events"
+      },
+      {
+        "id": 1478,
+        "name": "Pordenone EJU Kata Tournament 2017",
+        "year": 2017,
+        "level": "continental",
+        "tag_coverage": null,
+        "reason": "rank_name Kata Tournament"
+      }
+    ],
+    "totals": {
+      "competitions": 2,
+      "contests": 556,
+      "scores": 756,
+      "penalties": 967,
+      "athletes": 506,
+      "continental_score_share": 0
+    }
+  },
+  "quality_issues": [
+    {
+      "code": "summary_mismatch",
+      "issues": 3,
+      "contests": 3
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Score",
+      "definition": "An ippon, waza-ari or yuko awarded to an athlete. Walkovers and withdrawals are not scores."
+    },
+    {
+      "term": "Share (by event)",
+      "definition": "Scores with the technique divided by all scores in the filter."
+    },
+    {
+      "term": "Share (by athlete)",
+      "definition": "Athletes who scored at least once with the technique divided by all athletes who scored. Shows how widespread a technique is, not how often it is used."
+    },
+    {
+      "term": "Ippon / waza-ari / yuko breakdown",
+      "definition": "How the technique's scores split by score value. Only comparable within the same score scale."
+    },
+    {
+      "term": "Waza-ari awasete ippon",
+      "definition": "A second waza-ari, which always ends the contest. Counted as waza-ari."
+    },
+    {
+      "term": "Unknown technique",
+      "definition": "A score recorded without a technique tag."
+    },
+    {
+      "term": "Side",
+      "definition": "The side the technique was performed on (left/right), not the athlete's stance."
+    },
+    {
+      "term": "Technique type",
+      "definition": "Standing (tachi-waza) or ground (ne-waza) technique. With Standing or Ground selected, scores without a technique are left out, so shares are computed on fewer scores than with All and look higher."
+    },
+    {
+      "term": "Repertoire",
+      "definition": "The techniques an athlete scored with at least 2 times in the filter."
+    },
+    {
+      "term": "Lift",
+      "definition": "How much more often two things occur together than expected by chance, compared with what is expected in the same weight categories. 1 = as expected, 2 = twice as often."
+    },
+    {
+      "term": "Support",
+      "definition": "The number of athletes behind a repertoire or counter value."
+    },
+    {
+      "term": "Specialist",
+      "definition": "An athlete whose main technique accounts for at least 40% of their scores."
+    },
+    {
+      "term": "Counter",
+      "definition": "Techniques that score against specialists of a technique more often than against everyone else."
+    },
+    {
+      "term": "Hold-down scores",
+      "definition": "For osaekomi techniques, ippon/waza-ari/yuko depend on how long the hold lasted, not on the quality of the entry."
+    },
+    {
+      "term": "Sample status",
+      "definition": "ok, small or insufficient, depending on how many scores or athletes are behind a value."
+    },
+    {
+      "term": "Ruleset",
+      "definition": "A period with the same scoring rules (e.g. 2025–, with yuko)."
+    },
+    {
+      "term": "Similar athletes",
+      "definition": "Athletes whose technique profile (how many scores they made with each technique) is closest to this athlete's, by cosine similarity. 100% = same proportions."
+    },
+    {
+      "term": "Limits of the data",
+      "definition": "Techniques are tagged by hand by IJF operators, and one tag can cover several variants: \"Seoi-nage\" covers ippon-seoi-nage, morote-seoi-nage and their drop variants. Tagging habits can change over the years, so a trend can reflect the tagging as well as the judo. The data describes elite senior competitors: what scores for them is not necessarily what works for every judoka."
+    },
+    {
+      "term": "Competition level",
+      "definition": "Elite (Olympic Games, World Championships, Masters, Grand Slam, Grand Prix, continental championships) or continental (Opens, Cups and other events). Competitions are included by their data, not by their level."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+.chip {
+  min-height: 40px;
+  min-width: 48px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  font-family: var(--f-mono);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--fg-3);
+}
+
+.chip[data-text] {
+  font-family: var(--f-body);
+  font-weight: 600;
+}
+
+.chip[data-dimmed] {
+  opacity: 0.65;
+}
+
+.chip[aria-pressed="true"] {
+  background: var(--chip-on-bg);
+  color: var(--chip-on-fg);
+  border-color: var(--chip-on-bg);
+  opacity: 1;
+}

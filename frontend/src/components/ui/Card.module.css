@@ -1,0 +1,41 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 22px;
+  min-width: 0;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px 16px;
+  margin-bottom: 4px;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.description {
+  margin: 2px 0 18px;
+  max-width: 80ch;
+  font-size: 13px;
+  color: var(--fg-2);
+}
+
+/* Values below the sample threshold are greyed out, never hidden. */
+.card[data-sample="insufficient"] .body {
+  opacity: 0.42;
+  filter: grayscale(1);
+}

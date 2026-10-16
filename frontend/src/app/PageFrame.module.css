@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: opacity 0.2s;
+}
+
+.content:empty {
+  display: none;
+}
+
+/* The previous filters' data stays on screen, dimmed, while the new one loads: the layout does not jump. */
+.content[data-refreshing] {
+  opacity: 0.6;
+}

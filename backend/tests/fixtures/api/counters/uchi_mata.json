@@ -1,0 +1,133 @@
+{
+  "path": "/api/counters",
+  "query": {
+    "technique": "uchi_mata"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "all",
+      "weight": [],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 556,
+      "athletes": 506,
+      "scores": 756,
+      "penalties": 967
+    },
+    "warnings": [
+      {
+        "code": "quality_issues",
+        "message": "3 contests in the filter have inconsistent IJF data."
+      }
+    ],
+    "data": {
+      "technique": {
+        "code": "uchi_mata",
+        "name": "Uchi-mata",
+        "group_label": "Ashi-waza",
+        "domain": "standing"
+      },
+      "specialists": {
+        "n": 2,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "athletes"
+        },
+        "share_threshold": 0.4,
+        "athletes": [
+          {
+            "athlete": {
+              "id": 900263,
+              "given_name": "Bapu",
+              "family_name": "ZUBUNI",
+              "country_code": "KAZ"
+            },
+            "weight": {
+              "code": "m-81",
+              "gender": "m",
+              "label": "-81"
+            },
+            "share": 0.5714,
+            "n_total": 7
+          },
+          {
+            "athlete": {
+              "id": 900498,
+              "given_name": "Gefe",
+              "family_name": "BOPEDU",
+              "country_code": "JPN"
+            },
+            "weight": {
+              "code": "m-100",
+              "gender": "m",
+              "label": "-100"
+            },
+            "share": 0.4286,
+            "n_total": 7
+          }
+        ]
+      },
+      "conceded": {
+        "n": 2,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      "rows": [
+        {
+          "technique": {
+            "code": "sumi_gaeshi",
+            "name": "Sumi-gaeshi",
+            "group_label": "Ma-sutemi-waza",
+            "domain": "standing"
+          },
+          "n": 1,
+          "share": 0.5,
+          "base_share": 0.0488,
+          "lift": 10.25,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "scores"
+          }
+        },
+        {
+          "technique": null,
+          "n": 1,
+          "share": 0.5,
+          "base_share": 0.0854,
+          "lift": 5.8571,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "scores"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "invalid_parameter",
+    "message": "weight category m-73 does not match gender f",
+    "field": "weight"
+  }
+}

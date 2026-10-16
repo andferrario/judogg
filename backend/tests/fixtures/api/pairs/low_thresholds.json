@@ -1,0 +1,604 @@
+{
+  "path": "/api/repertoire/pairs",
+  "query": {
+    "min_scores_athlete": "3",
+    "min_scores_technique": "1",
+    "top": "3"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "all",
+      "weight": [],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 3,
+      "min_scores_technique": 1
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 556,
+      "athletes": 506,
+      "scores": 756,
+      "penalties": 967
+    },
+    "warnings": [
+      {
+        "code": "quality_issues",
+        "message": "3 contests in the filter have inconsistent IJF data."
+      }
+    ],
+    "data": {
+      "eligible": 111,
+      "sample": {
+        "status": "ok",
+        "n": 111,
+        "unit": "athletes"
+      },
+      "pairs": [
+        {
+          "a": {
+            "code": "o_soto_gari",
+            "name": "O-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "ko_soto_gari",
+            "name": "Ko-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_both": 6,
+          "support": 0.0541,
+          "confidence": 0.375,
+          "lift": 2.9106,
+          "sample": {
+            "status": "small",
+            "n": 6,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "tomoe_nage",
+            "name": "Tomoe-nage",
+            "group_label": "Ma-sutemi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n_both": 6,
+          "support": 0.0541,
+          "confidence": 0.75,
+          "lift": 2.4624,
+          "sample": {
+            "status": "small",
+            "n": 6,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "ura_nage",
+            "name": "Ura-nage",
+            "group_label": "Ma-sutemi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "ko_uchi_gari",
+            "name": "Ko-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_both": 5,
+          "support": 0.045,
+          "confidence": 0.5,
+          "lift": 2.4485,
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "o_soto_gari",
+            "name": "O-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "o_uchi_gari",
+            "name": "O-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_both": 8,
+          "support": 0.0721,
+          "confidence": 0.5,
+          "lift": 1.7984,
+          "sample": {
+            "status": "small",
+            "n": 8,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "o_soto_gari",
+            "name": "O-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n_both": 7,
+          "support": 0.0631,
+          "confidence": 0.4375,
+          "lift": 1.5351,
+          "sample": {
+            "status": "small",
+            "n": 7,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "ko_soto_gari",
+            "name": "Ko-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n_both": 6,
+          "support": 0.0541,
+          "confidence": 0.3333,
+          "lift": 1.3672,
+          "sample": {
+            "status": "small",
+            "n": 6,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "ko_soto_gari",
+            "name": "Ko-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "seoi_nage",
+            "name": "Seoi-nage",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "n_both": 8,
+          "support": 0.0721,
+          "confidence": 0.4444,
+          "lift": 1.3446,
+          "sample": {
+            "status": "small",
+            "n": 8,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "kata_guruma",
+            "name": "Kata-guruma",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n_both": 6,
+          "support": 0.0541,
+          "confidence": 0.375,
+          "lift": 1.3301,
+          "sample": {
+            "status": "small",
+            "n": 6,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "tate_shiho_gatame",
+            "name": "Tate-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "b": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n_both": 5,
+          "support": 0.045,
+          "confidence": 0.4545,
+          "lift": 1.3205,
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "uchi_mata",
+            "name": "Uchi-mata",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "o_uchi_gari",
+            "name": "O-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_both": 9,
+          "support": 0.0811,
+          "confidence": 0.3,
+          "lift": 1.2352,
+          "sample": {
+            "status": "small",
+            "n": 9,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "sumi_gaeshi",
+            "name": "Sumi-gaeshi",
+            "group_label": "Ma-sutemi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "seoi_nage",
+            "name": "Seoi-nage",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "n_both": 8,
+          "support": 0.0721,
+          "confidence": 0.3478,
+          "lift": 1.1822,
+          "sample": {
+            "status": "small",
+            "n": 8,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "ko_soto_gari",
+            "name": "Ko-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "o_uchi_gari",
+            "name": "O-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_both": 7,
+          "support": 0.0631,
+          "confidence": 0.3889,
+          "lift": 1.113,
+          "sample": {
+            "status": "small",
+            "n": 7,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "uchi_mata",
+            "name": "Uchi-mata",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n_both": 7,
+          "support": 0.0631,
+          "confidence": 0.2333,
+          "lift": 1.0761,
+          "sample": {
+            "status": "small",
+            "n": 7,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "b": {
+            "code": "seoi_nage",
+            "name": "Seoi-nage",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "n_both": 9,
+          "support": 0.0811,
+          "confidence": 0.3,
+          "lift": 1.0688,
+          "sample": {
+            "status": "small",
+            "n": 9,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "ko_uchi_gari",
+            "name": "Ko-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "o_uchi_gari",
+            "name": "O-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_both": 7,
+          "support": 0.0631,
+          "confidence": 0.3684,
+          "lift": 1.0176,
+          "sample": {
+            "status": "small",
+            "n": 7,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "o_soto_gari",
+            "name": "O-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "seoi_nage",
+            "name": "Seoi-nage",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "n_both": 5,
+          "support": 0.045,
+          "confidence": 0.3125,
+          "lift": 0.9974,
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "ko_soto_gari",
+            "name": "Ko-soto-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "uchi_mata",
+            "name": "Uchi-mata",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_both": 5,
+          "support": 0.045,
+          "confidence": 0.2778,
+          "lift": 0.9735,
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "sumi_gaeshi",
+            "name": "Sumi-gaeshi",
+            "group_label": "Ma-sutemi-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n_both": 5,
+          "support": 0.045,
+          "confidence": 0.2174,
+          "lift": 0.9423,
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "kata_guruma",
+            "name": "Kata-guruma",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "b": {
+            "code": "seoi_nage",
+            "name": "Seoi-nage",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "n_both": 5,
+          "support": 0.045,
+          "confidence": 0.3125,
+          "lift": 0.9252,
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "athletes"
+          }
+        },
+        {
+          "a": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "b": {
+            "code": "o_uchi_gari",
+            "name": "O-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          "n_both": 9,
+          "support": 0.0811,
+          "confidence": 0.3,
+          "lift": 0.9143,
+          "sample": {
+            "status": "small",
+            "n": 9,
+            "unit": "athletes"
+          }
+        }
+      ],
+      "matrix": {
+        "techniques": [
+          {
+            "code": "seoi_nage",
+            "name": "Seoi-nage",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          {
+            "code": "o_uchi_gari",
+            "name": "O-uchi-gari",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          },
+          {
+            "code": "uchi_mata",
+            "name": "Uchi-mata",
+            "group_label": "Ashi-waza",
+            "domain": "standing"
+          }
+        ],
+        "cells": [
+          [
+            null,
+            {
+              "n_both": 9,
+              "lift": 0.8943,
+              "sample": {
+                "status": "small",
+                "n": 9,
+                "unit": "athletes"
+              }
+            },
+            {
+              "n_both": 7,
+              "lift": 0.68,
+              "sample": {
+                "status": "small",
+                "n": 7,
+                "unit": "athletes"
+              }
+            }
+          ],
+          [
+            {
+              "n_both": 9,
+              "lift": 0.8943,
+              "sample": {
+                "status": "small",
+                "n": 9,
+                "unit": "athletes"
+              }
+            },
+            null,
+            {
+              "n_both": 9,
+              "lift": 1.2352,
+              "sample": {
+                "status": "small",
+                "n": 9,
+                "unit": "athletes"
+              }
+            }
+          ],
+          [
+            {
+              "n_both": 7,
+              "lift": 0.68,
+              "sample": {
+                "status": "small",
+                "n": 7,
+                "unit": "athletes"
+              }
+            },
+            {
+              "n_both": 9,
+              "lift": 1.2352,
+              "sample": {
+                "status": "small",
+                "n": 9,
+                "unit": "athletes"
+              }
+            },
+            null
+          ]
+        ]
+      }
+    }
+  }
+}

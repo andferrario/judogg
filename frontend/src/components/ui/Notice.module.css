@@ -1,0 +1,9 @@
+.notice {
+  margin: 0;
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  color: var(--warn-fg);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+}

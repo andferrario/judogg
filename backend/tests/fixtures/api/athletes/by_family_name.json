@@ -1,0 +1,1 @@
+{"path": "/api/athletes", "query": {"q": "sadid"}, "status": 200, "body": {"rows": [{"athlete": {"id": 900323, "given_name": "Tagi", "family_name": "SADIDI", "country_code": "AZE"}, "weights": [{"code": "m-66", "gender": "m", "label": "-66"}], "n_scores": 10}]}}

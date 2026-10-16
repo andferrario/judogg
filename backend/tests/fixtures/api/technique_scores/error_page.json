@@ -1,0 +1,14 @@
+{
+  "path": "/api/techniques/uchi_mata/scores",
+  "query": {
+    "page": "0"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "page must be an integer between 1 and 100000",
+      "field": "page"
+    }
+  }
+}

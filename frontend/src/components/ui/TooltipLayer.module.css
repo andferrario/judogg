@@ -1,0 +1,13 @@
+.tip {
+  position: fixed;
+  z-index: 50;
+  pointer-events: none;
+  background: var(--tip-bg);
+  color: var(--tip-fg);
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 7px 9px;
+  border-radius: 4px;
+  white-space: pre-line;
+  max-width: 300px;
+}

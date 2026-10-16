@@ -1,0 +1,17 @@
+# Competitions that are not individual senior judo with standard rules (not a level filter).
+# Ranks are checked first, then names (case-insensitive regular expressions).
+ranks:
+  - Kata Tournament
+  - Team event
+  - Mixed Teams
+names:
+  - pattern: "kata"
+    reason: "name contains Kata"
+  - pattern: "ne-?waza"
+    reason: "name contains Ne-Waza"
+  - pattern: "paralympic"
+    reason: "name contains Paralympic"
+  - pattern: "deaf"
+    reason: "name contains Deaf"
+  - pattern: "ibsa"
+    reason: "name contains IBSA"

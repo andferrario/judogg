@@ -1,0 +1,12 @@
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.block {
+  height: 160px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}

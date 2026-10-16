@@ -1,0 +1,37 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.kpi {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg-2);
+}
+
+.value {
+  margin: 2px 0 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.sub {
+  margin: 0;
+  font-size: 13px;
+  color: var(--fg-2);
+}
+
+.value[data-small] {
+  font-size: 18px;
+}

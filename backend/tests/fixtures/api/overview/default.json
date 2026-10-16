@@ -1,0 +1,179 @@
+{
+  "path": "/api/overview",
+  "query": {},
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "all",
+      "weight": [],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 556,
+      "athletes": 506,
+      "scores": 756,
+      "penalties": 967
+    },
+    "warnings": [
+      {
+        "code": "quality_issues",
+        "message": "3 contests in the filter have inconsistent IJF data."
+      }
+    ],
+    "data": {
+      "kpis": {
+        "scores": 756,
+        "contests": 556,
+        "scoring_athletes": 278,
+        "techniques": 58,
+        "gs_share": 0.2436,
+        "unknown_side_share": 0.168,
+        "unknown_technique_share": 0.0833
+      },
+      "outcomes": {
+        "played": 546,
+        "walkovers": {
+          "fusen_gachi": 8,
+          "kiken_gachi": 2
+        },
+        "end_types": [
+          {
+            "end_type": "ippon",
+            "n": 211,
+            "share": 0.3864
+          },
+          {
+            "end_type": "waza_ari_awasete",
+            "n": 39,
+            "share": 0.0714
+          },
+          {
+            "end_type": "hansoku_shido",
+            "n": 55,
+            "share": 0.1007
+          },
+          {
+            "end_type": "double_hansoku",
+            "n": 1,
+            "share": 0.0018
+          },
+          {
+            "end_type": "score_gs",
+            "n": 77,
+            "share": 0.141
+          },
+          {
+            "end_type": "score_regulation",
+            "n": 163,
+            "share": 0.2985
+          }
+        ],
+        "gs_share": 0.2436,
+        "avg_duration_s": 218,
+        "sample": {
+          "status": "ok",
+          "n": 546,
+          "unit": "contests"
+        }
+      },
+      "timing": [
+        {
+          "bin": 0,
+          "label": "0:00–0:30",
+          "n": 67,
+          "ippon": 19,
+          "waza_ari": 20,
+          "yuko": 28
+        },
+        {
+          "bin": 1,
+          "label": "0:30–1:00",
+          "n": 67,
+          "ippon": 18,
+          "waza_ari": 16,
+          "yuko": 33
+        },
+        {
+          "bin": 2,
+          "label": "1:00–1:30",
+          "n": 100,
+          "ippon": 28,
+          "waza_ari": 25,
+          "yuko": 47
+        },
+        {
+          "bin": 3,
+          "label": "1:30–2:00",
+          "n": 94,
+          "ippon": 22,
+          "waza_ari": 37,
+          "yuko": 35
+        },
+        {
+          "bin": 4,
+          "label": "2:00–2:30",
+          "n": 80,
+          "ippon": 23,
+          "waza_ari": 24,
+          "yuko": 33
+        },
+        {
+          "bin": 5,
+          "label": "2:30–3:00",
+          "n": 85,
+          "ippon": 31,
+          "waza_ari": 25,
+          "yuko": 29
+        },
+        {
+          "bin": 6,
+          "label": "3:00–3:30",
+          "n": 89,
+          "ippon": 22,
+          "waza_ari": 22,
+          "yuko": 45
+        },
+        {
+          "bin": 7,
+          "label": "3:30–4:00",
+          "n": 72,
+          "ippon": 24,
+          "waza_ari": 21,
+          "yuko": 27
+        },
+        {
+          "bin": 8,
+          "label": "Golden score",
+          "n": 102,
+          "ippon": 24,
+          "waza_ari": 29,
+          "yuko": 49
+        }
+      ],
+      "sample": {
+        "status": "ok",
+        "n": 756,
+        "unit": "scores"
+      }
+    }
+  }
+}

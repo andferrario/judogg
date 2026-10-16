@@ -1,0 +1,12 @@
+{
+  "path": "/api/nope",
+  "query": {},
+  "status": 404,
+  "body": {
+    "error": {
+      "code": "not_found",
+      "message": "unknown endpoint /api/nope",
+      "field": null
+    }
+  }
+}

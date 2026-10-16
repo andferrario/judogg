@@ -1,0 +1,15 @@
+{
+  "path": "/api/overview",
+  "query": {
+    "gender": "f",
+    "weight": "m-73"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "weight category m-73 does not match gender f",
+      "field": "weight"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "path": "/api/techniques",
+  "query": {
+    "count_by": "contest"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "count_by must be event or athlete",
+      "field": "count_by"
+    }
+  }
+}

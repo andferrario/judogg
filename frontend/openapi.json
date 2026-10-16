@@ -1,0 +1,6326 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Judogg",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/meta": {
+      "get": {
+        "summary": "Meta",
+        "operationId": "meta_api_meta_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Meta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/overview": {
+      "get": {
+        "summary": "Overview",
+        "operationId": "overview_api_overview_get",
+        "parameters": [
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_Overview_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/techniques": {
+      "get": {
+        "summary": "Techniques",
+        "operationId": "techniques_api_techniques_get",
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Sort"
+            }
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Order"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_TierList_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/techniques/by-weight": {
+      "get": {
+        "summary": "Techniques By Weight",
+        "operationId": "techniques_by_weight_api_techniques_by_weight_get",
+        "parameters": [
+          {
+            "name": "top",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Top"
+            }
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_WeightMatrix_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/techniques/{code}": {
+      "get": {
+        "summary": "Technique Detail",
+        "operationId": "technique_detail_api_techniques__code__get",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Code"
+            }
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_TechniqueDetail_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/techniques/{code}/scores": {
+      "get": {
+        "summary": "Technique Scores",
+        "operationId": "technique_scores_api_techniques__code__scores_get",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Code"
+            }
+          },
+          {
+            "name": "score_value",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Score Value"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Page"
+            }
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Page Size"
+            }
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_TechniqueScores_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/penalties": {
+      "get": {
+        "summary": "Penalties",
+        "operationId": "penalties_api_penalties_get",
+        "parameters": [
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_Penalties_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/outcomes": {
+      "get": {
+        "summary": "Outcome Table",
+        "operationId": "outcome_table_api_outcomes_get",
+        "parameters": [
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_OutcomeTable_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/repertoire": {
+      "get": {
+        "summary": "Repertoire",
+        "operationId": "repertoire_api_repertoire_get",
+        "parameters": [
+          {
+            "name": "technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Technique"
+            }
+          },
+          {
+            "name": "with",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "With"
+            }
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_Repertoire_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/repertoire/pairs": {
+      "get": {
+        "summary": "Repertoire Pairs",
+        "operationId": "repertoire_pairs_api_repertoire_pairs_get",
+        "parameters": [
+          {
+            "name": "top",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Top"
+            }
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_RepertoirePairs_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/counters": {
+      "get": {
+        "summary": "Counters",
+        "operationId": "counters_api_counters_get",
+        "parameters": [
+          {
+            "name": "technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Technique"
+            }
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Gender"
+            }
+          },
+          {
+            "name": "weight",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Weight"
+            }
+          },
+          {
+            "name": "ruleset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Ruleset"
+            }
+          },
+          {
+            "name": "year_from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year From"
+            }
+          },
+          {
+            "name": "year_to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year To"
+            }
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Country"
+            }
+          },
+          {
+            "name": "side",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Domain"
+            }
+          },
+          {
+            "name": "count_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Count By"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          },
+          {
+            "name": "min_scores_technique",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Technique"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envelope_Counters_"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/athletes": {
+      "get": {
+        "summary": "Athletes",
+        "operationId": "athletes_api_athletes_get",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Q"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AthleteSearch"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/athletes/{athlete_id}": {
+      "get": {
+        "summary": "Athlete",
+        "operationId": "athlete_api_athletes__athlete_id__get",
+        "parameters": [
+          {
+            "name": "athlete_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Athlete Id"
+            }
+          },
+          {
+            "name": "similar_scope",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Similar Scope"
+            }
+          },
+          {
+            "name": "min_scores_athlete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Scores Athlete"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AthleteResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Athlete": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "given_name": {
+            "type": "string",
+            "title": "Given Name"
+          },
+          "family_name": {
+            "type": "string",
+            "title": "Family Name"
+          },
+          "country_code": {
+            "type": "string",
+            "title": "Country Code"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "given_name",
+          "family_name",
+          "country_code"
+        ],
+        "title": "Athlete"
+      },
+      "AthleteDetail": {
+        "properties": {
+          "athlete": {
+            "$ref": "#/components/schemas/Athlete"
+          },
+          "judobase_url": {
+            "type": "string",
+            "title": "Judobase Url"
+          },
+          "weights": {
+            "items": {
+              "$ref": "#/components/schemas/AthleteWeight"
+            },
+            "type": "array",
+            "title": "Weights"
+          },
+          "years": {
+            "$ref": "#/components/schemas/YearSpan"
+          },
+          "kpis": {
+            "$ref": "#/components/schemas/AthleteKpis"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "techniques": {
+            "items": {
+              "$ref": "#/components/schemas/AthleteTechnique"
+            },
+            "type": "array",
+            "title": "Techniques"
+          },
+          "score_groups": {
+            "items": {
+              "$ref": "#/components/schemas/ScoreGroup"
+            },
+            "type": "array",
+            "title": "Score Groups"
+          },
+          "similar": {
+            "$ref": "#/components/schemas/Similar"
+          }
+        },
+        "type": "object",
+        "required": [
+          "athlete",
+          "judobase_url",
+          "weights",
+          "years",
+          "kpis",
+          "sample",
+          "techniques",
+          "score_groups",
+          "similar"
+        ],
+        "title": "AthleteDetail"
+      },
+      "AthleteKpis": {
+        "properties": {
+          "competitions": {
+            "type": "integer",
+            "title": "Competitions"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          },
+          "scores": {
+            "type": "integer",
+            "title": "Scores"
+          },
+          "techniques": {
+            "type": "integer",
+            "title": "Techniques"
+          },
+          "ippon_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ippon Share"
+          },
+          "main_technique": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TechniqueRef"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "competitions",
+          "contests",
+          "scores",
+          "techniques",
+          "ippon_share",
+          "main_technique"
+        ],
+        "title": "AthleteKpis"
+      },
+      "AthleteResponse": {
+        "properties": {
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/AthleteDetail"
+          }
+        },
+        "type": "object",
+        "required": [
+          "warnings",
+          "data"
+        ],
+        "title": "AthleteResponse"
+      },
+      "AthleteScoreRow": {
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date",
+            "title": "Date"
+          },
+          "competition": {
+            "$ref": "#/components/schemas/CompetitionRef"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "opponent": {
+            "$ref": "#/components/schemas/Athlete"
+          },
+          "score_value": {
+            "type": "string",
+            "enum": [
+              "ippon",
+              "waza_ari",
+              "yuko"
+            ],
+            "title": "Score Value"
+          },
+          "is_awasete": {
+            "type": "boolean",
+            "title": "Is Awasete"
+          },
+          "direction": {
+            "type": "string",
+            "enum": [
+              "left",
+              "right",
+              "unknown"
+            ],
+            "title": "Direction"
+          },
+          "is_gs": {
+            "type": "boolean",
+            "title": "Is Gs"
+          },
+          "time_bin": {
+            "type": "integer",
+            "title": "Time Bin"
+          },
+          "contest_code": {
+            "type": "string",
+            "title": "Contest Code"
+          },
+          "judobase_url": {
+            "type": "string",
+            "title": "Judobase Url"
+          },
+          "judotv_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Judotv Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "date",
+          "competition",
+          "weight",
+          "opponent",
+          "score_value",
+          "is_awasete",
+          "direction",
+          "is_gs",
+          "time_bin",
+          "contest_code",
+          "judobase_url",
+          "judotv_url"
+        ],
+        "title": "AthleteScoreRow"
+      },
+      "AthleteSearch": {
+        "properties": {
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/SearchRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rows"
+        ],
+        "title": "AthleteSearch"
+      },
+      "AthleteTechnique": {
+        "properties": {
+          "technique": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TechniqueRef"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "share_of_total": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share Of Total"
+          },
+          "counts": {
+            "$ref": "#/components/schemas/ValueCounts"
+          },
+          "pct": {
+            "$ref": "#/components/schemas/ValueShares"
+          },
+          "n_awasete": {
+            "type": "integer",
+            "title": "N Awasete"
+          },
+          "side": {
+            "$ref": "#/components/schemas/SideCounts"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "n",
+          "share_of_total",
+          "counts",
+          "pct",
+          "n_awasete",
+          "side"
+        ],
+        "title": "AthleteTechnique"
+      },
+      "AthleteWeight": {
+        "properties": {
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          }
+        },
+        "type": "object",
+        "required": [
+          "weight",
+          "contests"
+        ],
+        "title": "AthleteWeight"
+      },
+      "Cell": {
+        "properties": {
+          "technique": {
+            "type": "string",
+            "title": "Technique"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "n",
+          "share"
+        ],
+        "title": "Cell"
+      },
+      "Cohort": {
+        "properties": {
+          "eligible": {
+            "type": "integer",
+            "title": "Eligible"
+          },
+          "with_technique": {
+            "type": "integer",
+            "title": "With Technique"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "eligible",
+          "with_technique",
+          "sample"
+        ],
+        "title": "Cohort"
+      },
+      "Companion": {
+        "properties": {
+          "technique": {
+            "$ref": "#/components/schemas/TechniqueRef"
+          },
+          "n_both": {
+            "type": "integer",
+            "title": "N Both"
+          },
+          "p_given": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "P Given"
+          },
+          "p_base": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "P Base"
+          },
+          "lift": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lift"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "n_both",
+          "p_given",
+          "p_base",
+          "lift",
+          "sample"
+        ],
+        "title": "Companion"
+      },
+      "CompetitionRef": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "title": "CompetitionRef"
+      },
+      "Conceded": {
+        "properties": {
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "n",
+          "sample"
+        ],
+        "title": "Conceded"
+      },
+      "CounterRow": {
+        "properties": {
+          "technique": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TechniqueRef"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          },
+          "base_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Base Share"
+          },
+          "lift": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lift"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "n",
+          "share",
+          "base_share",
+          "lift",
+          "sample"
+        ],
+        "title": "CounterRow"
+      },
+      "Counters": {
+        "properties": {
+          "technique": {
+            "$ref": "#/components/schemas/TechniqueRef"
+          },
+          "specialists": {
+            "$ref": "#/components/schemas/Specialists"
+          },
+          "conceded": {
+            "$ref": "#/components/schemas/Conceded"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/CounterRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "specialists",
+          "conceded",
+          "rows"
+        ],
+        "title": "Counters"
+      },
+      "Countries": {
+        "properties": {
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/CountryLift"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "min_scores_country": {
+            "type": "integer",
+            "title": "Min Scores Country"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rows",
+          "min_scores_country"
+        ],
+        "title": "Countries"
+      },
+      "CountryLift": {
+        "properties": {
+          "country_code": {
+            "type": "string",
+            "title": "Country Code"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          },
+          "lift": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lift"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "country_code",
+          "total",
+          "n",
+          "share",
+          "lift",
+          "sample"
+        ],
+        "title": "CountryLift"
+      },
+      "Coverage": {
+        "properties": {
+          "competitions": {
+            "items": {
+              "$ref": "#/components/schemas/CoverageCompetition"
+            },
+            "type": "array",
+            "title": "Competitions"
+          },
+          "excluded": {
+            "items": {
+              "$ref": "#/components/schemas/ExcludedCompetition"
+            },
+            "type": "array",
+            "title": "Excluded"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/CoverageTotals"
+          }
+        },
+        "type": "object",
+        "required": [
+          "competitions",
+          "excluded",
+          "totals"
+        ],
+        "title": "Coverage"
+      },
+      "CoverageCompetition": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Code"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "rank_name": {
+            "type": "string",
+            "title": "Rank Name"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "elite",
+              "continental"
+            ],
+            "title": "Level"
+          },
+          "date_from": {
+            "type": "string",
+            "format": "date",
+            "title": "Date From"
+          },
+          "date_to": {
+            "type": "string",
+            "format": "date",
+            "title": "Date To"
+          },
+          "ruleset_id": {
+            "type": "integer",
+            "title": "Ruleset Id"
+          },
+          "tag_coverage": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tag Coverage"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          },
+          "by_weight": {
+            "items": {
+              "$ref": "#/components/schemas/WeightContests"
+            },
+            "type": "array",
+            "title": "By Weight"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "code",
+          "name",
+          "rank_name",
+          "level",
+          "date_from",
+          "date_to",
+          "ruleset_id",
+          "tag_coverage",
+          "contests",
+          "by_weight"
+        ],
+        "title": "CoverageCompetition"
+      },
+      "CoverageTotals": {
+        "properties": {
+          "competitions": {
+            "type": "integer",
+            "title": "Competitions"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          },
+          "scores": {
+            "type": "integer",
+            "title": "Scores"
+          },
+          "penalties": {
+            "type": "integer",
+            "title": "Penalties"
+          },
+          "athletes": {
+            "type": "integer",
+            "title": "Athletes"
+          },
+          "continental_score_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Continental Score Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "competitions",
+          "contests",
+          "scores",
+          "penalties",
+          "athletes",
+          "continental_score_share"
+        ],
+        "title": "CoverageTotals"
+      },
+      "Defaults": {
+        "properties": {
+          "gender": {
+            "type": "string",
+            "enum": [
+              "m",
+              "f",
+              "all"
+            ],
+            "title": "Gender"
+          },
+          "ruleset": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Ruleset"
+          },
+          "year_from": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year From"
+          },
+          "year_to": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year To"
+          },
+          "count_by": {
+            "type": "string",
+            "enum": [
+              "event",
+              "athlete"
+            ],
+            "title": "Count By"
+          },
+          "min_scores_athlete": {
+            "type": "integer",
+            "title": "Min Scores Athlete"
+          },
+          "min_scores_technique": {
+            "type": "integer",
+            "title": "Min Scores Technique"
+          }
+        },
+        "type": "object",
+        "required": [
+          "gender",
+          "ruleset",
+          "year_from",
+          "year_to",
+          "count_by",
+          "min_scores_athlete",
+          "min_scores_technique"
+        ],
+        "title": "Defaults"
+      },
+      "EndTypeCount": {
+        "properties": {
+          "end_type": {
+            "type": "string",
+            "enum": [
+              "fusen_gachi",
+              "kiken_gachi",
+              "double_hansoku",
+              "ippon",
+              "waza_ari_awasete",
+              "hansoku_shido",
+              "score_gs",
+              "score_regulation"
+            ],
+            "title": "End Type"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "end_type",
+          "n",
+          "share"
+        ],
+        "title": "EndTypeCount"
+      },
+      "Envelope_Counters_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Counters"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[Counters]"
+      },
+      "Envelope_OutcomeTable_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/OutcomeTable"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[OutcomeTable]"
+      },
+      "Envelope_Overview_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Overview"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[Overview]"
+      },
+      "Envelope_Penalties_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Penalties"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[Penalties]"
+      },
+      "Envelope_RepertoirePairs_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/RepertoirePairs"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[RepertoirePairs]"
+      },
+      "Envelope_Repertoire_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Repertoire"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[Repertoire]"
+      },
+      "Envelope_TechniqueDetail_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/TechniqueDetail"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[TechniqueDetail]"
+      },
+      "Envelope_TechniqueScores_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/TechniqueScores"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[TechniqueScores]"
+      },
+      "Envelope_TierList_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/TierList"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[TierList]"
+      },
+      "Envelope_WeightMatrix_": {
+        "properties": {
+          "filters": {
+            "$ref": "#/components/schemas/Filters"
+          },
+          "totals": {
+            "$ref": "#/components/schemas/Totals"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/WarningItem"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "data": {
+            "$ref": "#/components/schemas/WeightMatrix"
+          }
+        },
+        "type": "object",
+        "required": [
+          "filters",
+          "totals",
+          "warnings",
+          "data"
+        ],
+        "title": "Envelope[WeightMatrix]"
+      },
+      "ErrorBody": {
+        "properties": {
+          "error": {
+            "$ref": "#/components/schemas/ErrorDetail"
+          }
+        },
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "title": "ErrorBody"
+      },
+      "ErrorDetail": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "invalid_parameter",
+              "not_found"
+            ],
+            "title": "Code"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "field": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Field"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message",
+          "field"
+        ],
+        "title": "ErrorDetail"
+      },
+      "ExcludedCompetition": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "elite",
+              "continental"
+            ],
+            "title": "Level"
+          },
+          "tag_coverage": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tag Coverage"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "year",
+          "level",
+          "tag_coverage",
+          "reason"
+        ],
+        "title": "ExcludedCompetition"
+      },
+      "Filters": {
+        "properties": {
+          "gender": {
+            "type": "string",
+            "enum": [
+              "m",
+              "f",
+              "all"
+            ],
+            "title": "Gender"
+          },
+          "weight": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Weight"
+          },
+          "year_from": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year From"
+          },
+          "year_to": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year To"
+          },
+          "ruleset": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Ruleset"
+          },
+          "country": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Country"
+          },
+          "side": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "left",
+                "right",
+                "unknown"
+              ]
+            },
+            "type": "array",
+            "title": "Side"
+          },
+          "domain": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "standing",
+                "ground",
+                "unknown"
+              ]
+            },
+            "type": "array",
+            "title": "Domain"
+          },
+          "count_by": {
+            "type": "string",
+            "enum": [
+              "event",
+              "athlete"
+            ],
+            "title": "Count By"
+          },
+          "min_scores_athlete": {
+            "type": "integer",
+            "title": "Min Scores Athlete"
+          },
+          "min_scores_technique": {
+            "type": "integer",
+            "title": "Min Scores Technique"
+          }
+        },
+        "type": "object",
+        "required": [
+          "gender",
+          "weight",
+          "year_from",
+          "year_to",
+          "ruleset",
+          "country",
+          "side",
+          "domain",
+          "count_by",
+          "min_scores_athlete",
+          "min_scores_technique"
+        ],
+        "title": "Filters"
+      },
+      "GenderOption": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "m",
+              "f"
+            ],
+            "title": "Code"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "label"
+        ],
+        "title": "GenderOption"
+      },
+      "GlossaryEntry": {
+        "properties": {
+          "term": {
+            "type": "string",
+            "title": "Term"
+          },
+          "definition": {
+            "type": "string",
+            "title": "Definition"
+          }
+        },
+        "type": "object",
+        "required": [
+          "term",
+          "definition"
+        ],
+        "title": "GlossaryEntry"
+      },
+      "GroupRow": {
+        "properties": {
+          "group_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Group Label"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "group_label",
+          "n",
+          "share"
+        ],
+        "title": "GroupRow"
+      },
+      "Matrix": {
+        "properties": {
+          "techniques": {
+            "items": {
+              "$ref": "#/components/schemas/TechniqueRef"
+            },
+            "type": "array",
+            "title": "Techniques"
+          },
+          "cells": {
+            "items": {
+              "items": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/MatrixCell"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "type": "array"
+            },
+            "type": "array",
+            "title": "Cells"
+          }
+        },
+        "type": "object",
+        "required": [
+          "techniques",
+          "cells"
+        ],
+        "title": "Matrix"
+      },
+      "MatrixCell": {
+        "properties": {
+          "n_both": {
+            "type": "integer",
+            "title": "N Both"
+          },
+          "lift": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lift"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "n_both",
+          "lift",
+          "sample"
+        ],
+        "title": "MatrixCell"
+      },
+      "Meta": {
+        "properties": {
+          "genders": {
+            "items": {
+              "$ref": "#/components/schemas/GenderOption"
+            },
+            "type": "array",
+            "title": "Genders"
+          },
+          "weights": {
+            "items": {
+              "$ref": "#/components/schemas/WeightOption"
+            },
+            "type": "array",
+            "title": "Weights"
+          },
+          "rulesets": {
+            "items": {
+              "$ref": "#/components/schemas/RulesetOption"
+            },
+            "type": "array",
+            "title": "Rulesets"
+          },
+          "years": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Years"
+          },
+          "countries": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Countries"
+          },
+          "techniques": {
+            "items": {
+              "$ref": "#/components/schemas/TechniqueRef"
+            },
+            "type": "array",
+            "title": "Techniques"
+          },
+          "shido_reasons": {
+            "items": {
+              "$ref": "#/components/schemas/ReasonRef"
+            },
+            "type": "array",
+            "title": "Shido Reasons"
+          },
+          "defaults": {
+            "$ref": "#/components/schemas/Defaults"
+          },
+          "thresholds": {
+            "$ref": "#/components/schemas/Thresholds"
+          },
+          "coverage": {
+            "$ref": "#/components/schemas/Coverage"
+          },
+          "quality_issues": {
+            "items": {
+              "$ref": "#/components/schemas/QualityIssueCount"
+            },
+            "type": "array",
+            "title": "Quality Issues"
+          },
+          "glossary": {
+            "items": {
+              "$ref": "#/components/schemas/GlossaryEntry"
+            },
+            "type": "array",
+            "title": "Glossary"
+          }
+        },
+        "type": "object",
+        "required": [
+          "genders",
+          "weights",
+          "rulesets",
+          "years",
+          "countries",
+          "techniques",
+          "shido_reasons",
+          "defaults",
+          "thresholds",
+          "coverage",
+          "quality_issues",
+          "glossary"
+        ],
+        "title": "Meta"
+      },
+      "NumberReason": {
+        "properties": {
+          "reason": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ReasonRef"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "reason",
+          "n",
+          "share"
+        ],
+        "title": "NumberReason"
+      },
+      "OutcomeTable": {
+        "properties": {
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/WeightOutcomes"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "total": {
+            "$ref": "#/components/schemas/OutcomesWithShido"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rows",
+          "total"
+        ],
+        "title": "OutcomeTable"
+      },
+      "Outcomes": {
+        "properties": {
+          "played": {
+            "type": "integer",
+            "title": "Played"
+          },
+          "walkovers": {
+            "$ref": "#/components/schemas/Walkovers"
+          },
+          "end_types": {
+            "items": {
+              "$ref": "#/components/schemas/EndTypeCount"
+            },
+            "type": "array",
+            "title": "End Types"
+          },
+          "gs_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gs Share"
+          },
+          "avg_duration_s": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Duration S"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "played",
+          "walkovers",
+          "end_types",
+          "gs_share",
+          "avg_duration_s",
+          "sample"
+        ],
+        "title": "Outcomes"
+      },
+      "OutcomesWithShido": {
+        "properties": {
+          "played": {
+            "type": "integer",
+            "title": "Played"
+          },
+          "walkovers": {
+            "$ref": "#/components/schemas/Walkovers"
+          },
+          "end_types": {
+            "items": {
+              "$ref": "#/components/schemas/EndTypeCount"
+            },
+            "type": "array",
+            "title": "End Types"
+          },
+          "gs_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gs Share"
+          },
+          "avg_duration_s": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Duration S"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "shido_per_contest": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Shido Per Contest"
+          }
+        },
+        "type": "object",
+        "required": [
+          "played",
+          "walkovers",
+          "end_types",
+          "gs_share",
+          "avg_duration_s",
+          "sample",
+          "shido_per_contest"
+        ],
+        "title": "OutcomesWithShido"
+      },
+      "Overview": {
+        "properties": {
+          "kpis": {
+            "$ref": "#/components/schemas/OverviewKpis"
+          },
+          "outcomes": {
+            "$ref": "#/components/schemas/Outcomes"
+          },
+          "timing": {
+            "items": {
+              "$ref": "#/components/schemas/TimingBin"
+            },
+            "type": "array",
+            "title": "Timing"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "kpis",
+          "outcomes",
+          "timing",
+          "sample"
+        ],
+        "title": "Overview"
+      },
+      "OverviewKpis": {
+        "properties": {
+          "scores": {
+            "type": "integer",
+            "title": "Scores"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          },
+          "scoring_athletes": {
+            "type": "integer",
+            "title": "Scoring Athletes"
+          },
+          "techniques": {
+            "type": "integer",
+            "title": "Techniques"
+          },
+          "gs_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gs Share"
+          },
+          "unknown_side_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unknown Side Share"
+          },
+          "unknown_technique_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unknown Technique Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "scores",
+          "contests",
+          "scoring_athletes",
+          "techniques",
+          "gs_share",
+          "unknown_side_share",
+          "unknown_technique_share"
+        ],
+        "title": "OverviewKpis"
+      },
+      "Pair": {
+        "properties": {
+          "a": {
+            "$ref": "#/components/schemas/TechniqueRef"
+          },
+          "b": {
+            "$ref": "#/components/schemas/TechniqueRef"
+          },
+          "n_both": {
+            "type": "integer",
+            "title": "N Both"
+          },
+          "support": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Support"
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence"
+          },
+          "lift": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lift"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "a",
+          "b",
+          "n_both",
+          "support",
+          "confidence",
+          "lift",
+          "sample"
+        ],
+        "title": "Pair"
+      },
+      "PairAthlete": {
+        "properties": {
+          "athlete": {
+            "$ref": "#/components/schemas/Athlete"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "n_technique": {
+            "type": "integer",
+            "title": "N Technique"
+          },
+          "n_with": {
+            "type": "integer",
+            "title": "N With"
+          },
+          "n_total": {
+            "type": "integer",
+            "title": "N Total"
+          }
+        },
+        "type": "object",
+        "required": [
+          "athlete",
+          "weight",
+          "n_technique",
+          "n_with",
+          "n_total"
+        ],
+        "title": "PairAthlete"
+      },
+      "PairAthletes": {
+        "properties": {
+          "technique": {
+            "$ref": "#/components/schemas/TechniqueRef"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/PairAthlete"
+            },
+            "type": "array",
+            "title": "Rows"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "rows"
+        ],
+        "title": "PairAthletes"
+      },
+      "Penalties": {
+        "properties": {
+          "kpis": {
+            "$ref": "#/components/schemas/PenaltyKpis"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "reasons": {
+            "items": {
+              "$ref": "#/components/schemas/ReasonRow"
+            },
+            "type": "array",
+            "title": "Reasons"
+          },
+          "by_group": {
+            "items": {
+              "$ref": "#/components/schemas/GroupRow"
+            },
+            "type": "array",
+            "title": "By Group"
+          },
+          "by_weight": {
+            "items": {
+              "$ref": "#/components/schemas/WeightPenalties"
+            },
+            "type": "array",
+            "title": "By Weight"
+          },
+          "timing": {
+            "items": {
+              "$ref": "#/components/schemas/PenaltyBin"
+            },
+            "type": "array",
+            "title": "Timing"
+          },
+          "by_number": {
+            "items": {
+              "$ref": "#/components/schemas/ShidoNumber"
+            },
+            "type": "array",
+            "title": "By Number"
+          }
+        },
+        "type": "object",
+        "required": [
+          "kpis",
+          "sample",
+          "reasons",
+          "by_group",
+          "by_weight",
+          "timing",
+          "by_number"
+        ],
+        "title": "Penalties"
+      },
+      "PenaltyBin": {
+        "properties": {
+          "bin": {
+            "type": "integer",
+            "title": "Bin"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          }
+        },
+        "type": "object",
+        "required": [
+          "bin",
+          "label",
+          "n"
+        ],
+        "title": "PenaltyBin"
+      },
+      "PenaltyKpis": {
+        "properties": {
+          "n_penalties": {
+            "type": "integer",
+            "title": "N Penalties"
+          },
+          "n_shido": {
+            "type": "integer",
+            "title": "N Shido"
+          },
+          "n_hansoku_shido": {
+            "type": "integer",
+            "title": "N Hansoku Shido"
+          },
+          "played_contests": {
+            "type": "integer",
+            "title": "Played Contests"
+          },
+          "shido_per_contest": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Shido Per Contest"
+          },
+          "hansoku_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hansoku Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "n_penalties",
+          "n_shido",
+          "n_hansoku_shido",
+          "played_contests",
+          "shido_per_contest",
+          "hansoku_share"
+        ],
+        "title": "PenaltyKpis"
+      },
+      "QualityIssueCount": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "issues": {
+            "type": "integer",
+            "title": "Issues"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "issues",
+          "contests"
+        ],
+        "title": "QualityIssueCount"
+      },
+      "ReasonRef": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "group_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Group Label"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "name",
+          "group_label"
+        ],
+        "title": "ReasonRef"
+      },
+      "ReasonRow": {
+        "properties": {
+          "reason": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ReasonRef"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          },
+          "n_deciding": {
+            "type": "integer",
+            "title": "N Deciding"
+          },
+          "deciding_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Deciding Share"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "reason",
+          "n",
+          "share",
+          "n_deciding",
+          "deciding_share",
+          "sample"
+        ],
+        "title": "ReasonRow"
+      },
+      "Repertoire": {
+        "properties": {
+          "technique": {
+            "$ref": "#/components/schemas/TechniqueRef"
+          },
+          "cohort": {
+            "$ref": "#/components/schemas/Cohort"
+          },
+          "companions": {
+            "items": {
+              "$ref": "#/components/schemas/Companion"
+            },
+            "type": "array",
+            "title": "Companions"
+          },
+          "pair_athletes": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PairAthletes"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "cohort",
+          "companions",
+          "pair_athletes"
+        ],
+        "title": "Repertoire"
+      },
+      "RepertoirePairs": {
+        "properties": {
+          "eligible": {
+            "type": "integer",
+            "title": "Eligible"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "pairs": {
+            "items": {
+              "$ref": "#/components/schemas/Pair"
+            },
+            "type": "array",
+            "title": "Pairs"
+          },
+          "matrix": {
+            "$ref": "#/components/schemas/Matrix"
+          }
+        },
+        "type": "object",
+        "required": [
+          "eligible",
+          "sample",
+          "pairs",
+          "matrix"
+        ],
+        "title": "RepertoirePairs"
+      },
+      "RulesetOption": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "year_from": {
+            "type": "integer",
+            "title": "Year From"
+          },
+          "year_to": {
+            "type": "integer",
+            "title": "Year To"
+          },
+          "has_koka": {
+            "type": "boolean",
+            "title": "Has Koka"
+          },
+          "has_yuko": {
+            "type": "boolean",
+            "title": "Has Yuko"
+          },
+          "max_wazaari": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Wazaari"
+          },
+          "max_shido": {
+            "type": "integer",
+            "title": "Max Shido"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          },
+          "is_default": {
+            "type": "boolean",
+            "title": "Is Default"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "year_from",
+          "year_to",
+          "has_koka",
+          "has_yuko",
+          "max_wazaari",
+          "max_shido",
+          "contests",
+          "is_default"
+        ],
+        "title": "RulesetOption"
+      },
+      "Sample": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "small",
+              "insufficient"
+            ],
+            "title": "Status"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "unit": {
+            "type": "string",
+            "enum": [
+              "scores",
+              "penalties",
+              "contests",
+              "athletes",
+              "years"
+            ],
+            "title": "Unit"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "n",
+          "unit"
+        ],
+        "title": "Sample"
+      },
+      "ScoreGroup": {
+        "properties": {
+          "technique": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TechniqueRef"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/AthleteScoreRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "n",
+          "rows"
+        ],
+        "title": "ScoreGroup"
+      },
+      "ScoreListRow": {
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date",
+            "title": "Date"
+          },
+          "competition": {
+            "$ref": "#/components/schemas/CompetitionRef"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "opponent": {
+            "$ref": "#/components/schemas/Athlete"
+          },
+          "score_value": {
+            "type": "string",
+            "enum": [
+              "ippon",
+              "waza_ari",
+              "yuko"
+            ],
+            "title": "Score Value"
+          },
+          "is_awasete": {
+            "type": "boolean",
+            "title": "Is Awasete"
+          },
+          "direction": {
+            "type": "string",
+            "enum": [
+              "left",
+              "right",
+              "unknown"
+            ],
+            "title": "Direction"
+          },
+          "is_gs": {
+            "type": "boolean",
+            "title": "Is Gs"
+          },
+          "time_bin": {
+            "type": "integer",
+            "title": "Time Bin"
+          },
+          "contest_code": {
+            "type": "string",
+            "title": "Contest Code"
+          },
+          "judobase_url": {
+            "type": "string",
+            "title": "Judobase Url"
+          },
+          "judotv_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Judotv Url"
+          },
+          "athlete": {
+            "$ref": "#/components/schemas/Athlete"
+          }
+        },
+        "type": "object",
+        "required": [
+          "date",
+          "competition",
+          "weight",
+          "opponent",
+          "score_value",
+          "is_awasete",
+          "direction",
+          "is_gs",
+          "time_bin",
+          "contest_code",
+          "judobase_url",
+          "judotv_url",
+          "athlete"
+        ],
+        "title": "ScoreListRow"
+      },
+      "SearchRow": {
+        "properties": {
+          "athlete": {
+            "$ref": "#/components/schemas/Athlete"
+          },
+          "weights": {
+            "items": {
+              "$ref": "#/components/schemas/WeightRef"
+            },
+            "type": "array",
+            "title": "Weights"
+          },
+          "n_scores": {
+            "type": "integer",
+            "title": "N Scores"
+          }
+        },
+        "type": "object",
+        "required": [
+          "athlete",
+          "weights",
+          "n_scores"
+        ],
+        "title": "SearchRow"
+      },
+      "ShidoNumber": {
+        "properties": {
+          "number": {
+            "type": "integer",
+            "title": "Number"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "reasons": {
+            "items": {
+              "$ref": "#/components/schemas/NumberReason"
+            },
+            "type": "array",
+            "title": "Reasons"
+          }
+        },
+        "type": "object",
+        "required": [
+          "number",
+          "n",
+          "sample",
+          "reasons"
+        ],
+        "title": "ShidoNumber"
+      },
+      "SideCounts": {
+        "properties": {
+          "left": {
+            "type": "integer",
+            "title": "Left"
+          },
+          "right": {
+            "type": "integer",
+            "title": "Right"
+          },
+          "unknown": {
+            "type": "integer",
+            "title": "Unknown"
+          }
+        },
+        "type": "object",
+        "required": [
+          "left",
+          "right",
+          "unknown"
+        ],
+        "title": "SideCounts"
+      },
+      "Similar": {
+        "properties": {
+          "scope": {
+            "type": "string",
+            "enum": [
+              "weight",
+              "all"
+            ],
+            "title": "Scope"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "min_scores_athlete": {
+            "type": "integer",
+            "title": "Min Scores Athlete"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/SimilarAthlete"
+            },
+            "type": "array",
+            "title": "Rows"
+          }
+        },
+        "type": "object",
+        "required": [
+          "scope",
+          "weight",
+          "min_scores_athlete",
+          "sample",
+          "rows"
+        ],
+        "title": "Similar"
+      },
+      "SimilarAthlete": {
+        "properties": {
+          "athlete": {
+            "$ref": "#/components/schemas/Athlete"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "similarity": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Similarity"
+          },
+          "n_scores": {
+            "type": "integer",
+            "title": "N Scores"
+          },
+          "top_techniques": {
+            "items": {
+              "$ref": "#/components/schemas/TopTechnique"
+            },
+            "type": "array",
+            "title": "Top Techniques"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "athlete",
+          "weight",
+          "similarity",
+          "n_scores",
+          "top_techniques",
+          "sample"
+        ],
+        "title": "SimilarAthlete"
+      },
+      "Specialist": {
+        "properties": {
+          "athlete": {
+            "$ref": "#/components/schemas/Athlete"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          },
+          "n_total": {
+            "type": "integer",
+            "title": "N Total"
+          }
+        },
+        "type": "object",
+        "required": [
+          "athlete",
+          "weight",
+          "share",
+          "n_total"
+        ],
+        "title": "Specialist"
+      },
+      "Specialists": {
+        "properties": {
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "share_threshold": {
+            "type": "number",
+            "title": "Share Threshold"
+          },
+          "athletes": {
+            "items": {
+              "$ref": "#/components/schemas/Specialist"
+            },
+            "type": "array",
+            "title": "Athletes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "n",
+          "sample",
+          "share_threshold",
+          "athletes"
+        ],
+        "title": "Specialists"
+      },
+      "TechniqueDetail": {
+        "properties": {
+          "technique": {
+            "$ref": "#/components/schemas/TechniqueRef"
+          },
+          "kpis": {
+            "$ref": "#/components/schemas/TechniqueKpis"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "by_weight": {
+            "items": {
+              "$ref": "#/components/schemas/WeightShare"
+            },
+            "type": "array",
+            "title": "By Weight"
+          },
+          "timing": {
+            "items": {
+              "$ref": "#/components/schemas/TimingBin"
+            },
+            "type": "array",
+            "title": "Timing"
+          },
+          "trend": {
+            "$ref": "#/components/schemas/Trend"
+          },
+          "top_athletes": {
+            "items": {
+              "$ref": "#/components/schemas/TopAthlete"
+            },
+            "type": "array",
+            "title": "Top Athletes"
+          },
+          "countries": {
+            "$ref": "#/components/schemas/Countries"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "kpis",
+          "sample",
+          "by_weight",
+          "timing",
+          "trend",
+          "top_athletes",
+          "countries"
+        ],
+        "title": "TechniqueDetail"
+      },
+      "TechniqueKpis": {
+        "properties": {
+          "n_scores": {
+            "type": "integer",
+            "title": "N Scores"
+          },
+          "rank": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rank"
+          },
+          "of": {
+            "type": "integer",
+            "title": "Of"
+          },
+          "pct": {
+            "$ref": "#/components/schemas/ValueShares"
+          },
+          "overall_pct_ippon": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Overall Pct Ippon"
+          },
+          "right_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Right Share"
+          },
+          "unknown_side_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Unknown Side Share"
+          },
+          "n_athletes": {
+            "type": "integer",
+            "title": "N Athletes"
+          },
+          "n_awasete": {
+            "type": "integer",
+            "title": "N Awasete"
+          },
+          "gs_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gs Share"
+          },
+          "overall_gs_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Overall Gs Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "n_scores",
+          "rank",
+          "of",
+          "pct",
+          "overall_pct_ippon",
+          "right_share",
+          "unknown_side_share",
+          "n_athletes",
+          "n_awasete",
+          "gs_share",
+          "overall_gs_share"
+        ],
+        "title": "TechniqueKpis"
+      },
+      "TechniqueRef": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "group_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Group Label"
+          },
+          "domain": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "standing",
+                  "ground"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Domain"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "name",
+          "group_label",
+          "domain"
+        ],
+        "title": "TechniqueRef"
+      },
+      "TechniqueScores": {
+        "properties": {
+          "technique": {
+            "$ref": "#/components/schemas/TechniqueRef"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/ScoreListRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "page": {
+            "type": "integer",
+            "title": "Page"
+          },
+          "page_size": {
+            "type": "integer",
+            "title": "Page Size"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "rows",
+          "page",
+          "page_size",
+          "total"
+        ],
+        "title": "TechniqueScores"
+      },
+      "Thresholds": {
+        "properties": {
+          "sample_ok": {
+            "type": "integer",
+            "title": "Sample Ok"
+          },
+          "sample_small": {
+            "type": "integer",
+            "title": "Sample Small"
+          },
+          "athlete_sample_ok": {
+            "type": "integer",
+            "title": "Athlete Sample Ok"
+          },
+          "athlete_sample_small": {
+            "type": "integer",
+            "title": "Athlete Sample Small"
+          },
+          "specialist_share": {
+            "type": "number",
+            "title": "Specialist Share"
+          },
+          "min_scores_country": {
+            "type": "integer",
+            "title": "Min Scores Country"
+          },
+          "unknown_technique_warning": {
+            "type": "number",
+            "title": "Unknown Technique Warning"
+          }
+        },
+        "type": "object",
+        "required": [
+          "sample_ok",
+          "sample_small",
+          "athlete_sample_ok",
+          "athlete_sample_small",
+          "specialist_share",
+          "min_scores_country",
+          "unknown_technique_warning"
+        ],
+        "title": "Thresholds"
+      },
+      "TierList": {
+        "properties": {
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/TierRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "total_rows": {
+            "type": "integer",
+            "title": "Total Rows"
+          },
+          "sort": {
+            "type": "string",
+            "enum": [
+              "share",
+              "n_scores",
+              "n_athletes",
+              "pct_ippon",
+              "pct_waza_ari",
+              "pct_yuko"
+            ],
+            "title": "Sort"
+          },
+          "order": {
+            "type": "string",
+            "enum": [
+              "asc",
+              "desc"
+            ],
+            "title": "Order"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rows",
+          "total_rows",
+          "sort",
+          "order",
+          "sample"
+        ],
+        "title": "TierList"
+      },
+      "TierRow": {
+        "properties": {
+          "technique": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TechniqueRef"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "n_scores": {
+            "type": "integer",
+            "title": "N Scores"
+          },
+          "n_athletes": {
+            "type": "integer",
+            "title": "N Athletes"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          },
+          "counts": {
+            "$ref": "#/components/schemas/ValueCounts"
+          },
+          "pct": {
+            "$ref": "#/components/schemas/ValueShares"
+          },
+          "n_awasete": {
+            "type": "integer",
+            "title": "N Awasete"
+          },
+          "side": {
+            "$ref": "#/components/schemas/SideCounts"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "technique",
+          "n_scores",
+          "n_athletes",
+          "share",
+          "counts",
+          "pct",
+          "n_awasete",
+          "side",
+          "sample"
+        ],
+        "title": "TierRow"
+      },
+      "TimingBin": {
+        "properties": {
+          "bin": {
+            "type": "integer",
+            "title": "Bin"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "ippon": {
+            "type": "integer",
+            "title": "Ippon"
+          },
+          "waza_ari": {
+            "type": "integer",
+            "title": "Waza Ari"
+          },
+          "yuko": {
+            "type": "integer",
+            "title": "Yuko"
+          }
+        },
+        "type": "object",
+        "required": [
+          "bin",
+          "label",
+          "n",
+          "ippon",
+          "waza_ari",
+          "yuko"
+        ],
+        "title": "TimingBin"
+      },
+      "TopAthlete": {
+        "properties": {
+          "athlete": {
+            "$ref": "#/components/schemas/Athlete"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "n_ippon": {
+            "type": "integer",
+            "title": "N Ippon"
+          },
+          "total_scores": {
+            "type": "integer",
+            "title": "Total Scores"
+          },
+          "share_of_total": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share Of Total"
+          },
+          "side": {
+            "$ref": "#/components/schemas/SideCounts"
+          },
+          "judobase_url": {
+            "type": "string",
+            "title": "Judobase Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "athlete",
+          "weight",
+          "n",
+          "n_ippon",
+          "total_scores",
+          "share_of_total",
+          "side",
+          "judobase_url"
+        ],
+        "title": "TopAthlete"
+      },
+      "TopTechnique": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "group_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Group Label"
+          },
+          "domain": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "standing",
+                  "ground"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Domain"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "name",
+          "group_label",
+          "domain",
+          "n"
+        ],
+        "title": "TopTechnique"
+      },
+      "Totals": {
+        "properties": {
+          "competitions": {
+            "type": "integer",
+            "title": "Competitions"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          },
+          "athletes": {
+            "type": "integer",
+            "title": "Athletes"
+          },
+          "scores": {
+            "type": "integer",
+            "title": "Scores"
+          },
+          "penalties": {
+            "type": "integer",
+            "title": "Penalties"
+          }
+        },
+        "type": "object",
+        "required": [
+          "competitions",
+          "contests",
+          "athletes",
+          "scores",
+          "penalties"
+        ],
+        "title": "Totals"
+      },
+      "Trend": {
+        "properties": {
+          "points": {
+            "items": {
+              "$ref": "#/components/schemas/TrendPoint"
+            },
+            "type": "array",
+            "title": "Points"
+          },
+          "ruleset_changes": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Ruleset Changes"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "points",
+          "ruleset_changes",
+          "sample"
+        ],
+        "title": "Trend"
+      },
+      "TrendPoint": {
+        "properties": {
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          }
+        },
+        "type": "object",
+        "required": [
+          "year",
+          "n",
+          "total",
+          "share"
+        ],
+        "title": "TrendPoint"
+      },
+      "ValueCounts": {
+        "properties": {
+          "ippon": {
+            "type": "integer",
+            "title": "Ippon"
+          },
+          "waza_ari": {
+            "type": "integer",
+            "title": "Waza Ari"
+          },
+          "yuko": {
+            "type": "integer",
+            "title": "Yuko"
+          }
+        },
+        "type": "object",
+        "required": [
+          "ippon",
+          "waza_ari",
+          "yuko"
+        ],
+        "title": "ValueCounts"
+      },
+      "ValueShares": {
+        "properties": {
+          "ippon": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ippon"
+          },
+          "waza_ari": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Waza Ari"
+          },
+          "yuko": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Yuko"
+          }
+        },
+        "type": "object",
+        "required": [
+          "ippon",
+          "waza_ari",
+          "yuko"
+        ],
+        "title": "ValueShares"
+      },
+      "Walkovers": {
+        "properties": {
+          "fusen_gachi": {
+            "type": "integer",
+            "title": "Fusen Gachi"
+          },
+          "kiken_gachi": {
+            "type": "integer",
+            "title": "Kiken Gachi"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fusen_gachi",
+          "kiken_gachi"
+        ],
+        "title": "Walkovers"
+      },
+      "WarningItem": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "mixed_score_scales",
+              "high_unknown_technique",
+              "quality_issues"
+            ],
+            "title": "Code"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "WarningItem"
+      },
+      "WeightContests": {
+        "properties": {
+          "weight": {
+            "type": "string",
+            "title": "Weight"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          }
+        },
+        "type": "object",
+        "required": [
+          "weight",
+          "contests"
+        ],
+        "title": "WeightContests"
+      },
+      "WeightMatrix": {
+        "properties": {
+          "techniques": {
+            "items": {
+              "$ref": "#/components/schemas/TechniqueRef"
+            },
+            "type": "array",
+            "title": "Techniques"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/WeightRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          }
+        },
+        "type": "object",
+        "required": [
+          "techniques",
+          "rows"
+        ],
+        "title": "WeightMatrix"
+      },
+      "WeightOption": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "m",
+              "f"
+            ],
+            "title": "Gender"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "gender",
+          "label",
+          "contests"
+        ],
+        "title": "WeightOption"
+      },
+      "WeightOutcomes": {
+        "properties": {
+          "played": {
+            "type": "integer",
+            "title": "Played"
+          },
+          "walkovers": {
+            "$ref": "#/components/schemas/Walkovers"
+          },
+          "end_types": {
+            "items": {
+              "$ref": "#/components/schemas/EndTypeCount"
+            },
+            "type": "array",
+            "title": "End Types"
+          },
+          "gs_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gs Share"
+          },
+          "avg_duration_s": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Duration S"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "shido_per_contest": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Shido Per Contest"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          }
+        },
+        "type": "object",
+        "required": [
+          "played",
+          "walkovers",
+          "end_types",
+          "gs_share",
+          "avg_duration_s",
+          "sample",
+          "shido_per_contest",
+          "weight"
+        ],
+        "title": "WeightOutcomes"
+      },
+      "WeightPenalties": {
+        "properties": {
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "contests": {
+            "type": "integer",
+            "title": "Contests"
+          },
+          "penalties": {
+            "type": "integer",
+            "title": "Penalties"
+          },
+          "shido_per_contest": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Shido Per Contest"
+          },
+          "hansoku_share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hansoku Share"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "weight",
+          "contests",
+          "penalties",
+          "shido_per_contest",
+          "hansoku_share",
+          "sample"
+        ],
+        "title": "WeightPenalties"
+      },
+      "WeightRef": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "m",
+              "f"
+            ],
+            "title": "Gender"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "gender",
+          "label"
+        ],
+        "title": "WeightRef"
+      },
+      "WeightRow": {
+        "properties": {
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          },
+          "cells": {
+            "items": {
+              "$ref": "#/components/schemas/Cell"
+            },
+            "type": "array",
+            "title": "Cells"
+          }
+        },
+        "type": "object",
+        "required": [
+          "weight",
+          "total",
+          "sample",
+          "cells"
+        ],
+        "title": "WeightRow"
+      },
+      "WeightShare": {
+        "properties": {
+          "weight": {
+            "$ref": "#/components/schemas/WeightRef"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "share": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share"
+          },
+          "side": {
+            "$ref": "#/components/schemas/SideCounts"
+          },
+          "sample": {
+            "$ref": "#/components/schemas/Sample"
+          }
+        },
+        "type": "object",
+        "required": [
+          "weight",
+          "n",
+          "total",
+          "share",
+          "side",
+          "sample"
+        ],
+        "title": "WeightShare"
+      },
+      "YearSpan": {
+        "properties": {
+          "from": {
+            "type": "integer",
+            "title": "From"
+          },
+          "to": {
+            "type": "integer",
+            "title": "To"
+          }
+        },
+        "type": "object",
+        "required": [
+          "from",
+          "to"
+        ],
+        "title": "YearSpan"
+      }
+    }
+  }
+}

@@ -1,0 +1,953 @@
+{
+  "filters": {
+    "gender": "all",
+    "weight": [],
+    "year_from": 2025,
+    "year_to": 2027,
+    "ruleset": [
+      2025
+    ],
+    "country": [],
+    "side": [
+      "left",
+      "right",
+      "unknown"
+    ],
+    "domain": [
+      "standing",
+      "ground",
+      "unknown"
+    ],
+    "count_by": "event",
+    "min_scores_athlete": 5,
+    "min_scores_technique": 2
+  },
+  "totals": {
+    "competitions": 2,
+    "contests": 556,
+    "athletes": 506,
+    "scores": 756,
+    "penalties": 967
+  },
+  "warnings": [
+    {
+      "code": "quality_issues",
+      "message": "3 contests in the filter have inconsistent IJF data."
+    }
+  ],
+  "data": {
+    "eligible": 45,
+    "sample": {
+      "status": "ok",
+      "n": 45,
+      "unit": "athletes"
+    },
+    "pairs": [],
+    "matrix": {
+      "techniques": [
+        {
+          "code": "o_uchi_gari",
+          "name": "O-uchi-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "ko_soto_gari",
+          "name": "Ko-soto-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "yoko_shiho_gatame",
+          "name": "Yoko-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        {
+          "code": "kata_guruma",
+          "name": "Kata-guruma",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "o_soto_gari",
+          "name": "O-soto-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "tomoe_nage",
+          "name": "Tomoe-nage",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "uchi_mata",
+          "name": "Uchi-mata",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "sasae_tsurikomi_ashi",
+          "name": "Sasae-tsurikomi-ashi",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "seoi_nage",
+          "name": "Seoi-nage",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "uki_otoshi",
+          "name": "Uki-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        }
+      ],
+      "cells": [
+        [
+          null,
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 1,
+            "lift": 2.3077,
+            "sample": {
+              "status": "insufficient",
+              "n": 1,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          null,
+          {
+            "n_both": 1,
+            "lift": 5,
+            "sample": {
+              "status": "insufficient",
+              "n": 1,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 1,
+            "lift": 5,
+            "sample": {
+              "status": "insufficient",
+              "n": 1,
+              "unit": "athletes"
+            }
+          },
+          null,
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 1,
+            "lift": 1.5,
+            "sample": {
+              "status": "insufficient",
+              "n": 1,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 1,
+            "lift": 1.5,
+            "sample": {
+              "status": "insufficient",
+              "n": 1,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          null,
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 2,
+            "lift": 3.3333,
+            "sample": {
+              "status": "insufficient",
+              "n": 2,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 1,
+            "lift": 1.5,
+            "sample": {
+              "status": "insufficient",
+              "n": 1,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          null,
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 1,
+            "lift": 1.5,
+            "sample": {
+              "status": "insufficient",
+              "n": 1,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          null,
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          null,
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 2,
+            "lift": 3.3333,
+            "sample": {
+              "status": "insufficient",
+              "n": 2,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          null,
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 1,
+            "lift": 2.3077,
+            "sample": {
+              "status": "insufficient",
+              "n": 1,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          null,
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          }
+        ],
+        [
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": 0,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          {
+            "n_both": 0,
+            "lift": null,
+            "sample": {
+              "status": "insufficient",
+              "n": 0,
+              "unit": "athletes"
+            }
+          },
+          null
+        ]
+      ]
+    }
+  }
+}

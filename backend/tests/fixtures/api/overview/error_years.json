@@ -1,0 +1,15 @@
+{
+  "path": "/api/overview",
+  "query": {
+    "year_from": "2026",
+    "year_to": "2025"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "year_from must not be greater than year_to",
+      "field": "year_from"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.excluded {
+  margin-top: 12px;
+  max-height: 360px;
+  overflow: auto;
+}
+
+.term {
+  width: 30%;
+}

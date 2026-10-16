@@ -1,0 +1,12 @@
+{
+  "path": "/api/techniques/flying_armbar",
+  "query": {},
+  "status": 404,
+  "body": {
+    "error": {
+      "code": "not_found",
+      "message": "unknown technique flying_armbar",
+      "field": "technique"
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "path": "/api/counters",
+  "query": {
+    "technique": "ko_uchi_gari",
+    "gender": "m",
+    "weight": "m-66",
+    "min_scores_athlete": "2"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "m",
+      "weight": [
+        "m-66"
+      ],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 2,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 78,
+      "athletes": 65,
+      "scores": 125,
+      "penalties": 113
+    },
+    "warnings": [],
+    "data": {
+      "technique": {
+        "code": "ko_uchi_gari",
+        "name": "Ko-uchi-gari",
+        "group_label": "Ashi-waza",
+        "domain": "standing"
+      },
+      "specialists": {
+        "n": 2,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "athletes"
+        },
+        "share_threshold": 0.4,
+        "athletes": [
+          {
+            "athlete": {
+              "id": 900174,
+              "given_name": "Fimi",
+              "family_name": "MIGOGU",
+              "country_code": "KOR"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "share": 0.5,
+            "n_total": 6
+          },
+          {
+            "athlete": {
+              "id": 900249,
+              "given_name": "Pune",
+              "family_name": "KITUDO",
+              "country_code": "GBR"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "share": 0.5,
+            "n_total": 4
+          }
+        ]
+      },
+      "conceded": {
+        "n": 6,
+        "sample": {
+          "status": "small",
+          "n": 6,
+          "unit": "scores"
+        }
+      },
+      "rows": [
+        {
+          "technique": {
+            "code": "tate_shiho_gatame",
+            "name": "Tate-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n": 1,
+          "share": 0.1667,
+          "base_share": 0.008,
+          "lift": 20.8333,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "scores"
+          }
+        },
+        {
+          "technique": {
+            "code": "tomoe_nage",
+            "name": "Tomoe-nage",
+            "group_label": "Ma-sutemi-waza",
+            "domain": "standing"
+          },
+          "n": 1,
+          "share": 0.1667,
+          "base_share": 0.008,
+          "lift": 20.8333,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "scores"
+          }
+        },
+        {
+          "technique": {
+            "code": "yoko_guruma",
+            "name": "Yoko-guruma",
+            "group_label": "Yoko-sutemi-waza",
+            "domain": "standing"
+          },
+          "n": 1,
+          "share": 0.1667,
+          "base_share": 0.008,
+          "lift": 20.8333,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "scores"
+          }
+        },
+        {
+          "technique": {
+            "code": "ko_uchi_gaeshi",
+            "name": "Ko-uchi-gaeshi",
+            "group_label": "Te-waza",
+            "domain": "standing"
+          },
+          "n": 1,
+          "share": 0.1667,
+          "base_share": 0.016,
+          "lift": 10.4167,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "scores"
+          }
+        },
+        {
+          "technique": {
+            "code": "hikikomi_gaeshi",
+            "name": "Hikikomi-gaeshi",
+            "group_label": "Ma-sutemi-waza",
+            "domain": "standing"
+          },
+          "n": 1,
+          "share": 0.1667,
+          "base_share": 0.056,
+          "lift": 2.9762,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "scores"
+          }
+        },
+        {
+          "technique": {
+            "code": "yoko_shiho_gatame",
+            "name": "Yoko-shiho-gatame",
+            "group_label": "Osaekomi-waza",
+            "domain": "ground"
+          },
+          "n": 1,
+          "share": 0.1667,
+          "base_share": 0.056,
+          "lift": 2.9762,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "scores"
+          }
+        }
+      ]
+    }
+  }
+}

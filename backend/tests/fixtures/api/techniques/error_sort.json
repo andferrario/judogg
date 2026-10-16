@@ -1,0 +1,14 @@
+{
+  "path": "/api/techniques",
+  "query": {
+    "sort": "name"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "sort must be one of share, n_scores, n_athletes, pct_ippon, pct_waza_ari, pct_yuko",
+      "field": "sort"
+    }
+  }
+}

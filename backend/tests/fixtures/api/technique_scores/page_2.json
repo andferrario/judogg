@@ -1,0 +1,219 @@
+{
+  "path": "/api/techniques/uchi_mata/scores",
+  "query": {
+    "page": "2",
+    "page_size": "5"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "all",
+      "weight": [],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 556,
+      "athletes": 506,
+      "scores": 756,
+      "penalties": 967
+    },
+    "warnings": [
+      {
+        "code": "quality_issues",
+        "message": "3 contests in the filter have inconsistent IJF data."
+      }
+    ],
+    "data": {
+      "technique": {
+        "code": "uchi_mata",
+        "name": "Uchi-mata",
+        "group_label": "Ashi-waza",
+        "domain": "standing"
+      },
+      "rows": [
+        {
+          "date": "2026-02-07",
+          "competition": {
+            "id": 3131,
+            "name": "Paris Grand Slam 2026"
+          },
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "athlete": {
+            "id": 900259,
+            "given_name": "Roro",
+            "family_name": "MEZIFI",
+            "country_code": "GEO"
+          },
+          "opponent": {
+            "id": 900059,
+            "given_name": "Lepi",
+            "family_name": "TOKELI",
+            "country_code": "CUB"
+          },
+          "score_value": "waza_ari",
+          "is_awasete": false,
+          "direction": "right",
+          "is_gs": false,
+          "time_bin": 2,
+          "contest_code": "gs_fra2026_0001_m_0100_0035",
+          "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0100_0035",
+          "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0100_0035"
+        },
+        {
+          "date": "2026-02-07",
+          "competition": {
+            "id": 3131,
+            "name": "Paris Grand Slam 2026"
+          },
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "athlete": {
+            "id": 900498,
+            "given_name": "Gefe",
+            "family_name": "BOPEDU",
+            "country_code": "JPN"
+          },
+          "opponent": {
+            "id": 900209,
+            "given_name": "Ruro",
+            "family_name": "TIDODE",
+            "country_code": "KAZ"
+          },
+          "score_value": "ippon",
+          "is_awasete": false,
+          "direction": "left",
+          "is_gs": false,
+          "time_bin": 4,
+          "contest_code": "gs_fra2026_0001_m_0100_0063",
+          "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0100_0063",
+          "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0100_0063"
+        },
+        {
+          "date": "2026-02-07",
+          "competition": {
+            "id": 3131,
+            "name": "Paris Grand Slam 2026"
+          },
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "athlete": {
+            "id": 900156,
+            "given_name": "Nibi",
+            "family_name": "LEFUZO",
+            "country_code": "BRA"
+          },
+          "opponent": {
+            "id": 900461,
+            "given_name": "Ragu",
+            "family_name": "FEGOSU",
+            "country_code": "SRB"
+          },
+          "score_value": "yuko",
+          "is_awasete": false,
+          "direction": "right",
+          "is_gs": false,
+          "time_bin": 6,
+          "contest_code": "gs_fra2026_0001_m_0100_0053",
+          "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0100_0053",
+          "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0100_0053"
+        },
+        {
+          "date": "2026-02-07",
+          "competition": {
+            "id": 3131,
+            "name": "Paris Grand Slam 2026"
+          },
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "athlete": {
+            "id": 900156,
+            "given_name": "Nibi",
+            "family_name": "LEFUZO",
+            "country_code": "BRA"
+          },
+          "opponent": {
+            "id": 900461,
+            "given_name": "Ragu",
+            "family_name": "FEGOSU",
+            "country_code": "SRB"
+          },
+          "score_value": "yuko",
+          "is_awasete": false,
+          "direction": "right",
+          "is_gs": false,
+          "time_bin": 1,
+          "contest_code": "gs_fra2026_0001_m_0100_0053",
+          "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0100_0053",
+          "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0100_0053"
+        },
+        {
+          "date": "2026-02-07",
+          "competition": {
+            "id": 3131,
+            "name": "Paris Grand Slam 2026"
+          },
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "athlete": {
+            "id": 900498,
+            "given_name": "Gefe",
+            "family_name": "BOPEDU",
+            "country_code": "JPN"
+          },
+          "opponent": {
+            "id": 900301,
+            "given_name": "Sebi",
+            "family_name": "DAREDA",
+            "country_code": "GBR"
+          },
+          "score_value": "ippon",
+          "is_awasete": false,
+          "direction": "left",
+          "is_gs": false,
+          "time_bin": 4,
+          "contest_code": "gs_fra2026_0001_m_0100_0049",
+          "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0100_0049",
+          "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0100_0049"
+        }
+      ],
+      "page": 2,
+      "page_size": 5,
+      "total": 52
+    }
+  }
+}

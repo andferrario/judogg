@@ -1,0 +1,51 @@
+.figure {
+  margin: 0;
+}
+
+.chart text {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  fill: var(--fg-2);
+}
+
+.grid {
+  stroke: var(--line-soft);
+  stroke-width: 1;
+}
+
+.base {
+  stroke: var(--fg-3);
+  stroke-width: 1;
+}
+
+.change {
+  stroke: var(--sx);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
+}
+
+.line {
+  fill: none;
+  stroke: var(--waza);
+  stroke-width: 2;
+}
+
+.area {
+  fill: var(--waza);
+  opacity: 0.12;
+}
+
+.point {
+  fill: var(--waza);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+
+.hit {
+  fill: transparent;
+}
+
+.hit:hover {
+  fill: var(--fg);
+  opacity: 0.05;
+}

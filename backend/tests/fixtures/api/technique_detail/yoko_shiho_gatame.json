@@ -1,0 +1,748 @@
+{
+  "path": "/api/techniques/yoko_shiho_gatame",
+  "query": {},
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "all",
+      "weight": [],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 556,
+      "athletes": 506,
+      "scores": 756,
+      "penalties": 967
+    },
+    "warnings": [
+      {
+        "code": "quality_issues",
+        "message": "3 contests in the filter have inconsistent IJF data."
+      }
+    ],
+    "data": {
+      "technique": {
+        "code": "yoko_shiho_gatame",
+        "name": "Yoko-shiho-gatame",
+        "group_label": "Osaekomi-waza",
+        "domain": "ground"
+      },
+      "kpis": {
+        "n_scores": 43,
+        "rank": 4,
+        "of": 58,
+        "pct": {
+          "ippon": 0.5349,
+          "waza_ari": 0.2093,
+          "yuko": 0.2558
+        },
+        "overall_pct_ippon": 0.2791,
+        "right_share": 0.4872,
+        "unknown_side_share": 0.093,
+        "n_athletes": 38,
+        "n_awasete": 8,
+        "gs_share": 0.1395,
+        "overall_gs_share": 0.1349
+      },
+      "sample": {
+        "status": "ok",
+        "n": 43,
+        "unit": "scores"
+      },
+      "by_weight": [
+        {
+          "weight": {
+            "code": "m-60",
+            "gender": "m",
+            "label": "-60"
+          },
+          "n": 2,
+          "total": 59,
+          "share": 0.0339,
+          "side": {
+            "left": 0,
+            "right": 2,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 2,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 7,
+          "total": 125,
+          "share": 0.056,
+          "side": {
+            "left": 4,
+            "right": 3,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "small",
+            "n": 7,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "m-73",
+            "gender": "m",
+            "label": "-73"
+          },
+          "n": 2,
+          "total": 78,
+          "share": 0.0256,
+          "side": {
+            "left": 1,
+            "right": 1,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 2,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "m-81",
+            "gender": "m",
+            "label": "-81"
+          },
+          "n": 5,
+          "total": 82,
+          "share": 0.061,
+          "side": {
+            "left": 1,
+            "right": 3,
+            "unknown": 1
+          },
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "m-90",
+            "gender": "m",
+            "label": "-90"
+          },
+          "n": 5,
+          "total": 62,
+          "share": 0.0806,
+          "side": {
+            "left": 1,
+            "right": 3,
+            "unknown": 1
+          },
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "n": 2,
+          "total": 66,
+          "share": 0.0303,
+          "side": {
+            "left": 1,
+            "right": 1,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 2,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "m+100",
+            "gender": "m",
+            "label": "+100"
+          },
+          "n": 4,
+          "total": 41,
+          "share": 0.0976,
+          "side": {
+            "left": 3,
+            "right": 1,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 4,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-48",
+            "gender": "f",
+            "label": "-48"
+          },
+          "n": 0,
+          "total": 34,
+          "share": 0,
+          "side": {
+            "left": 0,
+            "right": 0,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 0,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-52",
+            "gender": "f",
+            "label": "-52"
+          },
+          "n": 2,
+          "total": 34,
+          "share": 0.0588,
+          "side": {
+            "left": 1,
+            "right": 0,
+            "unknown": 1
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 2,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-57",
+            "gender": "f",
+            "label": "-57"
+          },
+          "n": 3,
+          "total": 36,
+          "share": 0.0833,
+          "side": {
+            "left": 1,
+            "right": 2,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 3,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-63",
+            "gender": "f",
+            "label": "-63"
+          },
+          "n": 3,
+          "total": 25,
+          "share": 0.12,
+          "side": {
+            "left": 3,
+            "right": 0,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 3,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-70",
+            "gender": "f",
+            "label": "-70"
+          },
+          "n": 5,
+          "total": 50,
+          "share": 0.1,
+          "side": {
+            "left": 4,
+            "right": 1,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-78",
+            "gender": "f",
+            "label": "-78"
+          },
+          "n": 0,
+          "total": 37,
+          "share": 0,
+          "side": {
+            "left": 0,
+            "right": 0,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 0,
+            "unit": "scores"
+          }
+        },
+        {
+          "weight": {
+            "code": "f+78",
+            "gender": "f",
+            "label": "+78"
+          },
+          "n": 3,
+          "total": 27,
+          "share": 0.1111,
+          "side": {
+            "left": 0,
+            "right": 2,
+            "unknown": 1
+          },
+          "sample": {
+            "status": "insufficient",
+            "n": 3,
+            "unit": "scores"
+          }
+        }
+      ],
+      "timing": [
+        {
+          "bin": 0,
+          "label": "0:00–0:30",
+          "n": 2,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 2
+        },
+        {
+          "bin": 1,
+          "label": "0:30–1:00",
+          "n": 3,
+          "ippon": 2,
+          "waza_ari": 1,
+          "yuko": 0
+        },
+        {
+          "bin": 2,
+          "label": "1:00–1:30",
+          "n": 3,
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 2
+        },
+        {
+          "bin": 3,
+          "label": "1:30–2:00",
+          "n": 5,
+          "ippon": 2,
+          "waza_ari": 3,
+          "yuko": 0
+        },
+        {
+          "bin": 4,
+          "label": "2:00–2:30",
+          "n": 4,
+          "ippon": 2,
+          "waza_ari": 0,
+          "yuko": 2
+        },
+        {
+          "bin": 5,
+          "label": "2:30–3:00",
+          "n": 6,
+          "ippon": 4,
+          "waza_ari": 2,
+          "yuko": 0
+        },
+        {
+          "bin": 6,
+          "label": "3:00–3:30",
+          "n": 8,
+          "ippon": 7,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        {
+          "bin": 7,
+          "label": "3:30–4:00",
+          "n": 6,
+          "ippon": 3,
+          "waza_ari": 3,
+          "yuko": 0
+        },
+        {
+          "bin": 8,
+          "label": "Golden score",
+          "n": 6,
+          "ippon": 2,
+          "waza_ari": 0,
+          "yuko": 4
+        }
+      ],
+      "trend": {
+        "points": [
+          {
+            "year": 2025,
+            "n": 2,
+            "total": 42,
+            "share": 0.0476
+          },
+          {
+            "year": 2026,
+            "n": 41,
+            "total": 714,
+            "share": 0.0574
+          }
+        ],
+        "ruleset_changes": [],
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "years"
+        }
+      },
+      "top_athletes": [
+        {
+          "athlete": {
+            "id": 900534,
+            "given_name": "Zoda",
+            "family_name": "LILIVO",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "m-81",
+            "gender": "m",
+            "label": "-81"
+          },
+          "n": 3,
+          "n_ippon": 1,
+          "total_scores": 6,
+          "share_of_total": 0.5,
+          "side": {
+            "left": 0,
+            "right": 3,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900534"
+        },
+        {
+          "athlete": {
+            "id": 900010,
+            "given_name": "Reda",
+            "family_name": "VEGUBE",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "f-57",
+            "gender": "f",
+            "label": "-57"
+          },
+          "n": 2,
+          "n_ippon": 2,
+          "total_scores": 5,
+          "share_of_total": 0.4,
+          "side": {
+            "left": 1,
+            "right": 1,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900010"
+        },
+        {
+          "athlete": {
+            "id": 900283,
+            "given_name": "Kori",
+            "family_name": "VATAKA",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "m-90",
+            "gender": "m",
+            "label": "-90"
+          },
+          "n": 2,
+          "n_ippon": 2,
+          "total_scores": 8,
+          "share_of_total": 0.25,
+          "side": {
+            "left": 0,
+            "right": 1,
+            "unknown": 1
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900283"
+        },
+        {
+          "athlete": {
+            "id": 900403,
+            "given_name": "Mina",
+            "family_name": "MEKOFO",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 2,
+          "n_ippon": 1,
+          "total_scores": 10,
+          "share_of_total": 0.2,
+          "side": {
+            "left": 2,
+            "right": 0,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900403"
+        },
+        {
+          "athlete": {
+            "id": 900048,
+            "given_name": "Vovo",
+            "family_name": "MIZELI",
+            "country_code": "AZE"
+          },
+          "weight": {
+            "code": "m+100",
+            "gender": "m",
+            "label": "+100"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 1,
+          "share_of_total": 1,
+          "side": {
+            "left": 0,
+            "right": 1,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900048"
+        },
+        {
+          "athlete": {
+            "id": 900068,
+            "given_name": "Fugi",
+            "family_name": "TUMOKI",
+            "country_code": "SLO"
+          },
+          "weight": {
+            "code": "m-60",
+            "gender": "m",
+            "label": "-60"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 5,
+          "share_of_total": 0.2,
+          "side": {
+            "left": 0,
+            "right": 1,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900068"
+        },
+        {
+          "athlete": {
+            "id": 900088,
+            "given_name": "Vepi",
+            "family_name": "RUZUVE",
+            "country_code": "HUN"
+          },
+          "weight": {
+            "code": "f-70",
+            "gender": "f",
+            "label": "-70"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 6,
+          "share_of_total": 0.1667,
+          "side": {
+            "left": 1,
+            "right": 0,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900088"
+        },
+        {
+          "athlete": {
+            "id": 900106,
+            "given_name": "Koki",
+            "family_name": "ZELODO",
+            "country_code": "SUI"
+          },
+          "weight": {
+            "code": "f-70",
+            "gender": "f",
+            "label": "-70"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 2,
+          "share_of_total": 0.5,
+          "side": {
+            "left": 0,
+            "right": 1,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900106"
+        },
+        {
+          "athlete": {
+            "id": 900117,
+            "given_name": "Rata",
+            "family_name": "FEKIPU",
+            "country_code": "GER"
+          },
+          "weight": {
+            "code": "f-70",
+            "gender": "f",
+            "label": "-70"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 2,
+          "share_of_total": 0.5,
+          "side": {
+            "left": 1,
+            "right": 0,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900117"
+        },
+        {
+          "athlete": {
+            "id": 900118,
+            "given_name": "Nove",
+            "family_name": "SUGODE",
+            "country_code": "FIN"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 3,
+          "share_of_total": 0.3333,
+          "side": {
+            "left": 0,
+            "right": 1,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900118"
+        }
+      ],
+      "countries": {
+        "rows": [
+          {
+            "country_code": "ITA",
+            "total": 35,
+            "n": 3,
+            "share": 0.0857,
+            "lift": 2.1188,
+            "sample": {
+              "status": "insufficient",
+              "n": 3,
+              "unit": "scores"
+            }
+          },
+          {
+            "country_code": "JPN",
+            "total": 103,
+            "n": 12,
+            "share": 0.1165,
+            "lift": 1.813,
+            "sample": {
+              "status": "small",
+              "n": 12,
+              "unit": "scores"
+            }
+          },
+          {
+            "country_code": "KOR",
+            "total": 36,
+            "n": 3,
+            "share": 0.0833,
+            "lift": 1.2453,
+            "sample": {
+              "status": "insufficient",
+              "n": 3,
+              "unit": "scores"
+            }
+          },
+          {
+            "country_code": "ESP",
+            "total": 31,
+            "n": 2,
+            "share": 0.0645,
+            "lift": 1.1482,
+            "sample": {
+              "status": "insufficient",
+              "n": 2,
+              "unit": "scores"
+            }
+          },
+          {
+            "country_code": "FRA",
+            "total": 86,
+            "n": 3,
+            "share": 0.0349,
+            "lift": 0.5841,
+            "sample": {
+              "status": "insufficient",
+              "n": 3,
+              "unit": "scores"
+            }
+          }
+        ],
+        "min_scores_country": 30
+      }
+    }
+  }
+}

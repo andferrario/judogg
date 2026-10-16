@@ -1,0 +1,120 @@
+[project]
+name = "judogg"
+version = "0.1.0"
+description = "Which judo techniques score among the pros"
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi>=0.143.0",
+    "httpx2>=2.13.1",
+    "psycopg[binary]>=3.3.6",
+    "pydantic-settings>=2.15.0",
+    "pyyaml>=6.0.3",
+    "sqlalchemy>=2.1.4",
+    "typer>=0.27.3",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+judogg-ingest = "judogg.ingestion.interfaces.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/judogg"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+# ruleset labels such as "2018–2024" use an en dash on purpose
+allowed-confusables = ["–"]
+
+[tool.ruff.lint.per-file-ignores]
+# folding maps look-alike letters and apostrophes on purpose
+"src/judogg/text.py" = ["RUF001"]
+"tests/test_text.py" = ["RUF001"]
+
+[tool.ruff.lint.isort]
+# the local alembic/ folder holds migrations, not the alembic package
+known-third-party = ["alembic"]
+
+[tool.mypy]
+strict = true
+python_version = "3.14"
+files = ["src", "tests"]  # migrations are plain SQL: ruff only
+mypy_path = "tests"
+# pydantic-settings reads fields from the environment: the plugin makes them optional in __init__
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
+addopts = "--import-mode=importlib -q"
+
+[tool.coverage.run]
+branch = true
+
+[tool.importlinter]
+root_package = "judogg"
+include_external_packages = true
+
+[[tool.importlinter.contracts]]
+name = "app and ingestion never import each other"
+type = "independence"
+modules = ["judogg.app", "judogg.ingestion"]
+
+[[tool.importlinter.contracts]]
+name = "db imports neither app nor ingestion"
+type = "forbidden"
+source_modules = ["judogg.db"]
+forbidden_modules = ["judogg.app", "judogg.ingestion"]
+
+[dependency-groups]
+dev = [
+    "import-linter>=2.15",
+    "mypy>=2.4.0",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.17.0",
+    "types-pyyaml>=6.0.12.20260906",
+]
+[[tool.importlinter.contracts]]
+name = "ingestion layers"
+type = "layers"
+layers = [
+  "judogg.ingestion.interfaces",
+  "judogg.ingestion.infrastructure",
+  "judogg.ingestion.application",
+  "judogg.ingestion.domain",
+]
+
+[[tool.importlinter.contracts]]
+name = "ingestion domain uses no framework"
+type = "forbidden"
+source_modules = ["judogg.ingestion.domain"]
+forbidden_modules = ["sqlalchemy", "psycopg", "typer", "pydantic", "pydantic_settings", "yaml", "fastapi"]
+[[tool.importlinter.contracts]]
+name = "app layers"
+type = "layers"
+layers = [
+  "judogg.app.interfaces",
+  "judogg.app.infrastructure",
+  "judogg.app.application",
+  "judogg.app.domain",
+]
+
+[[tool.importlinter.contracts]]
+name = "app domain uses no framework"
+type = "forbidden"
+source_modules = ["judogg.app.domain"]
+forbidden_modules = ["sqlalchemy", "psycopg", "typer", "pydantic", "pydantic_settings", "yaml", "fastapi"]
+
+[[tool.importlinter.contracts]]
+name = "text imports neither app nor ingestion"
+type = "forbidden"
+source_modules = ["judogg.text"]
+forbidden_modules = ["judogg.app", "judogg.ingestion", "judogg.db"]

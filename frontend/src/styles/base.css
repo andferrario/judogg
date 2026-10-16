@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--f-body);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--f-display);
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 0.95;
+  font-weight: 800;
+  font-stretch: 66%;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: 0;
+  font-family: var(--f-display);
+  font-size: 22px;
+  font-weight: 800;
+  font-stretch: 75%;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend,
+.field-label {
+  display: block;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg-2);
+}
+
+/* The shared vocabulary of the pages: global because many components use it. */
+
+.num {
+  font-family: var(--f-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.btn {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--fg);
+  border-radius: 4px;
+  background: var(--surface);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--surface-2);
+}
+
+.btn[disabled] {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.dim {
+  color: var(--fg-3);
+}
+
+.cc {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--fg-3);
+}
+
+.fam {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--fg-3);
+}
+
+.tlink {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tlink:hover {
+  text-decoration: underline;
+}
+
+/* A technique name above its group label: a link of its own, not a coloured word inside a text block. */
+.tlink:has(+ .fam) {
+  display: block;
+  width: fit-content;
+}
+
+tr[data-selected] .fam {
+  color: var(--fg-2);
+}
+
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.more {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.trend-select {
+  height: 40px;
+  min-width: 200px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  padding: 0 10px;
+}
+
+.change-technique {
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+}
+
+.chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.video-links {
+  display: flex;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+tr[data-selected] {
+  background: color-mix(in oklab, var(--waza) 14%, var(--surface));
+}
+
+.page-note,
+.card-note {
+  margin: 0;
+  max-width: 80ch;
+  color: var(--fg-2);
+}
+
+.card-note {
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.link-button {
+  border: 0;
+  background: none;
+  padding: 4px 0;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.chip-static {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: var(--f-mono);
+  font-size: 12px;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg-2);
+}
+
+.shido-numbers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.shido-numbers ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shido-numbers li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 3px 0;
+  border-top: 1px solid var(--line-soft);
+  font-size: 13px;
+}
+
+.shido-numbers [data-sample="small"] {
+  opacity: 0.72;
+}
+
+.shido-numbers [data-sample="insufficient"] {
+  opacity: 0.4;
+}
+
+.video-group {
+  border-top: 1px solid var(--line-soft);
+  padding: 10px 0;
+}
+
+.video-group summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.video-group .tw {
+  margin-top: 8px;
+}
+
+/* A name, not a number: body font in a KPI value. */
+.kpi-text {
+  font-family: var(--f-body);
+  font-weight: 700;
+}
+
+/* Short values stay on one line; the table scrolls inside its card instead. */
+.nowrap td {
+  white-space: nowrap;
+}
+
+.nowrap td.wrap {
+  white-space: normal;
+}
+
+/* Tables scroll inside their card: the page itself never scrolls sideways. Positioned, so that the
+   visually hidden texts (absolutely positioned) of a wide table stay inside it instead of widening the page. */
+.tw {
+  position: relative;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg-2);
+  font-weight: 700;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+tbody th,
+tbody td {
+  padding: 9px 8px;
+  border-top: 1px solid var(--line-soft);
+  vertical-align: middle;
+}
+
+tbody th {
+  text-align: left;
+  font-weight: 600;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+th.r,
+td.r {
+  text-align: right;
+}
+
+tbody tr:hover {
+  background: var(--surface-2);
+}
+
+/* Rows below the sample threshold are greyed out, never hidden. */
+tr[data-sample="small"] > * {
+  opacity: 0.72;
+}
+
+tr[data-sample="insufficient"] > * {
+  opacity: 0.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

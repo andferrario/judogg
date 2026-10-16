@@ -1,0 +1,1650 @@
+{
+  "filters": {
+    "gender": "all",
+    "weight": [],
+    "year_from": 2025,
+    "year_to": 2027,
+    "ruleset": [
+      2025
+    ],
+    "country": [],
+    "side": [
+      "left",
+      "right",
+      "unknown"
+    ],
+    "domain": [
+      "standing",
+      "ground",
+      "unknown"
+    ],
+    "count_by": "event",
+    "min_scores_athlete": 5,
+    "min_scores_technique": 2
+  },
+  "totals": {
+    "competitions": 2,
+    "contests": 556,
+    "athletes": 506,
+    "scores": 756,
+    "penalties": 967
+  },
+  "warnings": [
+    {
+      "code": "quality_issues",
+      "message": "3 contests in the filter have inconsistent IJF data."
+    }
+  ],
+  "data": {
+    "rows": [
+      {
+        "technique": {
+          "code": "seoi_nage",
+          "name": "Seoi-nage",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_scores": 75,
+        "n_athletes": 61,
+        "share": 0.0992,
+        "counts": {
+          "ippon": 14,
+          "waza_ari": 27,
+          "yuko": 34
+        },
+        "pct": {
+          "ippon": 0.1867,
+          "waza_ari": 0.36,
+          "yuko": 0.4533
+        },
+        "n_awasete": 2,
+        "side": {
+          "left": 44,
+          "right": 28,
+          "unknown": 3
+        },
+        "sample": {
+          "status": "ok",
+          "n": 75,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "o_uchi_gari",
+          "name": "O-uchi-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 61,
+        "n_athletes": 48,
+        "share": 0.0807,
+        "counts": {
+          "ippon": 18,
+          "waza_ari": 10,
+          "yuko": 33
+        },
+        "pct": {
+          "ippon": 0.2951,
+          "waza_ari": 0.1639,
+          "yuko": 0.541
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 21,
+          "right": 40,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "ok",
+          "n": 61,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "uchi_mata",
+          "name": "Uchi-mata",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 52,
+        "n_athletes": 42,
+        "share": 0.0688,
+        "counts": {
+          "ippon": 11,
+          "waza_ari": 18,
+          "yuko": 23
+        },
+        "pct": {
+          "ippon": 0.2115,
+          "waza_ari": 0.3462,
+          "yuko": 0.4423
+        },
+        "n_awasete": 1,
+        "side": {
+          "left": 20,
+          "right": 30,
+          "unknown": 2
+        },
+        "sample": {
+          "status": "ok",
+          "n": 52,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "yoko_shiho_gatame",
+          "name": "Yoko-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_scores": 43,
+        "n_athletes": 38,
+        "share": 0.0569,
+        "counts": {
+          "ippon": 23,
+          "waza_ari": 9,
+          "yuko": 11
+        },
+        "pct": {
+          "ippon": 0.5349,
+          "waza_ari": 0.2093,
+          "yuko": 0.2558
+        },
+        "n_awasete": 8,
+        "side": {
+          "left": 20,
+          "right": 19,
+          "unknown": 4
+        },
+        "sample": {
+          "status": "ok",
+          "n": 43,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "sumi_gaeshi",
+          "name": "Sumi-gaeshi",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 38,
+        "n_athletes": 32,
+        "share": 0.0503,
+        "counts": {
+          "ippon": 7,
+          "waza_ari": 11,
+          "yuko": 20
+        },
+        "pct": {
+          "ippon": 0.1842,
+          "waza_ari": 0.2895,
+          "yuko": 0.5263
+        },
+        "n_awasete": 1,
+        "side": {
+          "left": 17,
+          "right": 20,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "ok",
+          "n": 38,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_uchi_gari",
+          "name": "Ko-uchi-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 34,
+        "n_athletes": 31,
+        "share": 0.045,
+        "counts": {
+          "ippon": 6,
+          "waza_ari": 8,
+          "yuko": 20
+        },
+        "pct": {
+          "ippon": 0.1765,
+          "waza_ari": 0.2353,
+          "yuko": 0.5882
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 15,
+          "right": 18,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "ok",
+          "n": 34,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_soto_gari",
+          "name": "Ko-soto-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 33,
+        "n_athletes": 24,
+        "share": 0.0437,
+        "counts": {
+          "ippon": 7,
+          "waza_ari": 8,
+          "yuko": 18
+        },
+        "pct": {
+          "ippon": 0.2121,
+          "waza_ari": 0.2424,
+          "yuko": 0.5455
+        },
+        "n_awasete": 1,
+        "side": {
+          "left": 14,
+          "right": 15,
+          "unknown": 4
+        },
+        "sample": {
+          "status": "ok",
+          "n": 33,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "o_soto_gari",
+          "name": "O-soto-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 28,
+        "n_athletes": 24,
+        "share": 0.037,
+        "counts": {
+          "ippon": 8,
+          "waza_ari": 7,
+          "yuko": 13
+        },
+        "pct": {
+          "ippon": 0.2857,
+          "waza_ari": 0.25,
+          "yuko": 0.4643
+        },
+        "n_awasete": 1,
+        "side": {
+          "left": 9,
+          "right": 19,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "ok",
+          "n": 28,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "kata_guruma",
+          "name": "Kata-guruma",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_scores": 26,
+        "n_athletes": 22,
+        "share": 0.0344,
+        "counts": {
+          "ippon": 8,
+          "waza_ari": 10,
+          "yuko": 8
+        },
+        "pct": {
+          "ippon": 0.3077,
+          "waza_ari": 0.3846,
+          "yuko": 0.3077
+        },
+        "n_awasete": 1,
+        "side": {
+          "left": 15,
+          "right": 11,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "ok",
+          "n": 26,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ura_nage",
+          "name": "Ura-nage",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 19,
+        "n_athletes": 15,
+        "share": 0.0251,
+        "counts": {
+          "ippon": 6,
+          "waza_ari": 5,
+          "yuko": 8
+        },
+        "pct": {
+          "ippon": 0.3158,
+          "waza_ari": 0.2632,
+          "yuko": 0.4211
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 5,
+          "right": 11,
+          "unknown": 3
+        },
+        "sample": {
+          "status": "small",
+          "n": 19,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_uchi_makikomi",
+          "name": "Ko-uchi-makikomi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 18,
+        "n_athletes": 14,
+        "share": 0.0238,
+        "counts": {
+          "ippon": 3,
+          "waza_ari": 1,
+          "yuko": 14
+        },
+        "pct": {
+          "ippon": 0.1667,
+          "waza_ari": 0.0556,
+          "yuko": 0.7778
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 9,
+          "right": 9,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 18,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_soto_gake",
+          "name": "Ko-soto-gake",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 17,
+        "n_athletes": 16,
+        "share": 0.0225,
+        "counts": {
+          "ippon": 5,
+          "waza_ari": 2,
+          "yuko": 10
+        },
+        "pct": {
+          "ippon": 0.2941,
+          "waza_ari": 0.1176,
+          "yuko": 0.5882
+        },
+        "n_awasete": 1,
+        "side": {
+          "left": 6,
+          "right": 5,
+          "unknown": 6
+        },
+        "sample": {
+          "status": "small",
+          "n": 17,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "seoi_otoshi",
+          "name": "Seoi-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_scores": 17,
+        "n_athletes": 16,
+        "share": 0.0225,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 4,
+          "yuko": 12
+        },
+        "pct": {
+          "ippon": 0.0588,
+          "waza_ari": 0.2353,
+          "yuko": 0.7059
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 6,
+          "right": 11,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 17,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "kuzure_kami_shiho_gatame",
+          "name": "Kuzure-kami-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_scores": 16,
+        "n_athletes": 15,
+        "share": 0.0212,
+        "counts": {
+          "ippon": 8,
+          "waza_ari": 4,
+          "yuko": 4
+        },
+        "pct": {
+          "ippon": 0.5,
+          "waza_ari": 0.25,
+          "yuko": 0.25
+        },
+        "n_awasete": 4,
+        "side": {
+          "left": 2,
+          "right": 1,
+          "unknown": 13
+        },
+        "sample": {
+          "status": "small",
+          "n": 16,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "tani_otoshi",
+          "name": "Tani-otoshi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 15,
+        "n_athletes": 15,
+        "share": 0.0198,
+        "counts": {
+          "ippon": 3,
+          "waza_ari": 5,
+          "yuko": 7
+        },
+        "pct": {
+          "ippon": 0.2,
+          "waza_ari": 0.3333,
+          "yuko": 0.4667
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 6,
+          "right": 6,
+          "unknown": 3
+        },
+        "sample": {
+          "status": "small",
+          "n": 15,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "tate_shiho_gatame",
+          "name": "Tate-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_scores": 15,
+        "n_athletes": 15,
+        "share": 0.0198,
+        "counts": {
+          "ippon": 8,
+          "waza_ari": 5,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0.5333,
+          "waza_ari": 0.3333,
+          "yuko": 0.1333
+        },
+        "n_awasete": 5,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 15
+        },
+        "sample": {
+          "status": "small",
+          "n": 15,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "tomoe_nage",
+          "name": "Tomoe-nage",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 15,
+        "n_athletes": 11,
+        "share": 0.0198,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 8,
+          "yuko": 6
+        },
+        "pct": {
+          "ippon": 0.0667,
+          "waza_ari": 0.5333,
+          "yuko": 0.4
+        },
+        "n_awasete": 1,
+        "side": {
+          "left": 3,
+          "right": 12,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 15,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "uki_otoshi",
+          "name": "Uki-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_scores": 13,
+        "n_athletes": 10,
+        "share": 0.0172,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 7,
+          "yuko": 5
+        },
+        "pct": {
+          "ippon": 0.0769,
+          "waza_ari": 0.5385,
+          "yuko": 0.3846
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 7,
+          "right": 5,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "small",
+          "n": 13,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "soto_makikomi",
+          "name": "Soto-makikomi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 12,
+        "n_athletes": 11,
+        "share": 0.0159,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 6,
+          "yuko": 5
+        },
+        "pct": {
+          "ippon": 0.0833,
+          "waza_ari": 0.5,
+          "yuko": 0.4167
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 4,
+          "right": 8,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 12,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "tai_otoshi",
+          "name": "Tai-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_scores": 11,
+        "n_athletes": 10,
+        "share": 0.0146,
+        "counts": {
+          "ippon": 3,
+          "waza_ari": 4,
+          "yuko": 4
+        },
+        "pct": {
+          "ippon": 0.2727,
+          "waza_ari": 0.3636,
+          "yuko": 0.3636
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 3,
+          "right": 8,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 11,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "hikikomi_gaeshi",
+          "name": "Hikikomi-gaeshi",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 10,
+        "n_athletes": 9,
+        "share": 0.0132,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 5,
+          "yuko": 3
+        },
+        "pct": {
+          "ippon": 0.2,
+          "waza_ari": 0.5,
+          "yuko": 0.3
+        },
+        "n_awasete": 2,
+        "side": {
+          "left": 2,
+          "right": 8,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 10,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "sumi_otoshi",
+          "name": "Sumi-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_scores": 10,
+        "n_athletes": 10,
+        "share": 0.0132,
+        "counts": {
+          "ippon": 3,
+          "waza_ari": 4,
+          "yuko": 3
+        },
+        "pct": {
+          "ippon": 0.3,
+          "waza_ari": 0.4,
+          "yuko": 0.3
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 3,
+          "right": 3,
+          "unknown": 4
+        },
+        "sample": {
+          "status": "small",
+          "n": 10,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "juji_gatame",
+          "name": "Juji-gatame",
+          "group_label": "Kansetsu-waza",
+          "domain": "ground"
+        },
+        "n_scores": 9,
+        "n_athletes": 9,
+        "share": 0.0119,
+        "counts": {
+          "ippon": 9,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 5,
+          "right": 4,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 9,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "sode_tsurikomi_goshi",
+          "name": "Sode-tsurikomi-goshi",
+          "group_label": "Koshi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 9,
+        "n_athletes": 8,
+        "share": 0.0119,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 3,
+          "yuko": 5
+        },
+        "pct": {
+          "ippon": 0.1111,
+          "waza_ari": 0.3333,
+          "yuko": 0.5556
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 4,
+          "right": 5,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 9,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "kesa_gatame",
+          "name": "Kesa-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_scores": 8,
+        "n_athletes": 8,
+        "share": 0.0106,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 4,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0.25,
+          "waza_ari": 0.5,
+          "yuko": 0.25
+        },
+        "n_awasete": 4,
+        "side": {
+          "left": 4,
+          "right": 3,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "small",
+          "n": 8,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "harai_goshi",
+          "name": "Harai-goshi",
+          "group_label": "Koshi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 7,
+        "n_athletes": 7,
+        "share": 0.0093,
+        "counts": {
+          "ippon": 3,
+          "waza_ari": 3,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0.4286,
+          "waza_ari": 0.4286,
+          "yuko": 0.1429
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 2,
+          "right": 4,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "small",
+          "n": 7,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "hiza_guruma",
+          "name": "Hiza-guruma",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 6,
+        "n_athletes": 6,
+        "share": 0.0079,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 3,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0.1667,
+          "waza_ari": 0.5,
+          "yuko": 0.3333
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 5,
+          "right": 1,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 6,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "sasae_tsurikomi_ashi",
+          "name": "Sasae-tsurikomi-ashi",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 6,
+        "n_athletes": 4,
+        "share": 0.0079,
+        "counts": {
+          "ippon": 3,
+          "waza_ari": 1,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0.5,
+          "waza_ari": 0.1667,
+          "yuko": 0.3333
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 3,
+          "right": 2,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "small",
+          "n": 6,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ashi_guruma",
+          "name": "Ashi-guruma",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 5,
+        "n_athletes": 5,
+        "share": 0.0066,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 2,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0.4,
+          "waza_ari": 0.4,
+          "yuko": 0.2
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 5,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 5,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "harai_makikomi",
+          "name": "Harai-makikomi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 5,
+        "n_athletes": 5,
+        "share": 0.0066,
+        "counts": {
+          "ippon": 4,
+          "waza_ari": 1,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 0.8,
+          "waza_ari": 0.2,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 3,
+          "right": 2,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "small",
+          "n": 5,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "de_ashi_harai",
+          "name": "De-ashi-harai",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 4,
+        "n_athletes": 3,
+        "share": 0.0053,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 2,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0.5,
+          "yuko": 0.5
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 2,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 4,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "kuzure_kesa_gatame",
+          "name": "Kuzure-kesa-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_scores": 4,
+        "n_athletes": 4,
+        "share": 0.0053,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 1,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0.25,
+          "waza_ari": 0.25,
+          "yuko": 0.5
+        },
+        "n_awasete": 1,
+        "side": {
+          "left": 3,
+          "right": 1,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 4,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "okuri_ashi_harai",
+          "name": "Okuri-ashi-harai",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 4,
+        "n_athletes": 4,
+        "share": 0.0053,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 3
+        },
+        "pct": {
+          "ippon": 0.25,
+          "waza_ari": 0,
+          "yuko": 0.75
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 2,
+          "right": 2,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 4,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "uchi_mata_gaeshi",
+          "name": "Uchi-mata-gaeshi",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 4,
+        "n_athletes": 3,
+        "share": 0.0053,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 2,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0.5,
+          "yuko": 0.5
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 1,
+          "unknown": 2
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 4,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "o_soto_gaeshi",
+          "name": "O-soto-gaeshi",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 3,
+        "n_athletes": 3,
+        "share": 0.004,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0.6667,
+          "waza_ari": 0,
+          "yuko": 0.3333
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 2,
+          "right": 1,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "o_soto_otoshi",
+          "name": "O-soto-otoshi",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 3,
+        "n_athletes": 3,
+        "share": 0.004,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0.3333,
+          "waza_ari": 0,
+          "yuko": 0.6667
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 1,
+          "unknown": 2
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "okuri_eri_jime",
+          "name": "Okuri-eri-jime",
+          "group_label": "Shime-waza",
+          "domain": "ground"
+        },
+        "n_scores": 3,
+        "n_athletes": 3,
+        "share": 0.004,
+        "counts": {
+          "ippon": 3,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 1,
+          "unknown": 2
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "uchi_mata_sukashi",
+          "name": "Uchi-mata-sukashi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_scores": 3,
+        "n_athletes": 3,
+        "share": 0.004,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0.6667,
+          "waza_ari": 0,
+          "yuko": 0.3333
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 3,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "yoko_gake",
+          "name": "Yoko-gake",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 3,
+        "n_athletes": 3,
+        "share": 0.004,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 1,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0.3333,
+          "waza_ari": 0.3333,
+          "yuko": 0.3333
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 2,
+          "right": 1,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "yoko_otoshi",
+          "name": "Yoko-otoshi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 3,
+        "n_athletes": 3,
+        "share": 0.004,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 1,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0.3333,
+          "yuko": 0.6667
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 2,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "kami_shiho_gatame",
+          "name": "Kami-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0.5,
+          "waza_ari": 0,
+          "yuko": 0.5
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 2
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_uchi_gaeshi",
+          "name": "Ko-uchi-gaeshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0.5,
+          "waza_ari": 0,
+          "yuko": 0.5
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 1,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "o_goshi",
+          "name": "O-goshi",
+          "group_label": "Koshi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 1,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "sankaku_jime",
+          "name": "Sankaku-jime",
+          "group_label": "Shime-waza",
+          "domain": "ground"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 1,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "tsuri_goshi",
+          "name": "Tsuri-goshi",
+          "group_label": "Koshi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 1,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0.5,
+          "yuko": 0.5
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 2,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "uchi_mata_makikomi",
+          "name": "Uchi-mata-makikomi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 1,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0.5,
+          "yuko": 0.5
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 2,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ude_garami",
+          "name": "Ude-garami",
+          "group_label": "Kansetsu-waza",
+          "domain": "ground"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 1,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "ushiro_kesa_gatame",
+          "name": "Ushiro-kesa-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0.5,
+          "waza_ari": 0,
+          "yuko": 0.5
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 1,
+          "unknown": 1
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "yoko_guruma",
+          "name": "Yoko-guruma",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 2,
+        "n_athletes": 2,
+        "share": 0.0026,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 2
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 2,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "scores"
+        }
+      },
+      {
+        "technique": {
+          "code": "koshi_guruma",
+          "name": "Koshi-guruma",
+          "group_label": "Koshi-waza",
+          "domain": "standing"
+        },
+        "n_scores": 1,
+        "n_athletes": 1,
+        "share": 0.0013,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 1,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 1,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 0,
+          "unknown": 0
+        },
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "scores"
+        }
+      }
+    ],
+    "total_rows": 59,
+    "sort": "share",
+    "order": "desc",
+    "sample": {
+      "status": "ok",
+      "n": 756,
+      "unit": "scores"
+    }
+  }
+}

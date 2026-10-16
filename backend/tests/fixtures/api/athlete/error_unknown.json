@@ -1,0 +1,12 @@
+{
+  "path": "/api/athletes/1",
+  "query": {},
+  "status": 404,
+  "body": {
+    "error": {
+      "code": "not_found",
+      "message": "unknown athlete 1",
+      "field": "athlete"
+    }
+  }
+}

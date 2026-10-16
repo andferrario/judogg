@@ -1,0 +1,14 @@
+{
+  "path": "/api/overview",
+  "query": {
+    "gender": "x"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "gender must be m, f or all",
+      "field": "gender"
+    }
+  }
+}

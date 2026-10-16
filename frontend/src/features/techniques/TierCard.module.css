@@ -1,0 +1,18 @@
+.table {
+  min-width: 920px;
+}
+
+.shareCell {
+  width: 28%;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+th.center {
+  text-align: center;
+}

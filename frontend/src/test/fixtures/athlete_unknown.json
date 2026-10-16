@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "not_found",
+    "message": "unknown athlete 1",
+    "field": "athlete"
+  }
+}

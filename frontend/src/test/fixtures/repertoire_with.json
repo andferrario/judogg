@@ -1,0 +1,772 @@
+{
+  "filters": {
+    "gender": "all",
+    "weight": [],
+    "year_from": 2025,
+    "year_to": 2027,
+    "ruleset": [
+      2025
+    ],
+    "country": [],
+    "side": [
+      "left",
+      "right",
+      "unknown"
+    ],
+    "domain": [
+      "standing",
+      "ground",
+      "unknown"
+    ],
+    "count_by": "event",
+    "min_scores_athlete": 3,
+    "min_scores_technique": 1
+  },
+  "totals": {
+    "competitions": 2,
+    "contests": 556,
+    "athletes": 506,
+    "scores": 756,
+    "penalties": 967
+  },
+  "warnings": [
+    {
+      "code": "quality_issues",
+      "message": "3 contests in the filter have inconsistent IJF data."
+    }
+  ],
+  "data": {
+    "technique": {
+      "code": "seoi_nage",
+      "name": "Seoi-nage",
+      "group_label": "Te-waza",
+      "domain": "standing"
+    },
+    "cohort": {
+      "eligible": 111,
+      "with_technique": 36,
+      "sample": {
+        "status": "ok",
+        "n": 36,
+        "unit": "athletes"
+      }
+    },
+    "companions": [
+      {
+        "technique": {
+          "code": "yoko_shiho_gatame",
+          "name": "Yoko-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_both": 9,
+        "p_given": 0.25,
+        "p_base": 0.2339,
+        "lift": 1.0688,
+        "sample": {
+          "status": "small",
+          "n": 9,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "o_uchi_gari",
+          "name": "O-uchi-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 9,
+        "p_given": 0.25,
+        "p_base": 0.2796,
+        "lift": 0.8943,
+        "sample": {
+          "status": "small",
+          "n": 9,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_soto_gari",
+          "name": "Ko-soto-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 8,
+        "p_given": 0.2222,
+        "p_base": 0.1653,
+        "lift": 1.3446,
+        "sample": {
+          "status": "small",
+          "n": 8,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "sumi_gaeshi",
+          "name": "Sumi-gaeshi",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_both": 8,
+        "p_given": 0.2222,
+        "p_base": 0.188,
+        "lift": 1.1822,
+        "sample": {
+          "status": "small",
+          "n": 8,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "uchi_mata",
+          "name": "Uchi-mata",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 7,
+        "p_given": 0.1944,
+        "p_base": 0.2859,
+        "lift": 0.68,
+        "sample": {
+          "status": "small",
+          "n": 7,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_uchi_gari",
+          "name": "Ko-uchi-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 6,
+        "p_given": 0.1667,
+        "p_base": 0.193,
+        "lift": 0.8634,
+        "sample": {
+          "status": "small",
+          "n": 6,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "o_soto_gari",
+          "name": "O-soto-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 5,
+        "p_given": 0.1389,
+        "p_base": 0.1393,
+        "lift": 0.9974,
+        "sample": {
+          "status": "small",
+          "n": 5,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "kata_guruma",
+          "name": "Kata-guruma",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_both": 5,
+        "p_given": 0.1389,
+        "p_base": 0.1501,
+        "lift": 0.9252,
+        "sample": {
+          "status": "small",
+          "n": 5,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "tai_otoshi",
+          "name": "Tai-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_both": 4,
+        "p_given": 0.1111,
+        "p_base": 0.0683,
+        "lift": 1.6265,
+        "sample": {
+          "status": "insufficient",
+          "n": 4,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "tomoe_nage",
+          "name": "Tomoe-nage",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_both": 4,
+        "p_given": 0.1111,
+        "p_base": 0.0908,
+        "lift": 1.2233,
+        "sample": {
+          "status": "insufficient",
+          "n": 4,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "juji_gatame",
+          "name": "Juji-gatame",
+          "group_label": "Kansetsu-waza",
+          "domain": "ground"
+        },
+        "n_both": 3,
+        "p_given": 0.0833,
+        "p_base": 0.0434,
+        "lift": 1.9183,
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "seoi_otoshi",
+          "name": "Seoi-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_both": 3,
+        "p_given": 0.0833,
+        "p_base": 0.047,
+        "lift": 1.7712,
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "sode_tsurikomi_goshi",
+          "name": "Sode-tsurikomi-goshi",
+          "group_label": "Koshi-waza",
+          "domain": "standing"
+        },
+        "n_both": 3,
+        "p_given": 0.0833,
+        "p_base": 0.057,
+        "lift": 1.4609,
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_uchi_makikomi",
+          "name": "Ko-uchi-makikomi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_both": 3,
+        "p_given": 0.0833,
+        "p_base": 0.0669,
+        "lift": 1.2453,
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "kuzure_kami_shiho_gatame",
+          "name": "Kuzure-kami-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_both": 3,
+        "p_given": 0.0833,
+        "p_base": 0.0744,
+        "lift": 1.12,
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "tate_shiho_gatame",
+          "name": "Tate-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_both": 3,
+        "p_given": 0.0833,
+        "p_base": 0.0859,
+        "lift": 0.9704,
+        "sample": {
+          "status": "insufficient",
+          "n": 3,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "de_ashi_harai",
+          "name": "De-ashi-harai",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 2,
+        "p_given": 0.0556,
+        "p_base": 0.0303,
+        "lift": 1.8313,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "ashi_guruma",
+          "name": "Ashi-guruma",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 2,
+        "p_given": 0.0556,
+        "p_base": 0.0483,
+        "lift": 1.1496,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "kesa_gatame",
+          "name": "Kesa-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_both": 2,
+        "p_given": 0.0556,
+        "p_base": 0.0525,
+        "lift": 1.0586,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "sumi_otoshi",
+          "name": "Sumi-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_both": 2,
+        "p_given": 0.0556,
+        "p_base": 0.0572,
+        "lift": 0.9712,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "hikikomi_gaeshi",
+          "name": "Hikikomi-gaeshi",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_both": 2,
+        "p_given": 0.0556,
+        "p_base": 0.0806,
+        "lift": 0.6893,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "ura_nage",
+          "name": "Ura-nage",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_both": 2,
+        "p_given": 0.0556,
+        "p_base": 0.1107,
+        "lift": 0.5018,
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "tsubame_gaeshi",
+          "name": "Tsubame-gaeshi",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0104,
+        "lift": 2.6667,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "ushiro_kesa_gatame",
+          "name": "Ushiro-kesa-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0111,
+        "lift": 2.5,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "sode_guruma_jime",
+          "name": "Sode-guruma-jime",
+          "group_label": "Shime-waza",
+          "domain": "ground"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0117,
+        "lift": 2.375,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "uchi_mata_sukashi",
+          "name": "Uchi-mata-sukashi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0196,
+        "lift": 1.4149,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "sankaku_jime",
+          "name": "Sankaku-jime",
+          "group_label": "Shime-waza",
+          "domain": "ground"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0221,
+        "lift": 1.2581,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "okuri_ashi_harai",
+          "name": "Okuri-ashi-harai",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0303,
+        "lift": 0.9157,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "yoko_gake",
+          "name": "Yoko-gake",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0321,
+        "lift": 0.8663,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "hiza_guruma",
+          "name": "Hiza-guruma",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0351,
+        "lift": 0.7904,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "kuzure_kesa_gatame",
+          "name": "Kuzure-kesa-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0419,
+        "lift": 0.6626,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_soto_gake",
+          "name": "Ko-soto-gake",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0672,
+        "lift": 0.4136,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      },
+      {
+        "technique": {
+          "code": "tani_otoshi",
+          "name": "Tani-otoshi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n_both": 1,
+        "p_given": 0.0278,
+        "p_base": 0.0778,
+        "lift": 0.3568,
+        "sample": {
+          "status": "insufficient",
+          "n": 1,
+          "unit": "athletes"
+        }
+      }
+    ],
+    "pair_athletes": {
+      "technique": {
+        "code": "o_uchi_gari",
+        "name": "O-uchi-gari",
+        "group_label": "Ashi-waza",
+        "domain": "standing"
+      },
+      "rows": [
+        {
+          "athlete": {
+            "id": 900413,
+            "given_name": "Vezo",
+            "family_name": "VAVOKU",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n_technique": 2,
+          "n_with": 3,
+          "n_total": 11
+        },
+        {
+          "athlete": {
+            "id": 900029,
+            "given_name": "Dipu",
+            "family_name": "TAMAGO",
+            "country_code": "UKR"
+          },
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "n_technique": 1,
+          "n_with": 2,
+          "n_total": 5
+        },
+        {
+          "athlete": {
+            "id": 900470,
+            "given_name": "Zopa",
+            "family_name": "RILOBI",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "m-81",
+            "gender": "m",
+            "label": "-81"
+          },
+          "n_technique": 1,
+          "n_with": 2,
+          "n_total": 7
+        },
+        {
+          "athlete": {
+            "id": 900173,
+            "given_name": "Kuru",
+            "family_name": "NESEVE",
+            "country_code": "KOR"
+          },
+          "weight": {
+            "code": "m-60",
+            "gender": "m",
+            "label": "-60"
+          },
+          "n_technique": 1,
+          "n_with": 1,
+          "n_total": 3
+        },
+        {
+          "athlete": {
+            "id": 900257,
+            "given_name": "Fini",
+            "family_name": "ZOLEME",
+            "country_code": "GBR"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n_technique": 1,
+          "n_with": 1,
+          "n_total": 5
+        },
+        {
+          "athlete": {
+            "id": 900403,
+            "given_name": "Mina",
+            "family_name": "MEKOFO",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n_technique": 1,
+          "n_with": 1,
+          "n_total": 10
+        },
+        {
+          "athlete": {
+            "id": 900510,
+            "given_name": "Susa",
+            "family_name": "NIPILI",
+            "country_code": "BRA"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n_technique": 1,
+          "n_with": 1,
+          "n_total": 9
+        },
+        {
+          "athlete": {
+            "id": 900530,
+            "given_name": "Male",
+            "family_name": "FUTULO",
+            "country_code": "CUB"
+          },
+          "weight": {
+            "code": "m-60",
+            "gender": "m",
+            "label": "-60"
+          },
+          "n_technique": 1,
+          "n_with": 1,
+          "n_total": 3
+        },
+        {
+          "athlete": {
+            "id": 900549,
+            "given_name": "Laso",
+            "family_name": "DISOVI",
+            "country_code": "RUS"
+          },
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "n_technique": 1,
+          "n_with": 1,
+          "n_total": 4
+        }
+      ]
+    }
+  }
+}

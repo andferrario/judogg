@@ -1,0 +1,5 @@
+.alone {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 24px max(16px, 2vw);
+}

@@ -1,0 +1,45 @@
+.weights,
+.countries {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.weights li,
+.countries li {
+  display: grid;
+  align-items: center;
+  gap: 8px 12px;
+  font-size: 13px;
+}
+
+.weights li {
+  grid-template-columns: 72px minmax(0, 1fr) 52px minmax(90px, 150px);
+}
+
+.countries li {
+  grid-template-columns: 44px minmax(0, 1fr) 40px;
+}
+
+.weights li > :first-child,
+.countries li > :first-child {
+  font-weight: 600;
+}
+
+.weights li > :nth-child(3),
+.countries li > :nth-child(3) {
+  text-align: right;
+}
+
+/* Rows below the sample threshold are greyed out, never hidden. */
+.weights li[data-sample="small"] > *,
+.countries li[data-sample="small"] > * {
+  opacity: 0.72;
+}
+
+.weights li[data-sample="insufficient"] > *,
+.countries li[data-sample="insufficient"] > * {
+  opacity: 0.4;
+}

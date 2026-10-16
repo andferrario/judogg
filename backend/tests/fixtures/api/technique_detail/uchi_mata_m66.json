@@ -1,0 +1,312 @@
+{
+  "path": "/api/techniques/uchi_mata",
+  "query": {
+    "gender": "m",
+    "weight": "m-66"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "m",
+      "weight": [
+        "m-66"
+      ],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 78,
+      "athletes": 65,
+      "scores": 125,
+      "penalties": 113
+    },
+    "warnings": [],
+    "data": {
+      "technique": {
+        "code": "uchi_mata",
+        "name": "Uchi-mata",
+        "group_label": "Ashi-waza",
+        "domain": "standing"
+      },
+      "kpis": {
+        "n_scores": 5,
+        "rank": 9,
+        "of": 33,
+        "pct": {
+          "ippon": 0.6,
+          "waza_ari": 0,
+          "yuko": 0.4
+        },
+        "overall_pct_ippon": 0.28,
+        "right_share": 0.6,
+        "unknown_side_share": 0,
+        "n_athletes": 5,
+        "n_awasete": 0,
+        "gs_share": 0.4,
+        "overall_gs_share": 0.112
+      },
+      "sample": {
+        "status": "small",
+        "n": 5,
+        "unit": "scores"
+      },
+      "by_weight": [
+        {
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 5,
+          "total": 125,
+          "share": 0.04,
+          "side": {
+            "left": 2,
+            "right": 3,
+            "unknown": 0
+          },
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "scores"
+          }
+        }
+      ],
+      "timing": [
+        {
+          "bin": 0,
+          "label": "0:00–0:30",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 1,
+          "label": "0:30–1:00",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 2,
+          "label": "1:00–1:30",
+          "n": 1,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        {
+          "bin": 3,
+          "label": "1:30–2:00",
+          "n": 1,
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 4,
+          "label": "2:00–2:30",
+          "n": 1,
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 5,
+          "label": "2:30–3:00",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 6,
+          "label": "3:00–3:30",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 7,
+          "label": "3:30–4:00",
+          "n": 0,
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        {
+          "bin": 8,
+          "label": "Golden score",
+          "n": 2,
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 1
+        }
+      ],
+      "trend": {
+        "points": [
+          {
+            "year": 2025,
+            "n": 2,
+            "total": 42,
+            "share": 0.0476
+          },
+          {
+            "year": 2026,
+            "n": 3,
+            "total": 83,
+            "share": 0.0361
+          }
+        ],
+        "ruleset_changes": [],
+        "sample": {
+          "status": "insufficient",
+          "n": 2,
+          "unit": "years"
+        }
+      },
+      "top_athletes": [
+        {
+          "athlete": {
+            "id": 900049,
+            "given_name": "Fomi",
+            "family_name": "DUGUMA",
+            "country_code": "FRA"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 8,
+          "share_of_total": 0.125,
+          "side": {
+            "left": 0,
+            "right": 1,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900049"
+        },
+        {
+          "athlete": {
+            "id": 900144,
+            "given_name": "Bisa",
+            "family_name": "REFUDI",
+            "country_code": "ESP"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 5,
+          "share_of_total": 0.2,
+          "side": {
+            "left": 1,
+            "right": 0,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900144"
+        },
+        {
+          "athlete": {
+            "id": 900403,
+            "given_name": "Mina",
+            "family_name": "MEKOFO",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 1,
+          "n_ippon": 1,
+          "total_scores": 10,
+          "share_of_total": 0.1,
+          "side": {
+            "left": 1,
+            "right": 0,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900403"
+        },
+        {
+          "athlete": {
+            "id": 900257,
+            "given_name": "Fini",
+            "family_name": "ZOLEME",
+            "country_code": "GBR"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 1,
+          "n_ippon": 0,
+          "total_scores": 5,
+          "share_of_total": 0.2,
+          "side": {
+            "left": 0,
+            "right": 1,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900257"
+        },
+        {
+          "athlete": {
+            "id": 900580,
+            "given_name": "Goli",
+            "family_name": "NINALU",
+            "country_code": "KOR"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "n": 1,
+          "n_ippon": 0,
+          "total_scores": 3,
+          "share_of_total": 0.3333,
+          "side": {
+            "left": 0,
+            "right": 1,
+            "unknown": 0
+          },
+          "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900580"
+        }
+      ],
+      "countries": {
+        "rows": [],
+        "min_scores_country": 30
+      }
+    }
+  }
+}

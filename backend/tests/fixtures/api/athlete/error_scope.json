@@ -1,0 +1,14 @@
+{
+  "path": "/api/athletes/900323",
+  "query": {
+    "similar_scope": "world"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "similar_scope must be weight or all",
+      "field": "similar_scope"
+    }
+  }
+}

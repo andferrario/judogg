@@ -1,0 +1,15 @@
+{
+  "path": "/api/repertoire",
+  "query": {
+    "technique": "seoi_nage",
+    "with": "seoi_nage"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "with must be different from technique",
+      "field": "with"
+    }
+  }
+}

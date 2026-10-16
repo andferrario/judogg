@@ -1,0 +1,28 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px 24px;
+}
+
+.summary {
+  margin: 8px 0 0;
+  max-width: 80ch;
+  color: var(--fg-2);
+}
+
+.back {
+  margin: 0 0 6px;
+}
+
+.big {
+  font-size: clamp(44px, 7vw, 80px);
+}
+
+.note {
+  margin: 4px 0 0;
+  max-width: 80ch;
+  font-size: 14px;
+  color: var(--fg-2);
+}

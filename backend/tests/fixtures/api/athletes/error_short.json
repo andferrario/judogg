@@ -1,0 +1,14 @@
+{
+  "path": "/api/athletes",
+  "query": {
+    "q": "a"
+  },
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "invalid_parameter",
+      "message": "q must have at least 2 characters",
+      "field": "q"
+    }
+  }
+}

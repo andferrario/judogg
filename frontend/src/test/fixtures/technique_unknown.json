@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "not_found",
+    "message": "unknown technique flying_armbar",
+    "field": "technique"
+  }
+}

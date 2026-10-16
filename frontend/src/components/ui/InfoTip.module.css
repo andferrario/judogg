@@ -1,0 +1,14 @@
+.info {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--fg-3);
+  background: none;
+  color: var(--fg-2);
+  font: 600 11px/1 var(--f-mono);
+  cursor: help;
+  padding: 0;
+  vertical-align: 2px;
+  margin-left: 6px;
+}

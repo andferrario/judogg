@@ -1,0 +1,868 @@
+{
+  "warnings": [],
+  "data": {
+    "athlete": {
+      "id": 900323,
+      "given_name": "Tagi",
+      "family_name": "SADIDI",
+      "country_code": "AZE"
+    },
+    "judobase_url": "https://judobase.ijf.org/#/competitor/profile/900323",
+    "weights": [
+      {
+        "weight": {
+          "code": "m-66",
+          "gender": "m",
+          "label": "-66"
+        },
+        "contests": 9
+      }
+    ],
+    "years": {
+      "from": 2025,
+      "to": 2026
+    },
+    "kpis": {
+      "competitions": 2,
+      "contests": 9,
+      "scores": 10,
+      "techniques": 7,
+      "ippon_share": 0.5,
+      "main_technique": {
+        "code": "sasae_tsurikomi_ashi",
+        "name": "Sasae-tsurikomi-ashi",
+        "group_label": "Ashi-waza",
+        "domain": "standing"
+      }
+    },
+    "sample": {
+      "status": "small",
+      "n": 10,
+      "unit": "scores"
+    },
+    "techniques": [
+      {
+        "technique": {
+          "code": "kata_guruma",
+          "name": "Kata-guruma",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n": 2,
+        "share_of_total": 0.2,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 2,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 1,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 2,
+          "right": 0,
+          "unknown": 0
+        }
+      },
+      {
+        "technique": {
+          "code": "sasae_tsurikomi_ashi",
+          "name": "Sasae-tsurikomi-ashi",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n": 2,
+        "share_of_total": 0.2,
+        "counts": {
+          "ippon": 2,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 2,
+          "right": 0,
+          "unknown": 0
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_soto_gake",
+          "name": "Ko-soto-gake",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "share_of_total": 0.1,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 0,
+          "unknown": 0
+        }
+      },
+      {
+        "technique": {
+          "code": "ko_uchi_gaeshi",
+          "name": "Ko-uchi-gaeshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "share_of_total": 0.1,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 1,
+          "unknown": 0
+        }
+      },
+      {
+        "technique": {
+          "code": "okuri_ashi_harai",
+          "name": "Okuri-ashi-harai",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "share_of_total": 0.1,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 0,
+          "unknown": 0
+        }
+      },
+      {
+        "technique": {
+          "code": "tai_otoshi",
+          "name": "Tai-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "share_of_total": 0.1,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 0,
+          "unknown": 0
+        }
+      },
+      {
+        "technique": {
+          "code": "tani_otoshi",
+          "name": "Tani-otoshi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "share_of_total": 0.1,
+        "counts": {
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "pct": {
+          "ippon": 0,
+          "waza_ari": 0,
+          "yuko": 1
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 1,
+          "right": 0,
+          "unknown": 0
+        }
+      },
+      {
+        "technique": null,
+        "n": 1,
+        "share_of_total": 0.1,
+        "counts": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "pct": {
+          "ippon": 1,
+          "waza_ari": 0,
+          "yuko": 0
+        },
+        "n_awasete": 0,
+        "side": {
+          "left": 0,
+          "right": 0,
+          "unknown": 1
+        }
+      }
+    ],
+    "score_groups": [
+      {
+        "technique": {
+          "code": "kata_guruma",
+          "name": "Kata-guruma",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n": 2,
+        "rows": [
+          {
+            "date": "2025-10-17",
+            "competition": {
+              "id": 3081,
+              "name": "Guadalajara Grand Prix 2025"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900135,
+              "given_name": "Supo",
+              "family_name": "DUMUDO",
+              "country_code": "FRA"
+            },
+            "score_value": "waza_ari",
+            "is_awasete": false,
+            "direction": "left",
+            "is_gs": true,
+            "time_bin": 8,
+            "contest_code": "gp_mex2025_0001_m_0066_0023",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gp_mex2025_0001_m_0066_0023",
+            "judotv_url": "https://judotv.com/competitions/gp_mex2025/contests/gp_mex2025_0001_m_0066_0023"
+          },
+          {
+            "date": "2025-10-17",
+            "competition": {
+              "id": 3081,
+              "name": "Guadalajara Grand Prix 2025"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900144,
+              "given_name": "Bisa",
+              "family_name": "REFUDI",
+              "country_code": "ESP"
+            },
+            "score_value": "waza_ari",
+            "is_awasete": false,
+            "direction": "left",
+            "is_gs": false,
+            "time_bin": 3,
+            "contest_code": "gp_mex2025_0001_m_0066_0032",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gp_mex2025_0001_m_0066_0032",
+            "judotv_url": "https://judotv.com/competitions/gp_mex2025/contests/gp_mex2025_0001_m_0066_0032"
+          }
+        ]
+      },
+      {
+        "technique": {
+          "code": "sasae_tsurikomi_ashi",
+          "name": "Sasae-tsurikomi-ashi",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n": 2,
+        "rows": [
+          {
+            "date": "2026-02-07",
+            "competition": {
+              "id": 3131,
+              "name": "Paris Grand Slam 2026"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900047,
+              "given_name": "Mifu",
+              "family_name": "RESOBI",
+              "country_code": "MNE"
+            },
+            "score_value": "ippon",
+            "is_awasete": false,
+            "direction": "left",
+            "is_gs": false,
+            "time_bin": 7,
+            "contest_code": "gs_fra2026_0001_m_0066_0045",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0066_0045",
+            "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0066_0045"
+          },
+          {
+            "date": "2026-02-07",
+            "competition": {
+              "id": 3131,
+              "name": "Paris Grand Slam 2026"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900524,
+              "given_name": "Voge",
+              "family_name": "KUPORU",
+              "country_code": "GEO"
+            },
+            "score_value": "ippon",
+            "is_awasete": false,
+            "direction": "left",
+            "is_gs": false,
+            "time_bin": 0,
+            "contest_code": "gs_fra2026_0001_m_0066_0055",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0066_0055",
+            "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0066_0055"
+          }
+        ]
+      },
+      {
+        "technique": {
+          "code": "ko_soto_gake",
+          "name": "Ko-soto-gake",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "rows": [
+          {
+            "date": "2026-02-07",
+            "competition": {
+              "id": 3131,
+              "name": "Paris Grand Slam 2026"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900047,
+              "given_name": "Mifu",
+              "family_name": "RESOBI",
+              "country_code": "MNE"
+            },
+            "score_value": "yuko",
+            "is_awasete": false,
+            "direction": "left",
+            "is_gs": false,
+            "time_bin": 6,
+            "contest_code": "gs_fra2026_0001_m_0066_0045",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0066_0045",
+            "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0066_0045"
+          }
+        ]
+      },
+      {
+        "technique": {
+          "code": "ko_uchi_gaeshi",
+          "name": "Ko-uchi-gaeshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "rows": [
+          {
+            "date": "2026-02-07",
+            "competition": {
+              "id": 3131,
+              "name": "Paris Grand Slam 2026"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900249,
+              "given_name": "Pune",
+              "family_name": "KITUDO",
+              "country_code": "GBR"
+            },
+            "score_value": "yuko",
+            "is_awasete": false,
+            "direction": "right",
+            "is_gs": false,
+            "time_bin": 3,
+            "contest_code": "gs_fra2026_0001_m_0066_0060",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0066_0060",
+            "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0066_0060"
+          }
+        ]
+      },
+      {
+        "technique": {
+          "code": "okuri_ashi_harai",
+          "name": "Okuri-ashi-harai",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "rows": [
+          {
+            "date": "2025-10-17",
+            "competition": {
+              "id": 3081,
+              "name": "Guadalajara Grand Prix 2025"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900026,
+              "given_name": "Geto",
+              "family_name": "NUVURE",
+              "country_code": "ITA"
+            },
+            "score_value": "ippon",
+            "is_awasete": false,
+            "direction": "left",
+            "is_gs": false,
+            "time_bin": 5,
+            "contest_code": "gp_mex2025_0001_m_0066_0028",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gp_mex2025_0001_m_0066_0028",
+            "judotv_url": "https://judotv.com/competitions/gp_mex2025/contests/gp_mex2025_0001_m_0066_0028"
+          }
+        ]
+      },
+      {
+        "technique": {
+          "code": "tai_otoshi",
+          "name": "Tai-otoshi",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "rows": [
+          {
+            "date": "2025-10-17",
+            "competition": {
+              "id": 3081,
+              "name": "Guadalajara Grand Prix 2025"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900144,
+              "given_name": "Bisa",
+              "family_name": "REFUDI",
+              "country_code": "ESP"
+            },
+            "score_value": "ippon",
+            "is_awasete": false,
+            "direction": "left",
+            "is_gs": false,
+            "time_bin": 5,
+            "contest_code": "gp_mex2025_0001_m_0066_0032",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gp_mex2025_0001_m_0066_0032",
+            "judotv_url": "https://judotv.com/competitions/gp_mex2025/contests/gp_mex2025_0001_m_0066_0032"
+          }
+        ]
+      },
+      {
+        "technique": {
+          "code": "tani_otoshi",
+          "name": "Tani-otoshi",
+          "group_label": "Yoko-sutemi-waza",
+          "domain": "standing"
+        },
+        "n": 1,
+        "rows": [
+          {
+            "date": "2026-02-07",
+            "competition": {
+              "id": 3131,
+              "name": "Paris Grand Slam 2026"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900365,
+              "given_name": "Vule",
+              "family_name": "BEDUFI",
+              "country_code": "ITA"
+            },
+            "score_value": "yuko",
+            "is_awasete": false,
+            "direction": "left",
+            "is_gs": false,
+            "time_bin": 7,
+            "contest_code": "gs_fra2026_0001_m_0066_0065",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gs_fra2026_0001_m_0066_0065",
+            "judotv_url": "https://judotv.com/competitions/gs_fra2026/contests/gs_fra2026_0001_m_0066_0065"
+          }
+        ]
+      },
+      {
+        "technique": null,
+        "n": 1,
+        "rows": [
+          {
+            "date": "2025-10-17",
+            "competition": {
+              "id": 3081,
+              "name": "Guadalajara Grand Prix 2025"
+            },
+            "weight": {
+              "code": "m-66",
+              "gender": "m",
+              "label": "-66"
+            },
+            "opponent": {
+              "id": 900118,
+              "given_name": "Nove",
+              "family_name": "SUGODE",
+              "country_code": "FIN"
+            },
+            "score_value": "ippon",
+            "is_awasete": false,
+            "direction": "unknown",
+            "is_gs": true,
+            "time_bin": 8,
+            "contest_code": "gp_mex2025_0001_m_0066_0035",
+            "judobase_url": "https://judobase.ijf.org/#/competition/contest/gp_mex2025_0001_m_0066_0035",
+            "judotv_url": "https://judotv.com/competitions/gp_mex2025/contests/gp_mex2025_0001_m_0066_0035"
+          }
+        ]
+      }
+    ],
+    "similar": {
+      "scope": "all",
+      "weight": {
+        "code": "m-66",
+        "gender": "m",
+        "label": "-66"
+      },
+      "min_scores_athlete": 5,
+      "sample": {
+        "status": "small",
+        "n": 10,
+        "unit": "scores"
+      },
+      "rows": [
+        {
+          "athlete": {
+            "id": 900049,
+            "given_name": "Fomi",
+            "family_name": "DUGUMA",
+            "country_code": "FRA"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "similarity": 0.8006,
+          "n_scores": 8,
+          "top_techniques": [
+            {
+              "code": "kata_guruma",
+              "name": "Kata-guruma",
+              "group_label": "Te-waza",
+              "domain": "standing",
+              "n": 2
+            },
+            {
+              "code": "sasae_tsurikomi_ashi",
+              "name": "Sasae-tsurikomi-ashi",
+              "group_label": "Ashi-waza",
+              "domain": "standing",
+              "n": 2
+            },
+            {
+              "code": "hikikomi_gaeshi",
+              "name": "Hikikomi-gaeshi",
+              "group_label": "Ma-sutemi-waza",
+              "domain": "standing",
+              "n": 1
+            }
+          ],
+          "sample": {
+            "status": "small",
+            "n": 8,
+            "unit": "scores"
+          }
+        },
+        {
+          "athlete": {
+            "id": 900380,
+            "given_name": "Zulo",
+            "family_name": "VIKURU",
+            "country_code": "AZE"
+          },
+          "weight": {
+            "code": "m-81",
+            "gender": "m",
+            "label": "-81"
+          },
+          "similarity": 0.5547,
+          "n_scores": 6,
+          "top_techniques": [
+            {
+              "code": "kata_guruma",
+              "name": "Kata-guruma",
+              "group_label": "Te-waza",
+              "domain": "standing",
+              "n": 1
+            },
+            {
+              "code": "sasae_tsurikomi_ashi",
+              "name": "Sasae-tsurikomi-ashi",
+              "group_label": "Ashi-waza",
+              "domain": "standing",
+              "n": 1
+            },
+            {
+              "code": "sumi_gaeshi",
+              "name": "Sumi-gaeshi",
+              "group_label": "Ma-sutemi-waza",
+              "domain": "standing",
+              "n": 1
+            }
+          ],
+          "sample": {
+            "status": "small",
+            "n": 6,
+            "unit": "scores"
+          }
+        },
+        {
+          "athlete": {
+            "id": 900365,
+            "given_name": "Vule",
+            "family_name": "BEDUFI",
+            "country_code": "ITA"
+          },
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "similarity": 0.4003,
+          "n_scores": 8,
+          "top_techniques": [
+            {
+              "code": "de_ashi_harai",
+              "name": "De-ashi-harai",
+              "group_label": "Ashi-waza",
+              "domain": "standing",
+              "n": 2
+            },
+            {
+              "code": "kata_guruma",
+              "name": "Kata-guruma",
+              "group_label": "Te-waza",
+              "domain": "standing",
+              "n": 2
+            },
+            {
+              "code": "seoi_nage",
+              "name": "Seoi-nage",
+              "group_label": "Te-waza",
+              "domain": "standing",
+              "n": 1
+            }
+          ],
+          "sample": {
+            "status": "small",
+            "n": 8,
+            "unit": "scores"
+          }
+        },
+        {
+          "athlete": {
+            "id": 900119,
+            "given_name": "Fage",
+            "family_name": "BELAMA",
+            "country_code": "AZE"
+          },
+          "weight": {
+            "code": "m-60",
+            "gender": "m",
+            "label": "-60"
+          },
+          "similarity": 0.3721,
+          "n_scores": 5,
+          "top_techniques": [
+            {
+              "code": "kata_guruma",
+              "name": "Kata-guruma",
+              "group_label": "Te-waza",
+              "domain": "standing",
+              "n": 1
+            },
+            {
+              "code": "kuzure_kami_shiho_gatame",
+              "name": "Kuzure-kami-shiho-gatame",
+              "group_label": "Osaekomi-waza",
+              "domain": "ground",
+              "n": 1
+            },
+            {
+              "code": "o_uchi_gari",
+              "name": "O-uchi-gari",
+              "group_label": "Ashi-waza",
+              "domain": "standing",
+              "n": 1
+            }
+          ],
+          "sample": {
+            "status": "small",
+            "n": 5,
+            "unit": "scores"
+          }
+        },
+        {
+          "athlete": {
+            "id": 900544,
+            "given_name": "Mira",
+            "family_name": "PUVADU",
+            "country_code": "JPN"
+          },
+          "weight": {
+            "code": "m+100",
+            "gender": "m",
+            "label": "+100"
+          },
+          "similarity": 0.3145,
+          "n_scores": 7,
+          "top_techniques": [
+            {
+              "code": "ashi_guruma",
+              "name": "Ashi-guruma",
+              "group_label": "Ashi-waza",
+              "domain": "standing",
+              "n": 1
+            },
+            {
+              "code": "kata_guruma",
+              "name": "Kata-guruma",
+              "group_label": "Te-waza",
+              "domain": "standing",
+              "n": 1
+            },
+            {
+              "code": "ko_soto_gari",
+              "name": "Ko-soto-gari",
+              "group_label": "Ashi-waza",
+              "domain": "standing",
+              "n": 1
+            }
+          ],
+          "sample": {
+            "status": "small",
+            "n": 7,
+            "unit": "scores"
+          }
+        },
+        {
+          "athlete": {
+            "id": 900296,
+            "given_name": "Befa",
+            "family_name": "MOTAFI",
+            "country_code": "CZE"
+          },
+          "weight": {
+            "code": "m-90",
+            "gender": "m",
+            "label": "-90"
+          },
+          "similarity": 0.1961,
+          "n_scores": 7,
+          "top_techniques": [
+            {
+              "code": "tomoe_nage",
+              "name": "Tomoe-nage",
+              "group_label": "Ma-sutemi-waza",
+              "domain": "standing",
+              "n": 2
+            },
+            {
+              "code": "kata_guruma",
+              "name": "Kata-guruma",
+              "group_label": "Te-waza",
+              "domain": "standing",
+              "n": 1
+            },
+            {
+              "code": "kuzure_kesa_gatame",
+              "name": "Kuzure-kesa-gatame",
+              "group_label": "Osaekomi-waza",
+              "domain": "ground",
+              "n": 1
+            }
+          ],
+          "sample": {
+            "status": "small",
+            "n": 7,
+            "unit": "scores"
+          }
+        }
+      ]
+    }
+  }
+}

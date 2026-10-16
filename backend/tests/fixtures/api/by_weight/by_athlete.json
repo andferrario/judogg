@@ -1,0 +1,869 @@
+{
+  "path": "/api/techniques/by-weight",
+  "query": {
+    "count_by": "athlete"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "all",
+      "weight": [],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "athlete",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 556,
+      "athletes": 506,
+      "scores": 756,
+      "penalties": 967
+    },
+    "warnings": [
+      {
+        "code": "quality_issues",
+        "message": "3 contests in the filter have inconsistent IJF data."
+      }
+    ],
+    "data": {
+      "techniques": [
+        {
+          "code": "seoi_nage",
+          "name": "Seoi-nage",
+          "group_label": "Te-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "o_uchi_gari",
+          "name": "O-uchi-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "uchi_mata",
+          "name": "Uchi-mata",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "yoko_shiho_gatame",
+          "name": "Yoko-shiho-gatame",
+          "group_label": "Osaekomi-waza",
+          "domain": "ground"
+        },
+        {
+          "code": "sumi_gaeshi",
+          "name": "Sumi-gaeshi",
+          "group_label": "Ma-sutemi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "ko_uchi_gari",
+          "name": "Ko-uchi-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "ko_soto_gari",
+          "name": "Ko-soto-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        },
+        {
+          "code": "o_soto_gari",
+          "name": "O-soto-gari",
+          "group_label": "Ashi-waza",
+          "domain": "standing"
+        }
+      ],
+      "rows": [
+        {
+          "weight": {
+            "code": "m-60",
+            "gender": "m",
+            "label": "-60"
+          },
+          "total": 24,
+          "sample": {
+            "status": "ok",
+            "n": 59,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 6,
+              "share": 0.25
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 6,
+              "share": 0.25
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 2,
+              "share": 0.0833
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 1,
+              "share": 0.0417
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 6,
+              "share": 0.25
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 2,
+              "share": 0.0833
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 1,
+              "share": 0.0417
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "total": 33,
+          "sample": {
+            "status": "ok",
+            "n": 125,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 13,
+              "share": 0.3939
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 7,
+              "share": 0.2121
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 5,
+              "share": 0.1515
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 6,
+              "share": 0.1818
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 9,
+              "share": 0.2727
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 4,
+              "share": 0.1212
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 2,
+              "share": 0.0606
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "m-73",
+            "gender": "m",
+            "label": "-73"
+          },
+          "total": 27,
+          "sample": {
+            "status": "ok",
+            "n": 78,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 6,
+              "share": 0.2222
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 7,
+              "share": 0.2593
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 5,
+              "share": 0.1852
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 2,
+              "share": 0.0741
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 4,
+              "share": 0.1481
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 3,
+              "share": 0.1111
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 3,
+              "share": 0.1111
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 4,
+              "share": 0.1481
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "m-81",
+            "gender": "m",
+            "label": "-81"
+          },
+          "total": 26,
+          "sample": {
+            "status": "ok",
+            "n": 82,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 10,
+              "share": 0.3846
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 4,
+              "share": 0.1538
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 6,
+              "share": 0.2308
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 3,
+              "share": 0.1154
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 4,
+              "share": 0.1538
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 2,
+              "share": 0.0769
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 1,
+              "share": 0.0385
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 3,
+              "share": 0.1154
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "m-90",
+            "gender": "m",
+            "label": "-90"
+          },
+          "total": 25,
+          "sample": {
+            "status": "ok",
+            "n": 62,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 5,
+              "share": 0.2
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 4,
+              "share": 0.16
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 2,
+              "share": 0.08
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 4,
+              "share": 0.16
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 3,
+              "share": 0.12
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 1,
+              "share": 0.04
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 1,
+              "share": 0.04
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 3,
+              "share": 0.12
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "total": 27,
+          "sample": {
+            "status": "ok",
+            "n": 66,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 6,
+              "share": 0.2222
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 3,
+              "share": 0.1111
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 7,
+              "share": 0.2593
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 2,
+              "share": 0.0741
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 2,
+              "share": 0.0741
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 3,
+              "share": 0.1111
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 5,
+              "share": 0.1852
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 1,
+              "share": 0.037
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "m+100",
+            "gender": "m",
+            "label": "+100"
+          },
+          "total": 17,
+          "sample": {
+            "status": "ok",
+            "n": 41,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 2,
+              "share": 0.1176
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 3,
+              "share": 0.1765
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 3,
+              "share": 0.1765
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 4,
+              "share": 0.2353
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 1,
+              "share": 0.0588
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 1,
+              "share": 0.0588
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 1,
+              "share": 0.0588
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 3,
+              "share": 0.1765
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "f-48",
+            "gender": "f",
+            "label": "-48"
+          },
+          "total": 13,
+          "sample": {
+            "status": "ok",
+            "n": 34,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 4,
+              "share": 0.3077
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 1,
+              "share": 0.0769
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 4,
+              "share": 0.3077
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 1,
+              "share": 0.0769
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 1,
+              "share": 0.0769
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "f-52",
+            "gender": "f",
+            "label": "-52"
+          },
+          "total": 15,
+          "sample": {
+            "status": "ok",
+            "n": 34,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 3,
+              "share": 0.2
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 3,
+              "share": 0.2
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 4,
+              "share": 0.2667
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 2,
+              "share": 0.1333
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 1,
+              "share": 0.0667
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 2,
+              "share": 0.1333
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 1,
+              "share": 0.0667
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "f-57",
+            "gender": "f",
+            "label": "-57"
+          },
+          "total": 13,
+          "sample": {
+            "status": "ok",
+            "n": 36,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 4,
+              "share": 0.3077
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 2,
+              "share": 0.1538
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 2,
+              "share": 0.1538
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 4,
+              "share": 0.3077
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 1,
+              "share": 0.0769
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 2,
+              "share": 0.1538
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "f-63",
+            "gender": "f",
+            "label": "-63"
+          },
+          "total": 11,
+          "sample": {
+            "status": "ok",
+            "n": 25,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 1,
+              "share": 0.0909
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 1,
+              "share": 0.0909
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 2,
+              "share": 0.1818
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 3,
+              "share": 0.2727
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 2,
+              "share": 0.1818
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 1,
+              "share": 0.0909
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 1,
+              "share": 0.0909
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 2,
+              "share": 0.1818
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "f-70",
+            "gender": "f",
+            "label": "-70"
+          },
+          "total": 19,
+          "sample": {
+            "status": "ok",
+            "n": 50,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 7,
+              "share": 0.3684
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 5,
+              "share": 0.2632
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 3,
+              "share": 0.1579
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 1,
+              "share": 0.0526
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 1,
+              "share": 0.0526
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 0,
+              "share": 0
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "f-78",
+            "gender": "f",
+            "label": "-78"
+          },
+          "total": 15,
+          "sample": {
+            "status": "ok",
+            "n": 37,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 1,
+              "share": 0.0667
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 2,
+              "share": 0.1333
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 3,
+              "share": 0.2
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 3,
+              "share": 0.2
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 1,
+              "share": 0.0667
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 1,
+              "share": 0.0667
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 0,
+              "share": 0
+            }
+          ]
+        },
+        {
+          "weight": {
+            "code": "f+78",
+            "gender": "f",
+            "label": "+78"
+          },
+          "total": 13,
+          "sample": {
+            "status": "ok",
+            "n": 27,
+            "unit": "scores"
+          },
+          "cells": [
+            {
+              "technique": "seoi_nage",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "o_uchi_gari",
+              "n": 1,
+              "share": 0.0769
+            },
+            {
+              "technique": "uchi_mata",
+              "n": 2,
+              "share": 0.1538
+            },
+            {
+              "technique": "yoko_shiho_gatame",
+              "n": 3,
+              "share": 0.2308
+            },
+            {
+              "technique": "sumi_gaeshi",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "technique": "ko_uchi_gari",
+              "n": 2,
+              "share": 0.1538
+            },
+            {
+              "technique": "ko_soto_gari",
+              "n": 1,
+              "share": 0.0769
+            },
+            {
+              "technique": "o_soto_gari",
+              "n": 1,
+              "share": 0.0769
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

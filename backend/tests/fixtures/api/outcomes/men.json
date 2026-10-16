@@ -1,0 +1,460 @@
+{
+  "path": "/api/outcomes",
+  "query": {
+    "gender": "m"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "m",
+      "weight": [],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 2,
+      "contests": 348,
+      "athletes": 317,
+      "scores": 513,
+      "penalties": 607
+    },
+    "warnings": [
+      {
+        "code": "quality_issues",
+        "message": "3 contests in the filter have inconsistent IJF data."
+      }
+    ],
+    "data": {
+      "rows": [
+        {
+          "weight": {
+            "code": "m-60",
+            "gender": "m",
+            "label": "-60"
+          },
+          "played": 42,
+          "walkovers": {
+            "fusen_gachi": 0,
+            "kiken_gachi": 0
+          },
+          "end_types": [
+            {
+              "end_type": "ippon",
+              "n": 13,
+              "share": 0.3095
+            },
+            {
+              "end_type": "waza_ari_awasete",
+              "n": 3,
+              "share": 0.0714
+            },
+            {
+              "end_type": "hansoku_shido",
+              "n": 2,
+              "share": 0.0476
+            },
+            {
+              "end_type": "double_hansoku",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "end_type": "score_gs",
+              "n": 11,
+              "share": 0.2619
+            },
+            {
+              "end_type": "score_regulation",
+              "n": 13,
+              "share": 0.3095
+            }
+          ],
+          "gs_share": 0.4048,
+          "avg_duration_s": 236,
+          "sample": {
+            "status": "ok",
+            "n": 42,
+            "unit": "contests"
+          },
+          "shido_per_contest": 1.881
+        },
+        {
+          "weight": {
+            "code": "m-66",
+            "gender": "m",
+            "label": "-66"
+          },
+          "played": 77,
+          "walkovers": {
+            "fusen_gachi": 1,
+            "kiken_gachi": 0
+          },
+          "end_types": [
+            {
+              "end_type": "ippon",
+              "n": 35,
+              "share": 0.4545
+            },
+            {
+              "end_type": "waza_ari_awasete",
+              "n": 7,
+              "share": 0.0909
+            },
+            {
+              "end_type": "hansoku_shido",
+              "n": 4,
+              "share": 0.0519
+            },
+            {
+              "end_type": "double_hansoku",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "end_type": "score_gs",
+              "n": 10,
+              "share": 0.1299
+            },
+            {
+              "end_type": "score_regulation",
+              "n": 21,
+              "share": 0.2727
+            }
+          ],
+          "gs_share": 0.1948,
+          "avg_duration_s": 209,
+          "sample": {
+            "status": "ok",
+            "n": 77,
+            "unit": "contests"
+          },
+          "shido_per_contest": 1.4675
+        },
+        {
+          "weight": {
+            "code": "m-73",
+            "gender": "m",
+            "label": "-73"
+          },
+          "played": 50,
+          "walkovers": {
+            "fusen_gachi": 1,
+            "kiken_gachi": 0
+          },
+          "end_types": [
+            {
+              "end_type": "ippon",
+              "n": 15,
+              "share": 0.3
+            },
+            {
+              "end_type": "waza_ari_awasete",
+              "n": 7,
+              "share": 0.14
+            },
+            {
+              "end_type": "hansoku_shido",
+              "n": 4,
+              "share": 0.08
+            },
+            {
+              "end_type": "double_hansoku",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "end_type": "score_gs",
+              "n": 9,
+              "share": 0.18
+            },
+            {
+              "end_type": "score_regulation",
+              "n": 15,
+              "share": 0.3
+            }
+          ],
+          "gs_share": 0.26,
+          "avg_duration_s": 209,
+          "sample": {
+            "status": "ok",
+            "n": 50,
+            "unit": "contests"
+          },
+          "shido_per_contest": 1.62
+        },
+        {
+          "weight": {
+            "code": "m-81",
+            "gender": "m",
+            "label": "-81"
+          },
+          "played": 52,
+          "walkovers": {
+            "fusen_gachi": 0,
+            "kiken_gachi": 1
+          },
+          "end_types": [
+            {
+              "end_type": "ippon",
+              "n": 20,
+              "share": 0.3846
+            },
+            {
+              "end_type": "waza_ari_awasete",
+              "n": 5,
+              "share": 0.0962
+            },
+            {
+              "end_type": "hansoku_shido",
+              "n": 6,
+              "share": 0.1154
+            },
+            {
+              "end_type": "double_hansoku",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "end_type": "score_gs",
+              "n": 4,
+              "share": 0.0769
+            },
+            {
+              "end_type": "score_regulation",
+              "n": 17,
+              "share": 0.3269
+            }
+          ],
+          "gs_share": 0.1731,
+          "avg_duration_s": 210,
+          "sample": {
+            "status": "ok",
+            "n": 52,
+            "unit": "contests"
+          },
+          "shido_per_contest": 1.6538
+        },
+        {
+          "weight": {
+            "code": "m-90",
+            "gender": "m",
+            "label": "-90"
+          },
+          "played": 44,
+          "walkovers": {
+            "fusen_gachi": 1,
+            "kiken_gachi": 0
+          },
+          "end_types": [
+            {
+              "end_type": "ippon",
+              "n": 19,
+              "share": 0.4318
+            },
+            {
+              "end_type": "waza_ari_awasete",
+              "n": 2,
+              "share": 0.0455
+            },
+            {
+              "end_type": "hansoku_shido",
+              "n": 7,
+              "share": 0.1591
+            },
+            {
+              "end_type": "double_hansoku",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "end_type": "score_gs",
+              "n": 6,
+              "share": 0.1364
+            },
+            {
+              "end_type": "score_regulation",
+              "n": 10,
+              "share": 0.2273
+            }
+          ],
+          "gs_share": 0.25,
+          "avg_duration_s": 225,
+          "sample": {
+            "status": "ok",
+            "n": 44,
+            "unit": "contests"
+          },
+          "shido_per_contest": 2.0455
+        },
+        {
+          "weight": {
+            "code": "m-100",
+            "gender": "m",
+            "label": "-100"
+          },
+          "played": 44,
+          "walkovers": {
+            "fusen_gachi": 1,
+            "kiken_gachi": 0
+          },
+          "end_types": [
+            {
+              "end_type": "ippon",
+              "n": 20,
+              "share": 0.4545
+            },
+            {
+              "end_type": "waza_ari_awasete",
+              "n": 4,
+              "share": 0.0909
+            },
+            {
+              "end_type": "hansoku_shido",
+              "n": 2,
+              "share": 0.0455
+            },
+            {
+              "end_type": "double_hansoku",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "end_type": "score_gs",
+              "n": 6,
+              "share": 0.1364
+            },
+            {
+              "end_type": "score_regulation",
+              "n": 12,
+              "share": 0.2727
+            }
+          ],
+          "gs_share": 0.25,
+          "avg_duration_s": 217,
+          "sample": {
+            "status": "ok",
+            "n": 44,
+            "unit": "contests"
+          },
+          "shido_per_contest": 1.4091
+        },
+        {
+          "weight": {
+            "code": "m+100",
+            "gender": "m",
+            "label": "+100"
+          },
+          "played": 34,
+          "walkovers": {
+            "fusen_gachi": 0,
+            "kiken_gachi": 0
+          },
+          "end_types": [
+            {
+              "end_type": "ippon",
+              "n": 12,
+              "share": 0.3529
+            },
+            {
+              "end_type": "waza_ari_awasete",
+              "n": 1,
+              "share": 0.0294
+            },
+            {
+              "end_type": "hansoku_shido",
+              "n": 8,
+              "share": 0.2353
+            },
+            {
+              "end_type": "double_hansoku",
+              "n": 0,
+              "share": 0
+            },
+            {
+              "end_type": "score_gs",
+              "n": 3,
+              "share": 0.0882
+            },
+            {
+              "end_type": "score_regulation",
+              "n": 10,
+              "share": 0.2941
+            }
+          ],
+          "gs_share": 0.2059,
+          "avg_duration_s": 222,
+          "sample": {
+            "status": "ok",
+            "n": 34,
+            "unit": "contests"
+          },
+          "shido_per_contest": 2.8235
+        }
+      ],
+      "total": {
+        "played": 343,
+        "walkovers": {
+          "fusen_gachi": 4,
+          "kiken_gachi": 1
+        },
+        "end_types": [
+          {
+            "end_type": "ippon",
+            "n": 134,
+            "share": 0.3907
+          },
+          {
+            "end_type": "waza_ari_awasete",
+            "n": 29,
+            "share": 0.0845
+          },
+          {
+            "end_type": "hansoku_shido",
+            "n": 33,
+            "share": 0.0962
+          },
+          {
+            "end_type": "double_hansoku",
+            "n": 0,
+            "share": 0
+          },
+          {
+            "end_type": "score_gs",
+            "n": 49,
+            "share": 0.1429
+          },
+          {
+            "end_type": "score_regulation",
+            "n": 98,
+            "share": 0.2857
+          }
+        ],
+        "gs_share": 0.242,
+        "avg_duration_s": 217,
+        "sample": {
+          "status": "ok",
+          "n": 343,
+          "unit": "contests"
+        },
+        "shido_per_contest": 1.7697
+      }
+    }
+  }
+}

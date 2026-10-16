@@ -1,0 +1,698 @@
+{
+  "path": "/api/penalties",
+  "query": {
+    "gender": "f"
+  },
+  "status": 200,
+  "body": {
+    "filters": {
+      "gender": "f",
+      "weight": [],
+      "year_from": 2025,
+      "year_to": 2027,
+      "ruleset": [
+        2025
+      ],
+      "country": [],
+      "side": [
+        "left",
+        "right",
+        "unknown"
+      ],
+      "domain": [
+        "standing",
+        "ground",
+        "unknown"
+      ],
+      "count_by": "event",
+      "min_scores_athlete": 5,
+      "min_scores_technique": 2
+    },
+    "totals": {
+      "competitions": 1,
+      "contests": 208,
+      "athletes": 189,
+      "scores": 243,
+      "penalties": 360
+    },
+    "warnings": [],
+    "data": {
+      "kpis": {
+        "n_penalties": 360,
+        "n_shido": 336,
+        "n_hansoku_shido": 24,
+        "played_contests": 203,
+        "shido_per_contest": 1.7586,
+        "hansoku_share": 0.1133
+      },
+      "sample": {
+        "status": "ok",
+        "n": 360,
+        "unit": "penalties"
+      },
+      "reasons": [
+        {
+          "reason": {
+            "code": "non_combativity",
+            "name": "Non-combativity",
+            "group_label": "Passivity"
+          },
+          "n": 171,
+          "share": 0.475,
+          "n_deciding": 13,
+          "deciding_share": 0.076,
+          "sample": {
+            "status": "ok",
+            "n": 171,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "false_attack",
+            "name": "False-attack",
+            "group_label": "Passivity"
+          },
+          "n": 61,
+          "share": 0.1694,
+          "n_deciding": 7,
+          "deciding_share": 0.1148,
+          "sample": {
+            "status": "ok",
+            "n": 61,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "avoid_grip",
+            "name": "Avoid-grip",
+            "group_label": "Grip"
+          },
+          "n": 50,
+          "share": 0.1389,
+          "n_deciding": 1,
+          "deciding_share": 0.02,
+          "sample": {
+            "status": "ok",
+            "n": 50,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "defensive_posture",
+            "name": "Defensive-posture",
+            "group_label": "Passivity"
+          },
+          "n": 29,
+          "share": 0.0806,
+          "n_deciding": 1,
+          "deciding_share": 0.0345,
+          "sample": {
+            "status": "ok",
+            "n": 29,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "hold_trouser_leg",
+            "name": "Hold-trouser-leg",
+            "group_label": "Infractions"
+          },
+          "n": 15,
+          "share": 0.0417,
+          "n_deciding": 1,
+          "deciding_share": 0.0667,
+          "sample": {
+            "status": "small",
+            "n": 15,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "hold_sleeve_ends",
+            "name": "Hold-sleeve-ends",
+            "group_label": "Grip"
+          },
+          "n": 8,
+          "share": 0.0222,
+          "n_deciding": 1,
+          "deciding_share": 0.125,
+          "sample": {
+            "status": "small",
+            "n": 8,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "escape_with_head",
+            "name": "Escape-with-head",
+            "group_label": "Grip"
+          },
+          "n": 4,
+          "share": 0.0111,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 4,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "outside_contest_area",
+            "name": "Outside-contest-area",
+            "group_label": "Passivity"
+          },
+          "n": 4,
+          "share": 0.0111,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 4,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "two_hand_grip_avoidance",
+            "name": "Two-hand-grip-avoidance",
+            "group_label": "Grip"
+          },
+          "n": 4,
+          "share": 0.0111,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 4,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "fingers_interlocked",
+            "name": "Fingers-interlocked",
+            "group_label": "Grip"
+          },
+          "n": 3,
+          "share": 0.0083,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 3,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "unorthodox_kumi_kata_too_long",
+            "name": "Unorthodox kumi-kata too long",
+            "group_label": "Grip"
+          },
+          "n": 3,
+          "share": 0.0083,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 3,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "pull_down",
+            "name": "Pull-down",
+            "group_label": "Passivity"
+          },
+          "n": 2,
+          "share": 0.0056,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 2,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "hand_on_face",
+            "name": "Hand-on-face",
+            "group_label": "Infractions"
+          },
+          "n": 1,
+          "share": 0.0028,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "hitting",
+            "name": "Hitting",
+            "group_label": "Infractions"
+          },
+          "n": 1,
+          "share": 0.0028,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "illegal_grip_breaking",
+            "name": "Illegal-grip-breaking",
+            "group_label": "Grip"
+          },
+          "n": 1,
+          "share": 0.0028,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "kansetsu_waza_from_tachi_waza",
+            "name": "Kansetsu waza from tachi waza",
+            "group_label": "Infractions"
+          },
+          "n": 1,
+          "share": 0.0028,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "leg_inside_blocking",
+            "name": "Leg-inside-blocking",
+            "group_label": "Passivity"
+          },
+          "n": 1,
+          "share": 0.0028,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "penalties"
+          }
+        },
+        {
+          "reason": {
+            "code": "rearranging_hair",
+            "name": "Rearranging hair",
+            "group_label": "Other"
+          },
+          "n": 1,
+          "share": 0.0028,
+          "n_deciding": 0,
+          "deciding_share": 0,
+          "sample": {
+            "status": "insufficient",
+            "n": 1,
+            "unit": "penalties"
+          }
+        }
+      ],
+      "by_group": [
+        {
+          "group_label": "Passivity",
+          "n": 268,
+          "share": 0.7444
+        },
+        {
+          "group_label": "Grip",
+          "n": 73,
+          "share": 0.2028
+        },
+        {
+          "group_label": "Infractions",
+          "n": 18,
+          "share": 0.05
+        },
+        {
+          "group_label": "Other",
+          "n": 1,
+          "share": 0.0028
+        }
+      ],
+      "by_weight": [
+        {
+          "weight": {
+            "code": "f-48",
+            "gender": "f",
+            "label": "-48"
+          },
+          "contests": 24,
+          "penalties": 29,
+          "shido_per_contest": 1.2083,
+          "hansoku_share": 0,
+          "sample": {
+            "status": "ok",
+            "n": 24,
+            "unit": "contests"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-52",
+            "gender": "f",
+            "label": "-52"
+          },
+          "contests": 32,
+          "penalties": 59,
+          "shido_per_contest": 1.8438,
+          "hansoku_share": 0.2188,
+          "sample": {
+            "status": "ok",
+            "n": 32,
+            "unit": "contests"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-57",
+            "gender": "f",
+            "label": "-57"
+          },
+          "contests": 28,
+          "penalties": 45,
+          "shido_per_contest": 1.6071,
+          "hansoku_share": 0.0714,
+          "sample": {
+            "status": "ok",
+            "n": 28,
+            "unit": "contests"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-63",
+            "gender": "f",
+            "label": "-63"
+          },
+          "contests": 24,
+          "penalties": 47,
+          "shido_per_contest": 1.9583,
+          "hansoku_share": 0.1667,
+          "sample": {
+            "status": "ok",
+            "n": 24,
+            "unit": "contests"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-70",
+            "gender": "f",
+            "label": "-70"
+          },
+          "contests": 38,
+          "penalties": 58,
+          "shido_per_contest": 1.5263,
+          "hansoku_share": 0.0263,
+          "sample": {
+            "status": "ok",
+            "n": 38,
+            "unit": "contests"
+          }
+        },
+        {
+          "weight": {
+            "code": "f-78",
+            "gender": "f",
+            "label": "-78"
+          },
+          "contests": 32,
+          "penalties": 68,
+          "shido_per_contest": 2.125,
+          "hansoku_share": 0.1563,
+          "sample": {
+            "status": "ok",
+            "n": 32,
+            "unit": "contests"
+          }
+        },
+        {
+          "weight": {
+            "code": "f+78",
+            "gender": "f",
+            "label": "+78"
+          },
+          "contests": 25,
+          "penalties": 51,
+          "shido_per_contest": 2.04,
+          "hansoku_share": 0.16,
+          "sample": {
+            "status": "ok",
+            "n": 25,
+            "unit": "contests"
+          }
+        }
+      ],
+      "timing": [
+        {
+          "bin": 0,
+          "label": "0:00–0:30",
+          "n": 15
+        },
+        {
+          "bin": 1,
+          "label": "0:30–1:00",
+          "n": 49
+        },
+        {
+          "bin": 2,
+          "label": "1:00–1:30",
+          "n": 64
+        },
+        {
+          "bin": 3,
+          "label": "1:30–2:00",
+          "n": 53
+        },
+        {
+          "bin": 4,
+          "label": "2:00–2:30",
+          "n": 33
+        },
+        {
+          "bin": 5,
+          "label": "2:30–3:00",
+          "n": 42
+        },
+        {
+          "bin": 6,
+          "label": "3:00–3:30",
+          "n": 27
+        },
+        {
+          "bin": 7,
+          "label": "3:30–4:00",
+          "n": 27
+        },
+        {
+          "bin": 8,
+          "label": "Golden score",
+          "n": 50
+        }
+      ],
+      "by_number": [
+        {
+          "number": 1,
+          "n": 230,
+          "sample": {
+            "status": "ok",
+            "n": 230,
+            "unit": "penalties"
+          },
+          "reasons": [
+            {
+              "reason": {
+                "code": "non_combativity",
+                "name": "Non-combativity",
+                "group_label": "Passivity"
+              },
+              "n": 106,
+              "share": 0.4609
+            },
+            {
+              "reason": {
+                "code": "avoid_grip",
+                "name": "Avoid-grip",
+                "group_label": "Grip"
+              },
+              "n": 42,
+              "share": 0.1826
+            },
+            {
+              "reason": {
+                "code": "false_attack",
+                "name": "False-attack",
+                "group_label": "Passivity"
+              },
+              "n": 28,
+              "share": 0.1217
+            },
+            {
+              "reason": {
+                "code": "defensive_posture",
+                "name": "Defensive-posture",
+                "group_label": "Passivity"
+              },
+              "n": 19,
+              "share": 0.0826
+            },
+            {
+              "reason": {
+                "code": "hold_trouser_leg",
+                "name": "Hold-trouser-leg",
+                "group_label": "Infractions"
+              },
+              "n": 8,
+              "share": 0.0348
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "n": 106,
+          "sample": {
+            "status": "ok",
+            "n": 106,
+            "unit": "penalties"
+          },
+          "reasons": [
+            {
+              "reason": {
+                "code": "non_combativity",
+                "name": "Non-combativity",
+                "group_label": "Passivity"
+              },
+              "n": 52,
+              "share": 0.4906
+            },
+            {
+              "reason": {
+                "code": "false_attack",
+                "name": "False-attack",
+                "group_label": "Passivity"
+              },
+              "n": 26,
+              "share": 0.2453
+            },
+            {
+              "reason": {
+                "code": "defensive_posture",
+                "name": "Defensive-posture",
+                "group_label": "Passivity"
+              },
+              "n": 9,
+              "share": 0.0849
+            },
+            {
+              "reason": {
+                "code": "avoid_grip",
+                "name": "Avoid-grip",
+                "group_label": "Grip"
+              },
+              "n": 7,
+              "share": 0.066
+            },
+            {
+              "reason": {
+                "code": "hold_trouser_leg",
+                "name": "Hold-trouser-leg",
+                "group_label": "Infractions"
+              },
+              "n": 6,
+              "share": 0.0566
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "n": 24,
+          "sample": {
+            "status": "ok",
+            "n": 24,
+            "unit": "penalties"
+          },
+          "reasons": [
+            {
+              "reason": {
+                "code": "non_combativity",
+                "name": "Non-combativity",
+                "group_label": "Passivity"
+              },
+              "n": 13,
+              "share": 0.5417
+            },
+            {
+              "reason": {
+                "code": "false_attack",
+                "name": "False-attack",
+                "group_label": "Passivity"
+              },
+              "n": 7,
+              "share": 0.2917
+            },
+            {
+              "reason": {
+                "code": "avoid_grip",
+                "name": "Avoid-grip",
+                "group_label": "Grip"
+              },
+              "n": 1,
+              "share": 0.0417
+            },
+            {
+              "reason": {
+                "code": "defensive_posture",
+                "name": "Defensive-posture",
+                "group_label": "Passivity"
+              },
+              "n": 1,
+              "share": 0.0417
+            },
+            {
+              "reason": {
+                "code": "hold_sleeve_ends",
+                "name": "Hold-sleeve-ends",
+                "group_label": "Grip"
+              },
+              "n": 1,
+              "share": 0.0417
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
