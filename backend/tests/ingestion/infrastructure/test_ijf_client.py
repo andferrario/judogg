@@ -32,7 +32,7 @@ class Recorder:
         )
 
 
-def test_a_call_encodes_the_brackets_and_names_the_project() -> None:
+def test_a_call_encodes_the_brackets() -> None:
     recorder = Recorder(httpx2.Response(200, json={"contests": []}))
     payload = recorder.client().get("contest.find", {"id_competition": "3131", "id_weight": "2"})
     assert payload == {"contests": []}
@@ -41,7 +41,7 @@ def test_a_call_encodes_the_brackets_and_names_the_project() -> None:
         "https://data.ijf.org/api/get_json?params%5Baction%5D=contest.find"
         "&params%5Bid_competition%5D=3131&params%5Bid_weight%5D=2"
     )
-    assert request.headers["User-Agent"] == "judogg-fetch (personal project)"
+    assert "judogg" not in request.headers.get("User-Agent", "").lower()
     assert recorder.waits == []
 
 

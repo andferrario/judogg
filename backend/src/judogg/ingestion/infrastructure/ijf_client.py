@@ -9,7 +9,6 @@ import httpx2
 from judogg.ingestion.application.errors import CallFailed
 
 BASE_URL = "https://data.ijf.org/api/get_json"
-USER_AGENT = "judogg-fetch (personal project)"
 RETRY_WAITS_S = (2.0, 5.0)
 
 
@@ -23,7 +22,7 @@ class HttpIjfClient:
         transport: httpx2.BaseTransport | None = None,
         sleep: Callable[[float], None] = time.sleep,
     ) -> None:
-        self._http = httpx2.Client(timeout=timeout_s, headers={"User-Agent": USER_AGENT}, transport=transport)
+        self._http = httpx2.Client(timeout=timeout_s, transport=transport)
         self._delay_s = delay_s
         self._retries = retries
         self._sleep = sleep
