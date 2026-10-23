@@ -78,7 +78,7 @@ test("with one gender the chips show only its categories, without the initial", 
 test("a ruleset change clears the years", async () => {
   const { user } = renderApp("/techniques?year_from=2026");
   await user.click(within(await group(/^Ruleset/)).getByRole("button", { name: "2018–2024" }));
-  expect(currentParams()).toEqual({ ruleset: "2025,2018" });
+  expect(currentParams()).toEqual({ ruleset: "2017,2025" });
 });
 
 test("the years offer only years with contests, From never after To", async () => {

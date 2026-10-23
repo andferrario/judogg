@@ -20,7 +20,6 @@ from judogg.app.domain.model import (
 )
 from judogg.app.domain.numbers import ratio
 from judogg.app.domain.refs import ReasonRef, TechniqueRef, reason_ref, technique_ref
-from judogg.app.domain.rulesets import default_ruleset
 from judogg.app.domain.scores import distinct
 
 
@@ -152,24 +151,23 @@ def build_meta(
     thresholds: Thresholds,
     glossary: tuple[GlossaryEntry, ...],
 ) -> Meta:
-    default = default_ruleset(catalogue.rulesets)
+    rulesets_in_order = sorted(catalogue.rulesets, key=lambda r: r.year_from, reverse=True)
+    all_rulesets = sorted(catalogue.rulesets, key=lambda r: r.year_from)
     contests_per_weight = Counter(c.weight for c in contests)
     tags = sorted(catalogue.tags.values(), key=lambda t: t.name)
     return Meta(
         genders=GENDERS,
         weights=tuple(WeightOption(w.code, w.gender, w.label, contests_per_weight[w.code]) for w in catalogue.weights),
-        rulesets=tuple(
-            _ruleset_option(r, default) for r in sorted(catalogue.rulesets, key=lambda r: r.year_from, reverse=True)
-        ),
+        rulesets=tuple(_ruleset_option(r, is_default=True) for r in rulesets_in_order),
         years=tuple(sorted({c.year for c in contests})),
         countries=tuple(sorted({code for c in contests for code in (c.white_country_code, c.blue_country_code)})),
         techniques=tuple(technique_ref(t) for t in tags if t.kind == "technique"),
         shido_reasons=tuple(reason_ref(t) for t in tags if t.kind == "shido_reason"),
         defaults=Defaults(
             gender="all",
-            ruleset=(default.id,) if default else (),
-            year_from=default.year_from if default else None,
-            year_to=default.year_to if default else None,
+            ruleset=tuple(r.id for r in all_rulesets),
+            year_from=min((r.year_from for r in all_rulesets), default=None),
+            year_to=max((r.year_to for r in all_rulesets), default=None),
             count_by="event",
             min_scores_athlete=DEFAULT_MIN_SCORES_ATHLETE,
             min_scores_technique=DEFAULT_MIN_SCORES_TECHNIQUE,
@@ -181,7 +179,7 @@ def build_meta(
     )
 
 
-def _ruleset_option(ruleset: Ruleset, default: Ruleset | None) -> RulesetOption:
+def _ruleset_option(ruleset: Ruleset, is_default: bool = True) -> RulesetOption:
     return RulesetOption(
         ruleset.id,
         ruleset.label,
@@ -192,7 +190,7 @@ def _ruleset_option(ruleset: Ruleset, default: Ruleset | None) -> RulesetOption:
         ruleset.max_wazaari,
         ruleset.max_shido,
         ruleset.contests,
-        default is not None and ruleset.id == default.id,
+        is_default,
     )
 
 

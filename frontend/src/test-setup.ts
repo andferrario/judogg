@@ -3,7 +3,7 @@ import { configure } from "@testing-library/react";
 import { server } from "./test/server";
 
 // A page renders many cards, each with its own request: under a parallel test run one second is not enough.
-configure({ asyncUtilTimeout: 3000 });
+configure({ asyncUtilTimeout: 5000 });
 
 // jsdom does not implement scrolling.
 window.scrollTo = () => {};

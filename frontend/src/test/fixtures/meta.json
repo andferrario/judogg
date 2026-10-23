@@ -118,7 +118,7 @@
       "max_wazaari": 1,
       "max_shido": 2,
       "contests": 0,
-      "is_default": false
+      "is_default": true
     },
     {
       "id": 2017,
@@ -130,7 +130,7 @@
       "max_wazaari": null,
       "max_shido": 2,
       "contests": 0,
-      "is_default": false
+      "is_default": true
     }
   ],
   "years": [
@@ -675,9 +675,11 @@
   "defaults": {
     "gender": "all",
     "ruleset": [
+      2017,
+      2018,
       2025
     ],
-    "year_from": 2025,
+    "year_from": 2017,
     "year_to": 2027,
     "count_by": "event",
     "min_scores_athlete": 5,

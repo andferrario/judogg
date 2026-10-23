@@ -56,7 +56,7 @@ describe("changeFilters", () => {
     ["count_by", "event"],
     ["min_scores_athlete", "5"],
     ["min_scores_technique", "2"],
-    ["ruleset", "2025"],
+    ["ruleset", "2017,2018,2025"],
   ])("never writes the default %s", (key, value) => {
     const change = { [key]: value } as FilterChange;
     expect(toSearch(changeFilters(params(`${key}=x`), change, defaults))).toBe("");
@@ -94,7 +94,7 @@ describe("genderChange", () => {
 
 describe("rulesetToggle", () => {
   test("adds to the rulesets on screen, the default included, and clears the years", () => {
-    expect(rulesetToggle(params("year_from=2025"), "2018", defaults)).toEqual({
+    expect(rulesetToggle(params("ruleset=2025&year_from=2025"), "2018", defaults)).toEqual({
       ruleset: "2025,2018",
       year_from: null,
       year_to: null,

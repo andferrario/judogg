@@ -20,7 +20,6 @@ from judogg.app.domain.model import (
     Catalogue,
     Filters,
 )
-from judogg.app.domain.rulesets import default_ruleset
 
 _COUNTRY = re.compile(r"[A-Z]{3}")
 
@@ -42,8 +41,7 @@ def resolve_filters(params: Params, catalogue: Catalogue) -> Filters:
             raise InvalidParameter("ruleset", f"unknown ruleset {value}")
         selected.append(rulesets[ruleset_id])
     if not selected:
-        default = default_ruleset(catalogue.rulesets)
-        selected = [default] if default else []
+        selected = sorted(catalogue.rulesets, key=lambda r: r.year_from)
     year_from = optional_int_param(params, "year_from", 1900, 2100)
     year_to = optional_int_param(params, "year_to", 1900, 2100)
     if year_from is None and selected:

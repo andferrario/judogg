@@ -5,7 +5,7 @@ import { api, ApiError, unwrap } from "./client";
 
 test("returns the body of a successful response", async () => {
   const meta = await unwrap(api.GET("/api/meta"));
-  expect(meta.defaults.ruleset).toEqual([2025]);
+  expect(meta.defaults.ruleset).toEqual([2017, 2018, 2025]);
 });
 
 test("turns the API error format into an ApiError", async () => {

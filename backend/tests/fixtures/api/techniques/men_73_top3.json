@@ -12,9 +12,11 @@
       "weight": [
         "m-73"
       ],
-      "year_from": 2025,
+      "year_from": 2017,
       "year_to": 2027,
       "ruleset": [
+        2017,
+        2018,
         2025
       ],
       "country": [],
