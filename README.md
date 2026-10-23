@@ -112,7 +112,8 @@ Competitions are filtered by their data, not by their level. Kata, ne-waza, team
 | `make lint` | ruff, mypy `--strict`, import-linter, ESLint, `tsc` |
 | `make format` | format the backend code |
 | `make openapi` | export the API contract to `frontend/openapi.json` and regenerate the frontend types |
-| `make dump` | dump the database to `data/` |
+| `make dump` | dump the database to compressed `data/judogg-<timestamp>.sql.gz` |
+| `make restore [FILE=...]` | restore the database from the latest dump or a specific file |
 
 CI (`.github/workflows/ci.yml`) runs lint and tests on every push.
 
