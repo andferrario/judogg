@@ -12,6 +12,8 @@
 
 It is a personal, non-commercial project by a judoka, built to learn and to answer questions like "what scores the most at −73 kg?" or "how does this athlete win?".
 
+> **Inspiration:** This project is inspired by [judostats](https://github.com/judoole/judostats) by [@judoole](https://github.com/judoole).
+
 ## Features
 
 - **Techniques**: the techniques that score the most, with the share of ippon, waza-ari and yuko, left/right side, timing in the contest, the trend over the years, a heatmap by weight category and how contests end.
